@@ -1,0 +1,1609 @@
+,dialog_act,utterance
+4555,request,"what kind of food do they serve
+"
+4556,inform,"im looking for a cheap restaurant in the north of
+"
+4557,inform,"im looking for a restaurant serving thai type of food
+"
+4558,request,"type of food does pizza hut serve
+"
+4559,null,"okay um can i have the other
+"
+4560,inform,"cheap restaurant spani
+"
+4561,inform,"im looking for a restaurant that serves irish food
+"
+4562,inform,"i want cantonese food
+"
+4563,affirm,"yes i am in the east part of town right now and i am looking for any place that serves indonesian food
+"
+4564,null,"of the venue
+"
+4565,reqalts,"how about moderate
+"
+4566,request,"where is it
+"
+4567,inform,"bistro food
+"
+4568,inform,"restaurant east
+"
+4569,inform,"um world food
+"
+4570,inform,"any is okay
+"
+4571,inform,"im looking for cuban food
+"
+4572,inform,"i am looking for an expensive restaurant on the east part of town
+"
+4573,inform,"im looking for spanish food
+"
+4574,reqalts,"how about gastropub type food
+"
+4575,request,"may i get the address and phone number
+"
+4576,null,"none
+"
+4577,inform,"im looking for a restaurant in the south part of town serving jamaican food
+"
+4578,inform,"it doesnt matter in the south part of town
+"
+4579,inform,"im looking for bistro food
+"
+4580,reqalts,"can i have another option
+"
+4581,inform,"um east part
+"
+4582,inform,"restaurant in the east part of town
+"
+4583,inform,"south of town
+"
+4584,reqalts,"how about expensive british
+"
+4585,inform,"turkish type of food
+"
+4586,inform,"are there any that serve vietnamese food
+"
+4587,inform,"im looking for a british restaurant
+"
+4588,inform,"dont care west part of town
+"
+4589,inform,"uh spanish food
+"
+4590,request,"what is the post co
+"
+4591,inform,"looking for moderately priced restaurant in the north part of town
+"
+4592,bye,"uh thank you and good bye
+"
+4593,inform,"type food
+"
+4594,reqalts,"do you have another
+"
+4595,null,"okay
+"
+4596,inform,"i need a restaurant in the east part of town that serves canape food
+"
+4597,request,"okay and h can i get the address
+"
+4598,inform,"any cheap food
+"
+4599,null,"done
+"
+4600,request,"the phone numeber
+"
+4601,inform,"i want a german restaurant in the west part of town
+"
+4602,inform,"polynesian food east of town
+"
+4603,inform,"system european food
+"
+4604,thankyou,"um okay thank you good bye
+"
+4605,inform,"did you see a korean restaurant
+"
+4606,thankyou,"okay ah i think thatll do it thank you and goodbye
+"
+4607,inform,"breath im looking for a restaurant that serves cuban food
+"
+4608,request,"phone number address
+"
+4609,inform,"uh gastropub
+"
+4610,reqalts,"how about a restaurant in the west part of town serving vietnamese food
+"
+4611,inform,"id like a restaurant in the north part of town that serves tur
+"
+4612,reqalts,"what about expensive
+"
+4613,affirm,"yes mexican food
+"
+4614,null,"uh unintelligible
+"
+4615,null,"what was
+"
+4616,inform,"what about irish food
+"
+4617,reqalts,"how about modern european food
+"
+4618,inform,"im looking for something cheap
+"
+4619,confirm,"does it serve fusion food
+"
+4620,null,"whats the ph
+"
+4621,negate,"no im looking for a cheap price range in the east part of town
+"
+4622,inform,"looking for thai food
+"
+4623,request,"sounds good whats the address
+"
+4624,negate,"no air tran good
+"
+4625,inform,"id like to find a restaurant in the north part of town and it should serve greek food
+"
+4626,inform,"steak
+"
+4627,request,"and the price code
+"
+4628,deny,"i dont want turkish
+"
+4629,inform,"im looking for international
+"
+4630,inform,"how bout che italian food
+"
+4631,inform,"im looking for an expensive restaurant and it should serve malaysian food
+"
+4632,inform,"im looking for a turkish type of restaurant
+"
+4633,request,"whats its price range
+"
+4634,inform,"im looking for a restaurant in the north of town serving french type of food
+"
+4635,inform,"restaurant in the east part of town that serves indonesian food
+"
+4636,request,"and can i get the address phone number and price range
+"
+4637,inform,"east of town
+"
+4638,inform,"is there any serving spanish food
+"
+4639,inform,"im searching for a restaurant in the south part of town that serves
+"
+4640,inform,"im looking for world food
+"
+4641,inform,"im looking for a cheap pan asian food
+"
+4642,inform,"not korean
+"
+4643,inform,"im looking for a restaurant in the center park of town that serves
+"
+4644,inform,"im looking for a cheap restaurant that serves vietnamese food
+"
+4645,inform,"a vietnamese
+"
+4646,reqalts,"how about a cheap asian oriental restaurant
+"
+4647,reqalts,"what about mediterranean
+"
+4648,inform,"find restaurant in north part of town serving asian
+"
+4649,reqalts,"is there another restaurant that serves portuguese food
+"
+4650,request,"may i have the address and phone number please
+"
+4651,inform,"looking for romanian food in the center of town
+"
+4652,inform,"on the south part of town
+"
+4653,null,"laugh
+"
+4654,inform,"breath i want a cheap restaura
+"
+4655,inform,"i want a moderate priced restaurant in the south of town
+"
+4656,inform,"id like a restaurant in any area that serves
+"
+4657,request,"thats fine can i get their phone number please
+"
+4658,affirm,"right that serves italian food
+"
+4659,negate,"thank you good bye no thank you good bye
+"
+4660,inform,"i would like gastropub food in the east part of town please
+"
+4661,inform,"i want to find a cheap restaurant and it should be in the east part of town
+"
+4662,request,"can i have the address the phone number
+"
+4663,inform,"i need a restaurant in the moderate price range
+"
+4664,inform,"vegetarian food in the east part of town
+"
+4665,request,"can i get the phone number and area
+"
+4666,affirm,"yea in the east part of town
+"
+4667,request,"noise may i have its address
+"
+4668,inform,"i dont care about the price range what is the address
+"
+4669,inform,"restaurant with african food
+"
+4670,inform,"that serves restaurant in south part of town
+"
+4671,inform,"im looking for a moderately priced restaurant and it should be in the east part of town
+"
+4672,inform,"next restaurant
+"
+4673,inform,"uh i want a cheap restaurant and it should be in the north part of town
+"
+4674,request,"and where is that located
+"
+4675,inform,"im looking for a cheap restaurant that serves canapes food
+"
+4676,request,"phone number please
+"
+4677,confirm,"does it serve african food
+"
+4678,affirm,"ah yes im looking for persian food though
+"
+4679,inform,"what about the other restaurant
+"
+4680,inform,"i want to find a cheap restaurant in the west part of town
+"
+4681,inform,"i would like to find a restaurant in the centre
+"
+4682,request,"um what is the address and phone number
+"
+4683,inform,"um doesnt matter if its in the center of the town
+"
+4684,affirm,"uh yes can i get the address
+"
+4685,request,"their phone number
+"
+4686,inform,"russian food
+"
+4687,request,"can i get the post code
+"
+4688,inform,"im looking for restaurant that serves portuguese food
+"
+4689,inform,"central inaudible
+"
+4690,inform,"im looking for gastropub food
+"
+4691,request,"and the telephone number
+"
+4692,null,"um hm
+"
+4693,reqalts,"can you tell me a restaurant in the south part of town
+"
+4694,inform,"west part of town
+"
+4695,request,"what is its post code
+"
+4696,inform,"a chinese restaurant that serves moderately priced food
+"
+4697,inform,"noise french food
+"
+4698,inform,"how bout asian oriental
+"
+4699,inform,"im looking for traditional food
+"
+4700,inform,"noise restaurant west part of town danish food
+"
+4701,inform,"moderate moderate moderate moderate
+"
+4702,reqalts,"what about cuban food
+"
+4703,reqalts,"breath is there anything else
+"
+4704,inform,"i need a moderately priced restaurant in the part of town
+"
+4705,inform,"the south
+"
+4706,inform,"moderately priced restaurant that serves indian food
+"
+4707,inform,"i want to find a restaurant in the center that should serve belgian food
+"
+4708,inform,"can i have a restaurant in the north
+"
+4709,inform,"doesnt matter but it should be moderately priced
+"
+4710,inform,"british type
+"
+4711,inform,"i want to find a moderately priced restaurant that serves cuban food
+"
+4712,inform,"expensive restaurant it should serve persian food
+"
+4713,inform,"i want a moderately priced restaurant in the east
+"
+4714,inform,"restaurant that serves korean food
+"
+4715,confirm,"is it in the west part of town
+"
+4716,affirm,"uh yes can i get a moderate moderately priced restaurant in the west part of town
+"
+4717,request,"phone number and price range
+"
+4718,request,"could i get the post code
+"
+4719,confirm,"does it serve african
+"
+4720,inform,"i need a restaurant in the
+"
+4721,inform,"i want to find a turkish food
+"
+4722,negate,"no is there anything else
+"
+4723,confirm,"does it serve cheap turkish food
+"
+4724,inform,"im looking for chinese food
+"
+4725,inform,"fancy restaurant moroccan food
+"
+4726,inform,"korean food expensive
+"
+4727,inform,"gastropub type of food
+"
+4728,reqalts,"how about british food
+"
+4729,request,"what the addre
+"
+4730,confirm,"is there a venue that serve vietnamese food
+"
+4731,inform,"looking for a restaurant in the north side of town
+"
+4732,inform,"noise im looking for a cheap restaurant in the south part of town
+"
+4733,inform,"any restaurant that serves asian oriental food
+"
+4734,null,"serving
+"
+4735,inform,"i dont care about the price range i need bask food
+"
+4736,negate,"no im looking for eritrean food
+"
+4737,inform,"welsh
+"
+4738,reqalts,"is there a restaurant serving turkish food
+"
+4739,request,"what kind of food do they serve there
+"
+4740,affirm,"uh yes id like an expensive restaurant that serves vegetarian food
+"
+4741,inform,"i want a cheap restaurant in the north part of town
+"
+4742,request,"may i have the address pleas
+"
+4743,inform,"restaurant north
+"
+4744,request,"give me the address and phone number
+"
+4745,inform,"gastro pub food
+"
+4746,inform,"im looking for a restaurant in the north part of town serving kosher food
+"
+4747,inform,"uh moderately priced restaurants in the south part of
+"
+4748,ack,"well take that one
+"
+4749,thankyou,"okay cool uh good bye thank you
+"
+4750,inform,"im looking for a cheap restaurant that serves brazilian
+"
+4751,negate,"no singaporean
+"
+4752,inform,"for restaurant
+"
+4753,null,"fen ditton
+"
+4754,inform,"gastropub restaurant
+"
+4755,inform,"thats not important
+"
+4756,affirm,"uh yes im looking for an expensive restaurant and it should be in the east part of town
+"
+4757,inform,"um i dont care about the price
+"
+4758,inform,"it has to serve unusual
+"
+4759,inform,"i dont care about price
+"
+4760,inform,"im looking for a restaurant that serves
+"
+4761,inform,"im looking for a restaurant on the east part of town that serves scandinavia food
+"
+4762,inform,"looking for a restaurant in the east part of town
+"
+4763,negate,"no dont care
+"
+4764,inform,"i need an expensive british restaurant
+"
+4765,inform,"im looking for moderately priced restaurant and it should serve halal food
+"
+4766,inform,"restaurant in any area thats
+"
+4767,inform,"british food
+"
+4768,negate,"no im looking for pan asian
+"
+4769,request,"whats the phone number
+"
+4770,inform,"unintelligible restaurant in the south part of town
+"
+4771,inform,"im looking for a spanish food restaurant
+"
+4772,inform,"i would like afghan food
+"
+4773,hello,"hi im looking for a cheap restaurant in the south part of town
+"
+4774,reqalts,"what about gastropub food
+"
+4775,inform,"spensive
+"
+4776,inform,"i want a gastropub restaurant
+"
+4777,inform,"something serving swiss food
+"
+4778,inform,"looking for austrian food in the center of town
+"
+4779,inform,"how bout irish food noise
+"
+4780,inform,"um expensive restaurant
+"
+4781,reqalts,"how about an indian type food restaurant
+"
+4782,bye,"okay forget it goodbye
+"
+4783,inform,"im looking for a moderately priced restaurant serving creative food
+"
+4784,reqalts,"what about asian oriental foo
+"
+4785,request,"whats your address
+"
+4786,inform,"restaurant serving english food
+"
+4787,inform,"im looking for a cheap restaurant that serves cuban food
+"
+4788,inform,"west
+"
+4789,request,"can you repeat the phone number and address please
+"
+4790,inform,"i would like european food
+"
+4791,inform,"a restaurant in the south part of town
+"
+4792,inform,"restaurant in the north part of
+"
+4793,negate,"no i am looking for a vietnamese restaurant
+"
+4794,inform,"world
+"
+4795,inform,"i want something that serves lebanese food
+"
+4796,request,"uh okay how about the address
+"
+4797,inform,"im looking for a moderately priced restaurant in the
+"
+4798,reqalts,"how about one serving jamaican food
+"
+4799,confirm,"okay is it in the west part of town
+"
+4800,request,"can i get the phone number and address
+"
+4801,inform,"im looking for a restaurant in the east part of town serving swiss food
+"
+4802,inform,"i want a modern european food
+"
+4803,request,"im good can i have the address and phone number please
+"
+4804,inform,"an expensive restaurant serving thai food
+"
+4805,inform,"the east part
+"
+4806,reqalts,"what are my other options
+"
+4807,inform,"north north part of town
+"
+4808,inform,"id like it to be in the south part of town
+"
+4809,inform,"i am looking for a restaurant in the center that serves korean food
+"
+4810,request,"whats the price range
+"
+4811,inform,"moderate restaurant east part of town
+"
+4812,inform,"an expensive italian restaurant
+"
+4813,inform,"any kind any thing
+"
+4814,request,"ah thank you phone number
+"
+4815,inform,"uh chinese food
+"
+4816,inform,"find me a cheap vietnamese restaurant
+"
+4817,inform,"im looking for a cheap spanish restaurant
+"
+4818,request,"and uh their post code
+"
+4819,bye,"okay cool thank you good bye
+"
+4820,reqalts,"how about european
+"
+4821,request,"what is the address phone number and the price range
+"
+4822,inform,"uh indian
+"
+4823,thankyou,"good bye thank you
+"
+4824,inform,"im looking for a restaurant in the north part of town and it should african food
+"
+4825,inform,"what about modern european food
+"
+4826,negate,"breath no unusual food
+"
+4827,request,"what area is it located
+"
+4828,inform,"unintelligible irish food
+"
+4829,request,"okay and uh can i get the address
+"
+4830,request,"its a type of food
+"
+4831,inform,"is modern european food any good
+"
+4832,inform,"something cheap
+"
+4833,inform,"i would like a cheap
+"
+4834,reqalts,"how about one serving unintelligible food
+"
+4835,reqalts,"another please
+"
+4836,inform,"im looking for a moderately priced restaurant that serves greek foo
+"
+4837,hello,"hi i want a restaurant
+"
+4838,inform,"noise i am looking for a moderately priced restaurant unintelligible
+"
+4839,request,"okay can i have the address and the phone number
+"
+4840,thankyou,"okay thank you
+"
+4841,inform,"a restaurant in the west part of town should serve crossover food
+"
+4842,inform,"romanian food
+"
+4843,inform,"looking for cheap barbecue food
+"
+4844,request,"cool give me that phone number
+"
+4845,inform,"im looking for something serves japanese food
+"
+4846,null,"id like to find
+"
+4847,inform,"expensive restaurant in the east
+"
+4848,null,"try again
+"
+4849,inform,"kosher food in the north
+"
+4850,request,"may i have it its address
+"
+4851,confirm,"is it moderately priced
+"
+4852,inform,"it should serve fusion food
+"
+4853,confirm,"is it in the center of town
+"
+4854,inform,"im looking for a malaysian restaurant in the north part of town
+"
+4855,request,"can i get the address and zip code
+"
+4856,inform,"ok i want vietnamese
+"
+4857,inform,"looking for a moderately priced restaurant that serves brazilian
+"
+4858,inform,"part of town and it serves mediterranean food
+"
+4859,request,"okay what is the phone number
+"
+4860,inform,"what is a good cheap restaurant that serves portuguese food
+"
+4861,inform,"expensive restaurant scottish food
+"
+4862,inform,"north american type food
+"
+4863,request,"area of the venue
+"
+4864,inform,"im looking for african food
+"
+4865,inform,"moderately priced restaurant in the east
+"
+4866,inform,"moderate priced restaurant in the north part of town
+"
+4867,request,"can i get the price range
+"
+4868,reqalts,"are there any other cheap restaurants in the west part of town
+"
+4869,inform,"im looking for an expensive restaurant in the south part of tow
+"
+4870,affirm,"ok yeah
+"
+4871,affirm,"right in the south part of town
+"
+4872,request,"could i have the address
+"
+4873,request,"address phone number prices
+"
+4874,inform,"im looking for a cheap restaurant and it should be in the east part of town
+"
+4875,inform,"im looking for a vietnamese restaurant
+"
+4876,inform,"can you find me a place that has thai food
+"
+4877,inform,"im looking for a restaurant in the west part of town that serves crossover food
+"
+4878,inform,"im looking for a restaurant that serves welsh food
+"
+4879,inform,"is there an asian oriental restaurant in the north part of town
+"
+4880,inform,"does anyone serve eritrean food
+"
+4881,inform,"restaurant and it should be
+"
+4882,inform,"moderate restaurant kosher food
+"
+4883,negate,"no international
+"
+4884,inform,"im looking for an expensive restaurant serving english food
+"
+4885,reqalts,"what about turkish food
+"
+4886,request,"and whats their post code
+"
+4887,inform,"im looking for expensive spanish food
+"
+4888,inform,"id like a restaurant in the east part of town
+"
+4889,inform,"that serves swiss food
+"
+4890,request,"what is what area is it in
+"
+4891,inform,"how bout chinese food
+"
+4892,inform,"moderate european
+"
+4893,inform,"cheap restaurant west part of town
+"
+4894,reqalts,"is there a restaurant serving italian food
+"
+4895,hello,"hi im looking for mexican food
+"
+4896,reqalts,"are there any other expensive restaurants in the east part of town
+"
+4897,inform,"canopy
+"
+4898,inform,"i dont care what price range
+"
+4899,inform,"expnsive
+"
+4900,request,"may i have the phone number please
+"
+4901,request,"uh can i get the post code and phone number
+"
+4902,inform,"im looking chineese food
+"
+4903,inform,"im looking for a cheap restaurant serving modern european type of food
+"
+4904,inform,"in the moderately price range
+"
+4905,inform,"alright gastropub food
+"
+4906,affirm,"yes cheap spanish restaurant
+"
+4907,confirm,"does it serve steakhouse food
+"
+4908,request,"kind i have the address
+"
+4909,inform,"im looking for an african restaurant
+"
+4910,inform,"south noise
+"
+4911,request,"and whats the telephone number
+"
+4912,request,"what kind of food
+"
+4913,inform,"i want to find a moderately priced restaurant in the east part town
+"
+4914,null,"child
+"
+4915,inform,"find indian restaurant in north of town
+"
+4916,inform,"expensive expensive
+"
+4917,null,"sil
+"
+4918,inform,"i want a cheap restaurant in the east part of town
+"
+4919,reqalts,"noise is there anything else
+"
+4920,inform,"any kind in the north part of town
+"
+4921,inform,"id like to find a restaurant in the north part of town serving french food
+"
+4922,null,"can you hear me
+"
+4923,inform,"i dont know
+"
+4924,inform,"im looking for a restaurant in any area that serves
+"
+4925,inform,"a restaurant that serves
+"
+4926,request,"may i have the phone number and post code please
+"
+4927,inform,"im looking for a restaurant that serves african food
+"
+4928,request,"and what is their phone number
+"
+4929,request,"address phone number and area
+"
+4930,inform,"noise im looking for a restaurant serving vegetarian food
+"
+4931,request,"address phone number price range
+"
+4932,hello,"hello im looking for a cheap restaurant in the west part of town
+"
+4933,request,"um could i have the address
+"
+4934,request,"what kind of food is it
+"
+4935,null,"7:30
+"
+4936,inform,"im looking for a restaurant on the east part of town
+"
+4937,confirm,"um is that moderately priced
+"
+4938,inform,"um im trying to find a restaurant in the unintelligible of town
+"
+4939,inform,"moderate european food
+"
+4940,inform,"in the west part of town in the cheap price range
+"
+4941,hello,"hi im looking for a place that serves scandinavian food
+"
+4942,reqalts,"how about gastropub food
+"
+4943,inform,"looking for a restaurant noise in the east part of town
+"
+4944,request,"okay do you have their phone number
+"
+4945,inform,"moderately priced south of town
+"
+4946,inform,"i need a restaurant in the west part of town that serves european food
+"
+4947,request,"no price
+"
+4948,inform,"im looking for expensive restaurants in the east part of town
+"
+4949,inform,"for something moderately priced on the east part of town
+"
+4950,inform,"restaurant in the north part of town that serves turkish food
+"
+4951,reqalts,"um how about spanish food
+"
+4952,request,"uh what is the address
+"
+4953,inform,"uh expensive restaurant in the south
+"
+4954,inform,"im looking for a restaurant in the north part of town
+"
+4955,negate,"no im looking for one that serves vietnamese food
+"
+4956,request,"may i have the postcode
+"
+4957,reqalts,"how about asian oriental
+"
+4958,request,"may i have the phone number talking
+"
+4959,request,"and the type of food
+"
+4960,inform,"moderately priced west part of town
+"
+4961,inform,"i am looking for modern european food
+"
+4962,thankyou,"alright thank you bye
+"
+4963,inform,"i am looking for persian food please
+"
+4964,request,"thats fine give me the address
+"
+4965,inform,"im looking for a restaurant in the east part of town that serves australian
+"
+4966,inform,"polish food
+"
+4967,negate,"no in any area
+"
+4968,inform,"im looking for a moderately priced restaurant in the north
+"
+4969,null,"gonville and caius college
+"
+4970,inform,"portuguese food in the south
+"
+4971,inform,"could i have a restaurant in the south part of town that serves unusual
+"
+4972,reqalts,"what about chinese type food
+"
+4973,inform,"i need lebanese food in the east
+"
+4974,inform,"i want to find a moderately priced restaurant and it should serve
+"
+4975,inform,"basque food
+"
+4976,confirm,"okay does it serve indian food
+"
+4977,inform,"im looking for a restaurant serving international food
+"
+4978,ack,"okay show me the least
+"
+4979,inform,"german food in the centre of town
+"
+4980,inform,"im looking for a cheap restaurant in south part of
+"
+4981,inform,"is there an expensive restaurant serving thai food
+"
+4982,request,"what area of town are they located
+"
+4983,inform,"i would like a restaurant that serves thai food
+"
+4984,inform,"moderately priced restaurant that serves fusion food
+"
+4985,reqalts,"what about australian asian food
+"
+4986,request,"may i have the post code
+"
+4987,inform,"i want an italian restaurant
+"
+4988,confirm,"is it portuguese food
+"
+4989,null,"okay uh what about the other
+"
+4990,reqalts,"how about the west of town
+"
+4991,request,"what area of town is it
+"
+4992,reqalts,"how bout the center part of town
+"
+4993,request,"ah whats the phone number
+"
+4994,inform,"turkish type food
+"
+4995,repeat,"repeat that
+"
+4996,inform,"im looking for an ex
+"
+4997,null,"okay can i
+"
+4998,inform,"expensive restaurant breath
+"
+4999,request,"um give me the addresses
+"
+5000,null,"hello welcome to the cambridge system
+"
+5001,inform,"i need an expensive restaurant in the east part of town
+"
+5002,inform,"im looking for a restaurant that serves japanese food in the north part of town
+"
+5003,inform,"african food in any price range
+"
+5004,reqalts,"how about indian type food
+"
+5005,negate,"no i said irish
+"
+5006,inform,"im looking for a restaurant in the east part of town that serves c
+"
+5007,inform,"id like to find a cheap restaurant in the west part of town
+"
+5008,reqalts,"what about thai food
+"
+5009,inform,"i need a restaurant that serves thai food
+"
+5010,null,"wait
+"
+5011,inform,"cantonese food north
+"
+5012,inform,"english
+"
+5013,null,"range
+"
+5014,null,"uh have
+"
+5015,inform,"what about other areas
+"
+5016,request,"may i have the address and the type of food
+"
+5017,inform,"center area
+"
+5018,request,"can i change the price range
+"
+5019,inform,"i want an expensive restaurant that serves polish food
+"
+5020,request,"okay ah wha whats the address
+"
+5021,request,"noise what is the area
+"
+5022,inform,"ok i want to find a restaurant in the south part of town
+"
+5023,inform,"north part of town moderately priced
+"
+5024,request,"a post code
+"
+5025,request,"may i get the post code
+"
+5026,reqalts,"i want something else
+"
+5027,inform,"id like a moderately priced restaurant in west of
+"
+5028,inform,"talian food
+"
+5029,inform,"in a moderate price range
+"
+5030,inform,"i want one in the north part of town
+"
+5031,inform,"im looking for a restaurant that serves gastropub food
+"
+5032,restart,"uh start over
+"
+5033,reqalts,"um is there anything else
+"
+5034,reqalts,"what about italian
+"
+5035,negate,"no english food
+"
+5036,negate,"no noise
+"
+5037,inform,"i need a moderately priced restaurant in the north part
+"
+5038,inform,"find irish food
+"
+5039,inform,"im looking for a moderately priced restaurant that serves british food
+"
+5040,inform,"im looking for a restaurant in the east part of town that serves traditional food
+"
+5041,request,"what is the address phone number price range
+"
+5042,hello,"hi looking for a moderately priced restaurant
+"
+5043,inform,"yea im looking for a moderately priced restaurant
+"
+5044,negate,"no catalan
+"
+5045,inform,"i want a cheap hungarian food restaurant
+"
+5046,request,"can i get the address and phone number please
+"
+5047,inform,"im looking for a restaurant in any area that serves tuscan food
+"
+5048,thankyou,"thank you and price range
+"
+5049,inform,"i am looking for sweedish food
+"
+5050,request,"and what area is it in
+"
+5051,request,"uh can i get the phone number
+"
+5052,inform,"british feed
+"
+5053,request,"can i have the phone number and the price range
+"
+5054,affirm,"yes moderate priced
+"
+5055,inform,"any noise
+"
+5056,inform,"im trying to find a cheap restaurant in the east of town
+"
+5057,inform,"im looking for a moderately priced restaurant in the east part of town
+"
+5058,inform,"in the center of town
+"
+5059,request,"what type of food is served
+"
+5060,affirm,"uh yes im looking for malaysian food
+"
+5061,reqalts,"um what about chinese
+"
+5062,inform,"north side
+"
+5063,inform,"im looking for corsica food
+"
+5064,inform,"i am looking for a restaurant serving afghan food
+"
+5065,inform,"i need a restaurant in the west part of town that serves crossover food
+"
+5066,inform,"i am looking for a british restaurant
+"
+5067,inform,"i want a cheap restaurant that serves unusual food
+"
+5068,request,"could i have its number
+"
+5069,inform,"i need one in the cheap price range
+"
+5070,request,"phone
+"
+5071,request,"address price range
+"
+5072,inform,"looking for something moderately priced on the east side of town
+"
+5073,inform,"um i want a restaurant in the north side of town and i want to eat christmas food
+"
+5074,inform,"i would like to find a restaurant in the south part of town that serves
+"
+5075,thankyou,"very good thank you bye bye
+"
+5076,reqalts,"thats great what else is there
+"
+5077,inform,"looking for a moderately priced restaurant that serves british food
+"
+5078,reqalts,"are there any other options
+"
+5079,thankyou,"water cherries thank you good bye
+"
+5080,request,"what type of food they serve
+"
+5081,inform,"i want to find a cheap restaurant that serve
+"
+5082,inform,"i dont care what part of town
+"
+5083,inform,"im looking for a restaurant that serves afghan food
+"
+5084,reqalts,"what about asian oriental
+"
+5085,inform,"im looking for a restaurant in any area that serves cantonese food
+"
+5086,request,"may i have the address phone number and postcode
+"
+5087,inform,"im looking for cheap restaurants in the north part of town
+"
+5088,inform,"can i have mediterranean food
+"
+5089,inform,"im looking for a restaurant in the east part of town that serves afghan food
+"
+5090,inform,"any type is fine
+"
+5091,inform,"looking for a restaurant in the south part of town that serves persian
+"
+5092,inform,"kosher food
+"
+5093,request,"okay can i have the address and post code please
+"
+5094,inform,"oh i dont care
+"
+5095,reqalts,"how about asian food
+"
+5096,null,"there
+"
+5097,request,"address phone number postcode
+"
+5098,reqalts,"do you have a restaurant that serves turkish food
+"
+5099,inform,"find restaurant serving asian
+"
+5100,bye,"unintelligible good bye
+"
+5101,request,"and the telephone
+"
+5102,confirm,"does it serve mediterranean food
+"
+5103,affirm,"yes iam looking for a cheap restaurant in the south part of town
+"
+5104,null,"pizza
+"
+5105,inform,"i would like a moderately priced restaurant
+"
+5106,affirm,"yes i would like to know the address
+"
+5107,inform,"i want i want indian food
+"
+5108,request,"adddress
+"
+5109,inform,"is there one with thai food
+"
+5110,inform,"can i get a restaurant in the south part of town that serves cuban food
+"
+5111,inform,"im looking for a restaurant in the north part of town serving international food
+"
+5112,request,"can i have the phone number and post code plea
+"
+5113,negate,"no
+"
+5114,null,"is there one serving
+"
+5115,request,"good i have the address of that
+"
+5116,confirm,"is it moderately
+"
+5117,inform,"chinese food in the north part of town
+"
+5118,affirm,"yes that sells korean food
+"
+5119,inform,"italian food in the center
+"
+5120,reqalts,"uh okay how about indian food in the east part of town
+"
+5121,reqalts,"what about french
+"
+5122,request,"where is the restaurant
+"
+5123,affirm,"uh yes iam looking for a british type of food restaurant
+"
+5124,inform,"mediterranean restaurant in any part of town
+"
+5125,inform,"restaurant in the south part of town caribbean food
+"
+5126,inform,"cheap restaurant north part of town
+"
+5127,inform,"vietnam
+"
+5128,inform,"im looking for a restaurant that serves romanian food
+"
+5129,inform,"uh im looking for a cheap restaurant in the north part of town
+"
+5130,inform,"noise east
+"
+5131,request,"telephone
+"
+5132,inform,"i want to find indian food then
+"
+5133,reqalts,"uh how about italian food
+"
+5134,reqalts,"what about international food
+"
+5135,negate,"no im looking for asian oriental
+"
+5136,inform,"im looking for something expensive
+"
+5137,request,"give me the address
+"
+5138,inform,"serving modern european food
+"
+5139,request,"okay let me have that address
+"
+5140,inform,"earetree mediterranean food
+"
+5141,reqalts,"is there something else
+"
+5142,null,"can i get
+"
+5143,inform,"caribbean foo
+"
+5144,inform,"italian restaurant
+"
+5145,inform,"i need to know if there are any restaurants serving turkish food
+"
+5146,inform,"moderately priced
+"
+5147,request,"ah whats the price ran
+"
+5148,thankyou,"okay um thank you good bye
+"
+5149,negate,"no caribbean food
+"
+5150,inform,"cheap restaurant in the west part of town
+"
+5151,inform,"i need a restaurant serving asian oriental in the north part of town
+"
+5152,null,"range please
+"
+5153,hello,"hi im looking for
+"
+5154,negate,"no im looking for thai food
+"
+5155,inform,"spanish food in west area
+"
+5156,confirm,"do they serve unintelligible food
+"
+5157,request,"and what area is it
+"
+5158,inform,"id like to find a restaurant in the west part of town that serves christmas food
+"
+5159,inform,"a restaurant in the center
+"
+5160,bye,"cool um thank you good bye
+"
+5161,inform,"i need a restaurant serving corsica food
+"
+5162,inform,"i want lebanese food
+"
+5163,inform,"id like to find a restaurant in the north part of town that serves german food
+"
+5164,inform,"breath i want to find an expensive restaurant and it sh
+"
+5165,inform,"any kind in the east part of town
+"
+5166,null,"type
+"
+5167,inform,"im looking for halal food
+"
+5168,inform,"noise i want to find a restaurant that serve french food
+"
+5169,request,"and their address
+"
+5170,inform,"asian oriental
+"
+5171,inform,"uh im looking for a moderately priced restaurant serving
+"
+5172,bye,"cute thank you good bye
+"
+5173,inform,"i would like to find a moderately priced restaurant in the north part of town
+"
+5174,inform,"im looking for a restaurant in the south part of town that serves jamaican food
+"
+5175,inform,"id like to find japanese food
+"
+5176,request,"whats its number
+"
+5177,inform,"the north
+"
+5178,inform,"hi im looking for moderately priced
+"
+5179,inform,"thai
+"
+5180,affirm,"yea thank you good bye
+"
+5181,inform,"i want to find a cheap restaurant and it should serve portuguese food
+"
+5182,inform,"like to find a moderately priced restaurant in the west part of town
+"
+5183,request,"what is the price range of this venue
+"
+5184,null,"prise me
+"
+5185,affirm,"yes in the cheap price range
+"
+5186,thankyou,"noise thank you goodbye
+"
+5187,inform,"a restaurant with afghan food
+"
+5188,inform,"okay can i have european food
+"
+5189,request,"and what is the phone number
+"
+5190,inform,"id like a cheap restaurant in the east part of town
+"
+5191,reqalts,"how about a restaurant in the west part of town that serves vietnamese
+"
+5192,request,"and mail postal code
+"
+5193,request,"what is a phone number
+"
+5194,ack,"okay um
+"
+5195,inform,"um anything else
+"
+5196,reqalts,"do you have anything else
+"
+5197,inform,"im looking for an expensive restaurant in the south part of
+"
+5198,inform,"im looking for a restaurant in the east part of town that serves spanish food
+"
+5199,inform,"cheap restaurant portuguese
+"
+5200,null,"may i
+"
+5201,inform,"looking for cheap eritrean food
+"
+5202,inform,"african
+"
+5203,null,"old
+"
+5204,inform,"looking for a restaurant in west part of town serving cantonese
+"
+5205,inform,"expensive italian
+"
+5206,inform,"mexican
+"
+5207,inform,"cheap restaurant in the east of town
+"
+5208,inform,"im looking for a restaurant in any area and it should serve pan asian food
+"
+5209,request,"whats the type of food they serve
+"
+5210,inform,"uh medium
+"
+5211,request,"what is the address and phone and postal code
+"
+5212,inform,"im looking for a restaurant in any area that serves polynesian food
+"
+5213,request,"and i need the address and post code
+"
+5214,inform,"do you have any asian oriental food
+"
+5215,inform,"expensive restaurant thai food
+"
+5216,confirm,"is it in the center
+"
+5217,inform,"can i have an expensive restaurant
+"
+5218,request,"and whats their address
+"
+5219,inform,"i want gastropub food
+"
+5220,inform,"a cheap restaurant in the east part of town
+"
+5221,request,"and the phone number
+"
+5222,inform,"theres no such venue unintelligible indian type of food
+"
+5223,inform,"is the one that serves indian food
+"
+5224,affirm,"yes right
+"
+5225,request,"what is um the address and phone number
+"
+5226,request,"i want the address and ph
+"
+5227,inform,"looking for a restaurant in the center that sales creative food
+"
+5228,inform,"airatarin
+"
+5229,inform,"im looking for a restaurant serving vegetarian food
+"
+5230,inform,"um doesnt matter
+"
+5231,inform,"im looking for pollynasian food
+"
+5232,inform,"im looking for moderately priced restaurant that serves world food
+"
+5233,affirm,"yes that serves chinese food
+"
+5234,inform,"okay im looking for an expensive restaurant
+"
+5235,inform,"looking for something with gastropub on the east side of town
+"
+5236,inform,"uh scandinavian food
+"
+5237,reqalts,"do you have any other restaurants
+"
+5238,inform,"restaurant in the west part of town that serves airitran food
+"
+5239,inform,"uh low price range
+"
+5240,inform,"breath unusual food
+"
+5241,inform,"yea im looking for an expensive restaurant in the south part of town
+"
+5242,bye,"kay thank you good bye
+"
+5243,inform,"uh north american food
+"
+5244,inform,"chinese food in the east part of town
+"
+5245,inform,"i want to find a moderately priced restaurant in the south part of time
+"
+5246,negate,"no thank you good bye
+"
+5247,inform,"im searching for turkish food
+"
+5248,inform,"i need a restaurant in the center of town that includes international food
+"
+5249,inform,"im looking for a spanish restaurant
+"
+5250,inform,"west side
+"
+5251,negate,"no vietnamese food
+"
+5252,inform,"modern european food
+"
+5253,thankyou,"oh thank you good bye
+"
+5254,request,"does it what kind of food does it serve
+"
+5255,inform,"um im looking for an expensive restaurant
+"
+5256,inform,"breath i am looking for a venue that serves gastropub food
+"
+5257,reqalts,"what is there anything else
+"
+5258,inform,"uh the west part of town
+"
+5259,inform,"indonesian
+"
+5260,request,"what part of town is chiquito mexican restaurant in
+"
+5261,confirm,"does it serve international food
+"
+5262,inform,"i am looking for a moderate priced restaurant in the west of town
+"
+5263,request,"what is the food type
+"
+5264,inform,"restaurants
+"
+5265,inform,"uh cheap moderate
+"
+5266,bye,"k you goodbye
+"
+5267,affirm,"yes a restaurant in the east of town unintelligible serving canap
+"
+5268,inform,"venetian food
+"
+5269,inform,"i want a restaurant in the we
+"
+5270,inform,"uh im looking for a cheap restaurant
+"
+5271,inform,"west part of town creative food
+"
+5272,inform,"east noise
+"
+5273,inform,"in the south part of the town
+"
+5274,inform,"noise taquita restaurant
+"
+5275,inform,"malaysian food
+"
+5276,inform,"north east
+"
+5277,null,"what about us
+"
+5278,request,"okay good whats the address for that one
+"
+5279,request,"in the wouth part of town
+"
+5280,inform,"chinese restaurant
+"
+5281,inform,"restaurant in the north part of town that serves french
+"
+5282,request,"can i get the address and phone number
+"
+5283,inform,"im looking for a restaurant in the center
+"
+5284,reqalts,"and anything else
+"
+5285,request,"area of venue
+"
+5286,affirm,"yes knocking
+"
+5287,inform,"um an expensive
+"
+5288,inform,"vietnamese anywhere
+"
+5289,inform,"i would like to find a restaurant
+"
+5290,inform,"um chinese food
+"
+5291,inform,"south side of town
+"
+5292,inform,"im looking for lebanese food
+"
+5293,inform,"im looking for an indian restaurant in the east of town
+"
+5294,inform,"im looking for a cheap restaurant serving pan as
+"
+5295,request,"where is the address
+"
+5296,reqalts,"how about the center of town
+"
+5297,inform,"cheap italian food
+"
+5298,null,"was
+"
+5299,inform,"i want to find a restaurant in the west part of town
+"
+5300,reqalts,"how about italian
+"
+5301,inform,"breath can i get a restaurant serving chinese food
+"
+5302,thankyou,"alright thank you thats it
+"
+5303,inform,"expensive mediterranean food
+"
+5304,inform,"im looking for a restaurant that serves scandinavian food
+"
+5305,null,"in the
+"
+5306,null,"breathing
+"
+5307,inform,"uh restaurant in the west part of town
+"
+5308,null,"just a moment
+"
+5309,hello,"hi im looking for a restaurant that serves spanish food
+"
+5310,inform,"im looking for a restaurant in the south part of town that serves malaysian food
+"
+5311,inform,"um medium price range
+"
+5312,inform,"looking for a moderately priced restaurant
+"
+5313,request,"post code
+"
+5314,inform,"catalan food north part of town
+"
+5315,inform,"im looking for a cheap restaurant that serves international
+"
+5316,inform,"cross over
+"
+5317,inform,"id like an expensive restaurant that serves fusion food
+"
+5318,inform,"looking for a moderately priced restaurant that serves cancun
+"
+5319,request,"ah could you give me the address
+"
+5320,request,"and whats the price range
+"
+5321,inform,"im looking for an expensive restaurant that serves mediteranian
+"
+5322,request,"can i have their phone number
+"
+5323,inform,"the north part of town
+"
+5324,request,"give me the address phone number and price range
+"
+5325,inform,"id like to find a moderately priced restaurant
+"
+5326,inform,"restaurant in central
+"
+5327,inform,"i am looking for italian
+"
+5328,inform,"breath expensive
+"
+5329,inform,"serving jamaican food
+"
+5330,inform,"gastropub
+"
+5331,confirm,"do they serve korean food
+"
+5332,request,"what price range is this venue
+"
+5333,inform,"looking for a restaurant in the center that serves
+"
+5334,inform,"restaurant in the north part of town that serves hungarian food
+"
+5335,inform,"swiss food
+"
+5336,inform,"im looking for a restaurant in the north part of town that serves euro
+"
+5337,inform,"breath id like a cheap restaurant in the south part of town
+"
+5338,request,"could i have the phone number and type of venue
+"
+5339,inform,"if there is no such venue how about french type of food
+"
+5340,reqalts,"how about europea
+"
+5341,inform,"breath id like a moderately priced restaurant that serves thai food
+"
+5342,inform,"noise north part of town
+"
+5343,request,"can i have the phone nu
+"
+5344,confirm,"is it moderate
+"
+5345,inform,"i want an indian food restaurant moderate priced
+"
+5346,request,"can i get a phone number please
+"
+5347,inform,"basque food in the east part of town
+"
+5348,request,"the phone
+"
+5349,request,"address phone number and type of food
+"
+5350,request,"thank you what is the phone number
+"
+5351,restart,"start again
+"
+5352,request,"can i get the address tv_noise
+"
+5353,inform,"im looking for a restaurant in the west part of town that serves italian food
+"
+5354,inform,"i am looking for an expensive restaurant in the east
+"
+5355,inform,"i would like to find a moderately priced
+"
+5356,inform,"uh dont care but can it be vegetarian food
+"
+5357,inform,"i would like indian food
+"
+5358,affirm,"im looking yes a restaurant in the east of town
+"

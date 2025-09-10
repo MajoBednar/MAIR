@@ -1,0 +1,7653 @@
+,dialog_act,utterance
+21675,reqalts,"how about european food
+"
+21676,affirm,"yes
+"
+21677,request,"what is the address
+"
+21678,thankyou,"thank you good bye
+"
+21679,request,"whats the address
+"
+21680,affirm,"yes
+"
+21681,thankyou,"thank you good bye
+"
+21682,null,"unintelligible
+"
+21683,inform,"italian
+"
+21684,request,"what is the price range
+"
+21685,negate,"no no im looking
+"
+21686,inform,"vietnamese
+"
+21687,inform,"chinese food
+"
+21688,inform,"it doesnt matter to me
+"
+21689,reqalts,"what about asian oriental food
+"
+21690,thankyou,"thank you good bye
+"
+21691,reqalts,"how about asian food
+"
+21692,request,"and phone number
+"
+21693,thankyou,"thank you good bye
+"
+21694,request,"may i have the address and phone number
+"
+21695,affirm,"yes
+"
+21696,request,"breath price range
+"
+21697,inform,"expensive restaurant
+"
+21698,affirm,"correct
+"
+21699,request,"price range
+"
+21700,inform,"asian oriental
+"
+21701,request,"phone number
+"
+21702,reqalts,"how about indian food
+"
+21703,request,"what kind of food do they serve
+"
+21704,hello,"hi i need a cheap restaurant in the south part of town
+"
+21705,inform,"im searching for a chinese restaurant
+"
+21706,thankyou,"thank you good bye
+"
+21707,inform,"center
+"
+21708,inform,"gastropub
+"
+21709,affirm,"yes
+"
+21710,inform,"moderately priced restaurant
+"
+21711,request,"whats the address
+"
+21712,request,"phone number
+"
+21713,restart,"start over
+"
+21714,request,"im looking for a restaurant in the north part of town serving french type of food
+"
+21715,request,"address and phone number
+"
+21716,negate,"no
+"
+21717,inform,"restaurant in the center
+"
+21718,request,"can i have the address phone number
+"
+21719,request,"part of town
+"
+21720,affirm,"yes
+"
+21721,thankyou,"thank you
+"
+21722,thankyou,"thank you good bye
+"
+21723,inform,"looking for hungarian food in the north side of town
+"
+21724,thankyou,"thank you good bye
+"
+21725,request,"address
+"
+21726,inform,"italian
+"
+21727,request,"address
+"
+21728,affirm,"right
+"
+21729,inform,"vietnamese food
+"
+21730,inform,"dont care
+"
+21731,inform,"crossover
+"
+21732,inform,"im looking for a moderately priced restaurant in the north part of town
+"
+21733,inform,"italian
+"
+21734,request,"uh address
+"
+21735,thankyou,"thank you goodbye
+"
+21736,thankyou,"thank you good bye
+"
+21737,thankyou,"thank you goodbye
+"
+21738,inform,"gastropub
+"
+21739,request,"what kind of food
+"
+21740,request,"and the price range
+"
+21741,reqalts,"how about korean food
+"
+21742,request,"address
+"
+21743,inform,"barbecue
+"
+21744,request,"what is the phone number
+"
+21745,inform,"i dont care
+"
+21746,thankyou,"thank you good bye
+"
+21747,inform,"north american restaurant expensive
+"
+21748,bye,"good bye
+"
+21749,null,"unintelligible
+"
+21750,inform,"vietnamese
+"
+21751,request,"post code
+"
+21752,inform,"i dont care
+"
+21753,inform,"gastropub
+"
+21754,inform,"i dont care
+"
+21755,inform,"greek
+"
+21756,inform,"cheap
+"
+21757,inform,"i dont care
+"
+21758,inform,"thai
+"
+21759,null,"sil
+"
+21760,request,"address
+"
+21761,inform,"spanish
+"
+21762,thankyou,"thank you good bye
+"
+21763,thankyou,"thank you goodbye
+"
+21764,thankyou,"thank you good bye
+"
+21765,inform,"moderate
+"
+21766,inform,"any area
+"
+21767,inform,"um it doesnt matter its for a cheap restaurant
+"
+21768,request,"price range
+"
+21769,thankyou,"thank you good bye
+"
+21770,request,"can i have the address
+"
+21771,inform,"im looking for an african restaurant
+"
+21772,inform,"can i get a restaurant in the south part of town that serves cuban food
+"
+21773,request,"what is the phone number
+"
+21774,thankyou,"thank you good bye
+"
+21775,inform,"moderately
+"
+21776,inform,"im looking for a restaurant in the center serving russian food
+"
+21777,affirm,"yes can i have a moderate priced restaurant
+"
+21778,inform,"food
+"
+21779,reqalts,"what about chinese food
+"
+21780,request,"and the address
+"
+21781,inform,"cheap restaurant
+"
+21782,request,"okay ah wha whats the address
+"
+21783,inform,"chinese food
+"
+21784,affirm,"uh yes can i find an expensive restaurant that serves italian food
+"
+21785,inform,"looking for a restaurant in any area that serves irish food
+"
+21786,inform,"im looking for a restaurant in the south part of town
+"
+21787,inform,"i dont care
+"
+21788,null,"sil
+"
+21789,inform,"south
+"
+21790,request,"phone number
+"
+21791,null,"can i get the
+"
+21792,inform,"turkish food
+"
+21793,reqalts,"how about vietnamese food
+"
+21794,inform,"i dont care
+"
+21795,request,"phone number
+"
+21796,inform,"id like thai food
+"
+21797,inform,"east part of town
+"
+21798,request,"whats the address
+"
+21799,thankyou,"thank you good bye
+"
+21800,thankyou,"thank you good bye
+"
+21801,inform,"thai food
+"
+21802,request,"post code
+"
+21803,inform,"west
+"
+21804,request,"may i have the address and phone number
+"
+21805,repeat,"back
+"
+21806,inform,"im looking for a moderate priced restaurant that serves kosher food
+"
+21807,inform,"im looking for a moderately priced restaurant and it should serve british
+"
+21808,request,"area
+"
+21809,inform,"i dont care
+"
+21810,reqalts,"anything else
+"
+21811,null,"sil
+"
+21812,inform,"moderate
+"
+21813,request,"post code
+"
+21814,null,"was
+"
+21815,reqalts,"what about international
+"
+21816,affirm,"yeah im looking for food cheap restaurant
+"
+21817,inform,"singapore
+"
+21818,inform,"west part of town
+"
+21819,inform,"i want to find a restaurant in the west part of
+"
+21820,request,"what is the address and phone number
+"
+21821,inform,"chinese food
+"
+21822,inform,"i want french
+"
+21823,thankyou,"thank you good bye
+"
+21824,repeat,"repeat that
+"
+21825,reqalts,"give me another one
+"
+21826,request,"phone number
+"
+21827,inform,"looking for caribbean food
+"
+21828,thankyou,"thank you good bye
+"
+21829,thankyou,"thank you good bye
+"
+21830,inform,"i want to find a rest
+"
+21831,thankyou,"thank you good bye
+"
+21832,thankyou,"thank you good bye
+"
+21833,inform,"i dont care
+"
+21834,inform,"indian food
+"
+21835,thankyou,"thank you good bye
+"
+21836,reqalts,"anything else
+"
+21837,inform,"doesnt matter
+"
+21838,inform,"spanish food any area
+"
+21839,request,"what is the phone number
+"
+21840,inform,"north
+"
+21841,inform,"chinese food
+"
+21842,request,"what kind of food does it serve
+"
+21843,inform,"i dont care
+"
+21844,inform,"any
+"
+21845,inform,"cheap restaurant
+"
+21846,request,"phone number
+"
+21847,null,"wait noise
+"
+21848,reqalts,"how about french
+"
+21849,null,"noise
+"
+21850,request,"what is the address
+"
+21851,reqalts,"how about indian food
+"
+21852,inform,"expensive
+"
+21853,request,"what is the phone number
+"
+21854,null,"noise
+"
+21855,request,"post code
+"
+21856,thankyou,"thank you good bye
+"
+21857,inform,"expensive restaurant asian food
+"
+21858,negate,"no
+"
+21859,thankyou,"thank you good bye
+"
+21860,inform,"restaurant in the south part of town
+"
+21861,thankyou,"thank you goodbye
+"
+21862,inform,"in the west part of town
+"
+21863,request,"phone number
+"
+21864,request,"phone number
+"
+21865,reqalts,"how about north american food
+"
+21866,reqalts,"is there anything else
+"
+21867,request,"whats the phone number
+"
+21868,thankyou,"thank you good bye
+"
+21869,thankyou,"thank you goodbye
+"
+21870,inform,"vietnamese
+"
+21871,inform,"seafood
+"
+21872,request,"may i have the address
+"
+21873,inform,"afghan food
+"
+21874,inform,"east
+"
+21875,negate,"no international
+"
+21876,reqalts,"what about italian food
+"
+21877,reqalts,"how about chinese
+"
+21878,deny,"i dont want that
+"
+21879,inform,"moderate
+"
+21880,inform,"im looking for singaporean food
+"
+21881,inform,"welsh food
+"
+21882,inform,"restaurant and it should be
+"
+21883,reqalts,"how about italian food
+"
+21884,inform,"uh i dont care
+"
+21885,request,"whats the address
+"
+21886,inform,"restaurant
+"
+21887,request,"phone number
+"
+21888,inform,"im looking for a restaurant that serves african food
+"
+21889,thankyou,"thank you good bye
+"
+21890,inform,"im looking for portuguese food
+"
+21891,inform,"is there greek food
+"
+21892,inform,"unusal
+"
+21893,request,"how much does it cost
+"
+21894,request,"whats the address
+"
+21895,null,"sil
+"
+21896,inform,"cheap restaurant
+"
+21897,thankyou,"thank you good bye
+"
+21898,inform,"italian food cheap restaurant
+"
+21899,inform,"polynesia food
+"
+21900,request,"address
+"
+21901,request,"what is the phone number
+"
+21902,null,"noise
+"
+21903,request,"whats the address
+"
+21904,inform,"im looking for an expensive restaurant in the east part of town
+"
+21905,thankyou,"thank you good bye
+"
+21906,inform,"looking for mediterranean food uh west side of town
+"
+21907,reqalts,"is there anything else
+"
+21908,null,"sil
+"
+21909,reqalts,"anything else
+"
+21910,inform,"i want a restaurant in the north part of town that serves kosher
+"
+21911,request,"whats the address
+"
+21912,inform,"any
+"
+21913,request,"what is their phone number
+"
+21914,inform,"im looking for a restaurant in the center of town that serves
+"
+21915,thankyou,"thank you good bye
+"
+21916,thankyou,"thank you good bye
+"
+21917,request,"what area is it in
+"
+21918,inform,"that serves in the moderate food price
+"
+21919,inform,"i want to find international food
+"
+21920,inform,"thai food
+"
+21921,inform,"romanian food
+"
+21922,inform,"im looking for canapes food in any price range
+"
+21923,request,"whats the phone number
+"
+21924,null,"um how about
+"
+21925,inform,"cheap restaurant
+"
+21926,request,"type of food do they serve
+"
+21927,inform,"indian
+"
+21928,null,"can i get a
+"
+21929,thankyou,"thank you good bye
+"
+21930,request,"what is the address
+"
+21931,inform,"italian
+"
+21932,inform,"im looking for a restaurant in the north part of town serving
+"
+21933,request,"the post code
+"
+21934,inform,"any part of town
+"
+21935,request,"the address
+"
+21936,inform,"im looking for fusion food
+"
+21937,thankyou,"thank you good bye
+"
+21938,inform,"a cheap restauran
+"
+21939,request,"what type of food do they serve
+"
+21940,thankyou,"thank you good bye
+"
+21941,inform,"can i have a caribbean food
+"
+21942,affirm,"yes
+"
+21943,thankyou,"thank you good bye
+"
+21944,reqalts,"what about portuguese food
+"
+21945,inform,"im looking for moderately priced restaurant and it should serve halal food
+"
+21946,repeat,"again
+"
+21947,null,"unintelligible
+"
+21948,thankyou,"thank you good bye
+"
+21949,request,"whats the address
+"
+21950,reqalts,"how about indian food
+"
+21951,null,"sil
+"
+21952,affirm,"yes
+"
+21953,inform,"i dont care
+"
+21954,inform,"cheap
+"
+21955,null,"sil
+"
+21956,affirm,"yes
+"
+21957,request,"whats the address
+"
+21958,affirm,"yes
+"
+21959,thankyou,"thank you good bye
+"
+21960,inform,"creative food
+"
+21961,request,"and the phone number
+"
+21962,reqalts,"is there a restaurant serving vietnamese food
+"
+21963,inform,"im looking for a restaurant that serves russian food
+"
+21964,null,"okay
+"
+21965,thankyou,"thank you good bye
+"
+21966,request,"can i have the phone number of the venue
+"
+21967,inform,"any
+"
+21968,null,"noise
+"
+21969,request,"may i have the address and phone number
+"
+21970,inform,"doesnt matter
+"
+21971,inform,"i dont care
+"
+21972,inform,"modern european food
+"
+21973,affirm,"yes
+"
+21974,inform,"noise ease part of town east
+"
+21975,null,"unintelligible
+"
+21976,request,"area of the venue
+"
+21977,request,"address and phone number
+"
+21978,thankyou,"thank you good bye
+"
+21979,request,"what is the post code
+"
+21980,affirm,"yes
+"
+21981,inform,"im looking for a moderately priced restaurant in the south part of town
+"
+21982,thankyou,"thank you good bye
+"
+21983,request,"whats the address
+"
+21984,inform,"chinese food
+"
+21985,request,"what is the address
+"
+21986,inform,"im looking for a restaurant in the south part of town
+"
+21987,inform,"restaurant
+"
+21988,inform,"dont care
+"
+21989,thankyou,"thank you good bye
+"
+21990,reqalts,"how about asian food
+"
+21991,thankyou,"okay thank you good bye
+"
+21992,thankyou,"thank you good bye
+"
+21993,affirm,"yes
+"
+21994,inform,"i dont care
+"
+21995,request,"may i have the phone number
+"
+21996,request,"what is the telephone number
+"
+21997,request,"can i get the address
+"
+21998,inform,"i want to find a moderately priced restaurant that serves vietna
+"
+21999,inform,"any
+"
+22000,null,"sil
+"
+22001,inform,"dont care
+"
+22002,thankyou,"thank you good bye
+"
+22003,thankyou,"okay thank you good bye
+"
+22004,thankyou,"thank you good bye
+"
+22005,affirm,"yes
+"
+22006,thankyou,"thank you good bye
+"
+22007,inform,"id like to find japanese food
+"
+22008,inform,"the east part of town
+"
+22009,inform,"im looking for a cheap restaurant in the east part of town
+"
+22010,null,"unintelligible
+"
+22011,inform,"can i have a thai restaurant
+"
+22012,request,"could i get the address please
+"
+22013,inform,"seafood
+"
+22014,inform,"what european food
+"
+22015,inform,"korean food
+"
+22016,request,"what is the address and phone number
+"
+22017,inform,"gastro
+"
+22018,thankyou,"thank you good bye
+"
+22019,request,"is it what what price range
+"
+22020,request,"where is it
+"
+22021,inform,"moroccan food
+"
+22022,inform,"i want to find a cheap restaurant
+"
+22023,request,"address
+"
+22024,inform,"im looking for a restaurant in any area it should serve gastropub food
+"
+22025,confirm,"is it expensive
+"
+22026,affirm,"yes
+"
+22027,inform,"polish food
+"
+22028,affirm,"yes
+"
+22029,thankyou,"thank you good bye
+"
+22030,thankyou,"thank you good bye
+"
+22031,affirm,"yes
+"
+22032,request,"address
+"
+22033,inform,"moderately priced restaurant serving moroccan food
+"
+22034,inform,"cheap
+"
+22035,negate,"no hungarian
+"
+22036,request,"whats the address
+"
+22037,request,"post code
+"
+22038,thankyou,"thank you good bye
+"
+22039,inform,"vietnamese
+"
+22040,inform,"in the north part of town
+"
+22041,request,"post code
+"
+22042,request,"okay and can i get the address
+"
+22043,inform,"chinese
+"
+22044,inform,"west
+"
+22045,request,"address
+"
+22046,inform,"any type
+"
+22047,negate,"no
+"
+22048,null,"okay is there
+"
+22049,thankyou,"thank you goodbye
+"
+22050,thankyou,"okay thank you good bye
+"
+22051,thankyou,"thank you good bye
+"
+22052,reqalts,"is there anything else
+"
+22053,reqalts,"is there anything else
+"
+22054,request,"post code
+"
+22055,request,"what is the phone number
+"
+22056,inform,"expensive
+"
+22057,thankyou,"thank you goodbye
+"
+22058,inform,"dont care
+"
+22059,request,"may i have the address
+"
+22060,inform,"english food
+"
+22061,affirm,"yeah im looking for a restaurant serving kosher food
+"
+22062,reqalts,"how about vietnamese type of food
+"
+22063,reqalts,"what about indian food
+"
+22064,request,"whats the address
+"
+22065,inform,"food
+"
+22066,inform,"spanish
+"
+22067,null,"serving
+"
+22068,request,"what type of food
+"
+22069,thankyou,"thank you good bye
+"
+22070,request,"phone number
+"
+22071,thankyou,"thank you good bye
+"
+22072,inform,"chinese food
+"
+22073,thankyou,"thank you good bye
+"
+22074,inform,"dont care
+"
+22075,inform,"im looking for cuban food
+"
+22076,request,"what is the phone number
+"
+22077,inform,"ok what about indian
+"
+22078,inform,"korean
+"
+22079,reqalts,"how about a turkish restaurant
+"
+22080,inform,"tuscan
+"
+22081,affirm,"yes
+"
+22082,request,"and can i get their address
+"
+22083,inform,"korean food
+"
+22084,inform,"im looking for a cheap restaurant in the north part of town
+"
+22085,inform,"indian
+"
+22086,request,"what is the address and phone number
+"
+22087,inform,"id like to find a restaurant that serves portuguese food
+"
+22088,request,"price range
+"
+22089,request,"can i get the phone number
+"
+22090,request,"address
+"
+22091,thankyou,"thank you good bye
+"
+22092,inform,"kosher food
+"
+22093,inform,"asian oriental food
+"
+22094,inform,"tv_noise any
+"
+22095,inform,"tuscan food
+"
+22096,inform,"any kind of food
+"
+22097,request,"may i have the address and phone nymber
+"
+22098,thankyou,"thank you good bye
+"
+22099,inform,"halal food
+"
+22100,null,"sil
+"
+22101,inform,"barbecue food
+"
+22102,inform,"italian food
+"
+22103,inform,"moderately
+"
+22104,inform,"hungarian food in the west part of town
+"
+22105,request,"what type of food do they serve
+"
+22106,affirm,"yes
+"
+22107,inform,"restaurant
+"
+22108,reqalts,"how about korean food
+"
+22109,request,"whats the address
+"
+22110,request,"what is the phone number
+"
+22111,request,"what type of food is it
+"
+22112,request,"phone number
+"
+22113,inform,"russian food
+"
+22114,null,"breathing
+"
+22115,thankyou,"thank you good bye
+"
+22116,thankyou,"thank you good bye
+"
+22117,null,"unintelligible
+"
+22118,inform,"cheap
+"
+22119,inform,"any
+"
+22120,thankyou,"thank you good bye
+"
+22121,inform,"chinese food
+"
+22122,inform,"iam looking
+"
+22123,thankyou,"thank you good bye
+"
+22124,inform,"italian food
+"
+22125,null,"ad
+"
+22126,thankyou,"thank you good bye
+"
+22127,inform,"im looking for a restaurant that serves gastropub food any price range
+"
+22128,request,"phone number
+"
+22129,request,"whats the phone number
+"
+22130,inform,"aristrain food
+"
+22131,inform,"world food
+"
+22132,null,"laughing
+"
+22133,inform,"im looking for a restaurant in any area that serves japanese
+"
+22134,request,"address
+"
+22135,null,"unintelligible
+"
+22136,repeat,"repeat that
+"
+22137,affirm,"yes
+"
+22138,request,"what is the phone number
+"
+22139,inform,"is there an expensive
+"
+22140,null,"pizza
+"
+22141,negate,"no
+"
+22142,inform,"im looking for a cheap restaurant in the south of town
+"
+22143,request,"address
+"
+22144,null,"sil
+"
+22145,inform,"i would like to find an expensive restaurant in the south part of town
+"
+22146,null,"adress
+"
+22147,inform,"im looking for a cheap restaurant and it should be in north part of town
+"
+22148,inform,"id like thai food
+"
+22149,inform,"it does not matter
+"
+22150,inform,"im looking for a restaurant in the south part of town that serves creative food
+"
+22151,thankyou,"thank you good bye
+"
+22152,request,"and whats their phone number
+"
+22153,inform,"gastropub moderate
+"
+22154,null,"cough
+"
+22155,inform,"i dont care
+"
+22156,reqalts,"how about mediterranean food
+"
+22157,request,"address
+"
+22158,reqalts,"is there anything else
+"
+22159,inform,"expensive
+"
+22160,inform,"i dont care
+"
+22161,inform,"food
+"
+22162,thankyou,"thank you goodbye
+"
+22163,request,"what is the address phone number and the price range
+"
+22164,inform,"cheap cheap restaurant
+"
+22165,inform,"east
+"
+22166,inform,"any
+"
+22167,request,"what is the address and post code
+"
+22168,request,"can i have the address of the last one
+"
+22169,thankyou,"thank you good bye
+"
+22170,inform,"doesnt matter
+"
+22171,inform,"uh are there any that serves mediterranean
+"
+22172,thankyou,"thank you good bye
+"
+22173,reqalts,"how about chinese
+"
+22174,inform,"i dont care
+"
+22175,inform,"modern european
+"
+22176,inform,"i dont care
+"
+22177,inform,"any type of food is okay
+"
+22178,inform,"west
+"
+22179,null,"sil
+"
+22180,affirm,"yes
+"
+22181,inform,"im looking for an expensive restaurant in the east part of town
+"
+22182,request,"address
+"
+22183,inform,"south part of town persian food
+"
+22184,request,"what is the address
+"
+22185,inform,"italian
+"
+22186,inform,"im looking for corsica food
+"
+22187,inform,"russian food
+"
+22188,thankyou,"thank you good bye
+"
+22189,inform,"expensive
+"
+22190,request,"whats the phone number
+"
+22191,inform,"moderately
+"
+22192,request,"phone number
+"
+22193,request,"address
+"
+22194,inform,"dont care
+"
+22195,thankyou,"thank you good bye
+"
+22196,inform,"cheap
+"
+22197,null,"noise
+"
+22198,request,"and the phone number
+"
+22199,inform,"fucking west
+"
+22200,inform,"ah centre
+"
+22201,inform,"im looking for a moderately priced labonese restaruant
+"
+22202,request,"what is their address
+"
+22203,request,"phone number
+"
+22204,thankyou,"thank you good bye
+"
+22205,inform,"uh thai food
+"
+22206,null,"sil
+"
+22207,reqalts,"um is there anything else
+"
+22208,reqalts,"is there anything else
+"
+22209,inform,"cheap cheap restaurant
+"
+22210,request,"whats the address and phone number
+"
+22211,thankyou,"thank you good bye
+"
+22212,request,"phone number
+"
+22213,affirm,"yes
+"
+22214,request,"phone number and post code
+"
+22215,thankyou,"thank you good bye
+"
+22216,inform,"south
+"
+22217,inform,"looking for a cheap restaurant in the north part of town
+"
+22218,affirm,"right
+"
+22219,inform,"indian food
+"
+22220,inform,"it doesnt matter
+"
+22221,inform,"unintelligible food
+"
+22222,inform,"turkish
+"
+22223,null,"range that serves cana
+"
+22224,affirm,"yes
+"
+22225,request,"whats the address
+"
+22226,inform,"what about modern european
+"
+22227,inform,"seafood
+"
+22228,inform,"gastropub
+"
+22229,inform,"moderately priced
+"
+22230,request,"whats the address
+"
+22231,reqalts,"okay how about a venue with italian food
+"
+22232,negate,"no
+"
+22233,null,"previews
+"
+22234,inform,"restaurant in the center
+"
+22235,inform,"how bout irish food noise
+"
+22236,inform,"im looking for a moderately priced restaurant in the south part of town
+"
+22237,inform,"i dont care
+"
+22238,inform,"west part of town
+"
+22239,inform,"moderately priced restaurant
+"
+22240,inform,"i need a moderately priced restaurant in the south part of town
+"
+22241,inform,"can i have an asian oriental restaurant in the
+"
+22242,repeat,"back
+"
+22243,request,"whats the address
+"
+22244,inform,"east part of town
+"
+22245,request,"area
+"
+22246,inform,"looking for a moderately priced restaurant that serves cancun
+"
+22247,request,"whats the post code
+"
+22248,inform,"could i have brazilian food
+"
+22249,inform,"dont care
+"
+22250,inform,"i dont care
+"
+22251,inform,"it doesnt matter
+"
+22252,inform,"south part of town
+"
+22253,inform,"portuguese food
+"
+22254,request,"post code
+"
+22255,inform,"turkish
+"
+22256,thankyou,"thank you good bye
+"
+22257,thankyou,"thank you good bye
+"
+22258,thankyou,"thank you good bye
+"
+22259,request,"whats the phone number
+"
+22260,request,"telephone number
+"
+22261,request,"phone number
+"
+22262,inform,"international food
+"
+22263,inform,"italian
+"
+22264,request,"whats the cost
+"
+22265,request,"whats the phone number
+"
+22266,reqalts,"anything else
+"
+22267,request,"and what is their post code
+"
+22268,inform,"african
+"
+22269,reqalts,"is there anything else
+"
+22270,inform,"gastro pub
+"
+22271,inform,"im looking for russian food
+"
+22272,request,"may i have the address and phone number please
+"
+22273,request,"whats the address
+"
+22274,reqalts,"is there any thing else
+"
+22275,inform,"yea id like a restaurant in the west part of town thats
+"
+22276,thankyou,"thank you good bye
+"
+22277,reqalts,"how about gastropub food
+"
+22278,request,"address
+"
+22279,inform,"south
+"
+22280,inform,"in the moderately price range
+"
+22281,thankyou,"thank you good bye
+"
+22282,null,"sil
+"
+22283,inform,"barbecue food
+"
+22284,thankyou,"thank you good bye
+"
+22285,request,"address
+"
+22286,request,"can i get their address and phone number
+"
+22287,request,"whats the phone number
+"
+22288,null,"noise
+"
+22289,thankyou,"thank you goodbye
+"
+22290,inform,"south
+"
+22291,inform,"i dont care
+"
+22292,inform,"expensive
+"
+22293,request,"address
+"
+22294,inform,"uh indian
+"
+22295,inform,"turkish
+"
+22296,inform,"im looking for a restaurant in the south part of town that serves european food
+"
+22297,inform,"jamaican
+"
+22298,inform,"moderately priced french food
+"
+22299,inform,"im looking for moderately priced restaurant in the south part of town
+"
+22300,request,"and the phone number
+"
+22301,null,"unintelligible
+"
+22302,inform,"french
+"
+22303,inform,"pan asian food
+"
+22304,null,"noise
+"
+22305,thankyou,"thank you good bye
+"
+22306,inform,"im looking for traditional food
+"
+22307,inform,"center
+"
+22308,inform,"south
+"
+22309,request,"phone number
+"
+22310,inform,"east
+"
+22311,inform,"serves halal food
+"
+22312,affirm,"yes
+"
+22313,negate,"no
+"
+22314,request,"address
+"
+22315,null,"sil
+"
+22316,inform,"moderate priced restaurant in the north part of town
+"
+22317,inform,"japanese food
+"
+22318,null,"sil
+"
+22319,thankyou,"thank you good bye
+"
+22320,request,"address phone number and price range
+"
+22321,request,"whats the phone number
+"
+22322,inform,"thai food
+"
+22323,request,"thats fine whats the address
+"
+22324,reqalts,"anything else
+"
+22325,inform,"any area
+"
+22326,inform,"i need a restaurant that serves turkish food
+"
+22327,request,"address
+"
+22328,reqalts,"is there anything else
+"
+22329,null,"noise
+"
+22330,negate,"no okay thats fine what about french food
+"
+22331,request,"whats the address
+"
+22332,request,"may i have a phone number and postcode
+"
+22333,thankyou,"thank you good bye
+"
+22334,inform,"corsica food
+"
+22335,confirm,"is it in the south part
+"
+22336,negate,"no ah
+"
+22337,inform,"dont care
+"
+22338,null,"for a
+"
+22339,inform,"west part of town
+"
+22340,request,"type of food does it serve
+"
+22341,inform,"moderately priced in the south part of town
+"
+22342,request,"oh where is it
+"
+22343,request,"expensive price range
+"
+22344,request,"and what kind of food
+"
+22345,affirm,"yes
+"
+22346,request,"may i have the post code
+"
+22347,request,"phone number
+"
+22348,thankyou,"thank you good bye
+"
+22349,inform,"afghan
+"
+22350,inform,"hungarian food
+"
+22351,inform,"it doesnt matter
+"
+22352,reqalts,"anything else
+"
+22353,inform,"okay um well how bout portuguese
+"
+22354,request,"phone number
+"
+22355,inform,"indian food
+"
+22356,request,"post code
+"
+22357,inform,"im looking for a restaurant in any area that serves north american type
+"
+22358,inform,"sea food
+"
+22359,inform,"british food
+"
+22360,inform,"jamaican food
+"
+22361,request,"price range
+"
+22362,request,"phone number
+"
+22363,thankyou,"thank you good bye
+"
+22364,affirm,"yes
+"
+22365,reqalts,"anything else
+"
+22366,request,"can i get the address and phone number
+"
+22367,inform,"any restaurants
+"
+22368,reqalts,"i want something else
+"
+22369,inform,"restaurant in west part of town
+"
+22370,affirm,"yes
+"
+22371,thankyou,"thank you good bye
+"
+22372,reqalts,"is there anyone else
+"
+22373,inform,"can i have a cheap restaurant
+"
+22374,request,"what type of food does it have
+"
+22375,null,"noise
+"
+22376,inform,"it doesnt matter
+"
+22377,request,"and whats the postcode
+"
+22378,thankyou,"thank you good bye
+"
+22379,inform,"looking for a restaurant in the center that serves
+"
+22380,inform,"i dont care
+"
+22381,inform,"expensive
+"
+22382,request,"may i have the phone number please
+"
+22383,inform,"im looking for a restaurant in the center of town that serves russian food
+"
+22384,request,"phone number
+"
+22385,inform,"it doesnt matter
+"
+22386,affirm,"yes
+"
+22387,request,"what kind of food does it serve
+"
+22388,request,"address please
+"
+22389,request,"phone number
+"
+22390,inform,"i dont care
+"
+22391,request,"what type of food do they serve
+"
+22392,request,"and the post code
+"
+22393,inform,"i am looking for a british restaurant
+"
+22394,request,"can i have the phone number please
+"
+22395,inform,"what about other parts of town
+"
+22396,request,"what is the address
+"
+22397,inform,"south part of town
+"
+22398,affirm,"yes
+"
+22399,inform,"chinese food
+"
+22400,inform,"it doesnt matter
+"
+22401,bye,"good bye
+"
+22402,bye,"good bye
+"
+22403,thankyou,"thank you goodbye
+"
+22404,request,"address
+"
+22405,inform,"catalan
+"
+22406,request,"phone number
+"
+22407,reqalts,"is there anything else
+"
+22408,request,"what type of food is it
+"
+22409,inform,"any asian oriental
+"
+22410,request,"phone number
+"
+22411,request,"what is the phone number
+"
+22412,affirm,"yes
+"
+22413,affirm,"right that serves italian food
+"
+22414,request,"the price range
+"
+22415,request,"address phone number
+"
+22416,inform,"east
+"
+22417,request,"what is the address
+"
+22418,inform,"portugese
+"
+22419,request,"can i get the phone number
+"
+22420,inform,"im looking for a restaurant in the north part of town serving in
+"
+22421,thankyou,"thank you good bye
+"
+22422,request,"phone number
+"
+22423,affirm,"yes
+"
+22424,request,"what is the phone number
+"
+22425,request,"whats the phone number
+"
+22426,negate,"no
+"
+22427,request,"what is the address and phone number
+"
+22428,inform,"im looking for a restaurant in the south part of town that serves jamaican food
+"
+22429,thankyou,"thank you good bye
+"
+22430,request,"their price range
+"
+22431,request,"phone number
+"
+22432,repeat,"go back
+"
+22433,request,"may i have the address phone
+"
+22434,request,"and whats the address
+"
+22435,affirm,"yes
+"
+22436,request,"phone number
+"
+22437,bye,"good bye
+"
+22438,request,"telephone number
+"
+22439,inform,"i dont care
+"
+22440,request,"telephone number
+"
+22441,thankyou,"thank you good bye
+"
+22442,inform,"west
+"
+22443,inform,"cheap
+"
+22444,request,"address
+"
+22445,inform,"south of town
+"
+22446,request,"okay what kind of food
+"
+22447,inform,"moderate
+"
+22448,inform,"any kind
+"
+22449,request,"can i have the phone number and address
+"
+22450,inform,"any
+"
+22451,null,"unintelligible
+"
+22452,thankyou,"thank you good bye
+"
+22453,inform,"south part
+"
+22454,inform,"mediterranean food
+"
+22455,inform,"a restaurant in the north part of town
+"
+22456,null,"okay what was the first one
+"
+22457,request,"price range
+"
+22458,reqalts,"anything else
+"
+22459,request,"address
+"
+22460,thankyou,"thank you good bye
+"
+22461,request,"address
+"
+22462,inform,"im looking for a cheap restaurant in the north part of town
+"
+22463,inform,"with scottish food
+"
+22464,negate,"no i want spanish food
+"
+22465,request,"phone number
+"
+22466,inform,"turkish type of food
+"
+22467,thankyou,"thank you good bye
+"
+22468,request,"type of food
+"
+22469,request,"what about the phone number
+"
+22470,request,"phone number
+"
+22471,request,"what type of food is served
+"
+22472,inform,"i want a malaysian restaurant
+"
+22473,request,"whats the address phone number and price
+"
+22474,confirm,"does it serve christmas food
+"
+22475,thankyou,"thank you good bye
+"
+22476,inform,"im looking for a cheap restaurant that serves gastropub food
+"
+22477,thankyou,"thank you
+"
+22478,inform,"scandinavian food
+"
+22479,inform,"any kind
+"
+22480,inform,"i dont care
+"
+22481,inform,"thai food
+"
+22482,inform,"im looking for a moderately priced restaurant in the north part of town
+"
+22483,inform,"im looking for a moderately priced restaurant
+"
+22484,inform,"expensive thai food
+"
+22485,request,"can i have the address please
+"
+22486,request,"phone number
+"
+22487,inform,"doesnt matter
+"
+22488,bye,"good bye
+"
+22489,inform,"i dont care
+"
+22490,request,"what is the address
+"
+22491,affirm,"yes that serves corsica food
+"
+22492,reqalts,"kay how about indian food
+"
+22493,thankyou,"thank you good bye
+"
+22494,request,"can i have the address and phone number
+"
+22495,thankyou,"thank you good bye
+"
+22496,request,"do you have the address
+"
+22497,null,"aw give me the damn code
+"
+22498,inform,"spanish
+"
+22499,request,"and the phone number
+"
+22500,reqalts,"how about vietnamese food
+"
+22501,inform,"cheap
+"
+22502,thankyou,"thank you good bye
+"
+22503,request,"address and phone number please
+"
+22504,inform,"spanish food
+"
+22505,request,"what is the phone number
+"
+22506,affirm,"yes
+"
+22507,reqalts,"is there another restaurant
+"
+22508,null,"whats the other one
+"
+22509,request,"what is the phone number
+"
+22510,request,"and the phone number
+"
+22511,inform,"danish food in the center of town
+"
+22512,thankyou,"thank you goodbye
+"
+22513,inform,"i dont care
+"
+22514,request,"address
+"
+22515,inform,"korean food
+"
+22516,request,"cool whats the address
+"
+22517,confirm,"does it serve halal food
+"
+22518,thankyou,"thank you good bye
+"
+22519,inform,"i want a restaurant that serves french food
+"
+22520,bye,"good bye
+"
+22521,inform,"mexican food
+"
+22522,inform,"chinese foo
+"
+22523,inform,"west
+"
+22524,request,"phone number
+"
+22525,inform,"center
+"
+22526,inform,"mediterranean restaurant in any part of town
+"
+22527,inform,"im looking for a restaurant that serves gastropub food
+"
+22528,inform,"doesnt matter
+"
+22529,thankyou,"thank you good bye
+"
+22530,inform,"is there a restaurant in the center of town serving
+"
+22531,confirm,"is it in the south part of town
+"
+22532,affirm,"yes
+"
+22533,thankyou,"thank you good bye
+"
+22534,inform,"european
+"
+22535,affirm,"yes
+"
+22536,inform,"cuban
+"
+22537,inform,"mexican
+"
+22538,thankyou,"thank you good bye
+"
+22539,thankyou,"thank you good bye
+"
+22540,request,"whats the phone number
+"
+22541,request,"whats the address
+"
+22542,inform,"uh the north
+"
+22543,request,"what type of food do they serve
+"
+22544,null,"sil
+"
+22545,inform,"south
+"
+22546,thankyou,"thank you good bye
+"
+22547,negate,"uh no im looking for italian food
+"
+22548,inform,"any kind any thing
+"
+22549,inform,"i dont care
+"
+22550,inform,"can i have greek food
+"
+22551,inform,"im looking for a restaurant in the center
+"
+22552,inform,"breath how bout north part of town
+"
+22553,thankyou,"thank you goodbye
+"
+22554,thankyou,"thank you goodbye
+"
+22555,inform,"asian oriental
+"
+22556,request,"what type of food do they serve
+"
+22557,request,"may i have the address
+"
+22558,null,"noise
+"
+22559,affirm,"correct
+"
+22560,inform,"scandinavian
+"
+22561,bye,"good bye
+"
+22562,inform,"moderat
+"
+22563,negate,"no
+"
+22564,inform,"what about the center area
+"
+22565,inform,"vietnamese
+"
+22566,request,"alright whats their address
+"
+22567,inform,"breath im looking for a cheap restaurant serving catalan food
+"
+22568,inform,"im looking for a
+"
+22569,request,"what type of food
+"
+22570,inform,"restaurant in the west part of town that serves airitran food
+"
+22571,thankyou,"thank you good bye
+"
+22572,request,"what is the post code
+"
+22573,inform,"im looking for an expensive restaurant in the east part of town
+"
+22574,inform,"gastro pub
+"
+22575,inform,"cheap
+"
+22576,inform,"jamaican food
+"
+22577,thankyou,"thank you good bye
+"
+22578,thankyou,"thank you goodbye
+"
+22579,inform,"korean food
+"
+22580,thankyou,"thank you good bye
+"
+22581,inform,"gastropub
+"
+22582,request,"phone number
+"
+22583,inform,"if there is no such venue how about french type of food
+"
+22584,inform,"singaporean food
+"
+22585,affirm,"yes
+"
+22586,request,"can you give me its post code
+"
+22587,request,"what is the address of the missing sock
+"
+22588,thankyou,"noise thank you goodbye
+"
+22589,request,"may i have the address
+"
+22590,inform,"halal
+"
+22591,inform,"west part of town
+"
+22592,inform,"is there mediterranean food
+"
+22593,inform,"italian food
+"
+22594,thankyou,"thank you good bye
+"
+22595,inform,"italian food
+"
+22596,inform,"i dont give a damn about chinese food i want thai food
+"
+22597,null,"i need
+"
+22598,inform,"seafood
+"
+22599,request,"do you have the address
+"
+22600,reqalts,"how about north american food
+"
+22601,inform,"breath id like a cheap restaurant in the south part of town
+"
+22602,inform,"west
+"
+22603,negate,"uh no thank you and good bye
+"
+22604,request,"whats the phone number
+"
+22605,inform,"cheap
+"
+22606,request,"what is the phone number
+"
+22607,inform,"i dont care
+"
+22608,inform,"i dont care
+"
+22609,inform,"center
+"
+22610,inform,"i am looking for catalin food
+"
+22611,bye,"okay thats all
+"
+22612,ack,"breath okay how about thai food
+"
+22613,inform,"indian food
+"
+22614,thankyou,"thank you
+"
+22615,null,"tv_noise
+"
+22616,affirm,"yes please can i have the address and the price range of the restaurant please
+"
+22617,inform,"i need a restaurant that serves canape
+"
+22618,affirm,"yes
+"
+22619,inform,"african
+"
+22620,null,"sil
+"
+22621,request,"postcode
+"
+22622,thankyou,"um okay thank you good bye
+"
+22623,reqalts,"is there anything that serves caribbean food
+"
+22624,inform,"id like to find a restaurant that serves korean food
+"
+22625,inform,"modereate
+"
+22626,thankyou,"thank you good bye
+"
+22627,thankyou,"thank you good bye
+"
+22628,inform,"find me a restaurant serving italian food
+"
+22629,request,"address phone number
+"
+22630,reqalts,"is there anything else
+"
+22631,null,"noise
+"
+22632,null,"unintelligible
+"
+22633,inform,"i want an expensive restaurant in the east part of town
+"
+22634,inform,"i want a restaurant in the south part of town that serves moroccan food
+"
+22635,inform,"i dont care
+"
+22636,thankyou,"thank you good bye
+"
+22637,request,"okay whats the phone number
+"
+22638,inform,"im looking for a restaurant in the west part of town serving italian food
+"
+22639,inform,"spanish food
+"
+22640,request,"could i have the address and phone number
+"
+22641,affirm,"yea
+"
+22642,inform,"british
+"
+22643,request,"phone number
+"
+22644,inform,"any food
+"
+22645,inform,"unintelligible food
+"
+22646,inform,"cheap
+"
+22647,request,"can i have an address and phone number
+"
+22648,inform,"i dont care
+"
+22649,inform,"central inaudible
+"
+22650,inform,"the south
+"
+22651,affirm,"yes
+"
+22652,thankyou,"thank you good bye
+"
+22653,thankyou,"thank you good bye
+"
+22654,inform,"french
+"
+22655,inform,"a restaurant
+"
+22656,reqalts,"is there anything else
+"
+22657,thankyou,"thank you good bye
+"
+22658,request,"what is the address and phone and postal code
+"
+22659,request,"address
+"
+22660,inform,"im looking for moderately priced restaurant that serves
+"
+22661,inform,"south part
+"
+22662,inform,"im looking for a restaurant in the east part of town serving catalan food
+"
+22663,request,"phone number
+"
+22664,request,"phone number
+"
+22665,inform,"south
+"
+22666,inform,"east
+"
+22667,inform,"south
+"
+22668,inform,"i want a moderately priced
+"
+22669,request,"address
+"
+22670,request,"what is the phone number an post code
+"
+22671,inform,"i need a cheap restaurant serving italian food
+"
+22672,reqalts,"how about italian food
+"
+22673,reqalts,"how about the moderate price range
+"
+22674,thankyou,"thank you good bye
+"
+22675,inform,"south
+"
+22676,inform,"a restaurant in the west part of town
+"
+22677,inform,"hold on im working hold on gastro pub
+"
+22678,thankyou,"thank you good bye
+"
+22679,inform,"caribbean
+"
+22680,inform,"dont care whats the phone number
+"
+22681,negate,"no
+"
+22682,request,"okay how about the address
+"
+22683,request,"uh address
+"
+22684,bye,"great thank you goodbye
+"
+22685,request,"what is the price range
+"
+22686,inform,"earatrain
+"
+22687,inform,"italian
+"
+22688,inform,"north
+"
+22689,request,"what is the address
+"
+22690,inform,"center
+"
+22691,request,"what type of food does the missing sock ser
+"
+22692,bye,"see you goodbye
+"
+22693,request,"address
+"
+22694,affirm,"yes and in french please
+"
+22695,thankyou,"thank you good bye
+"
+22696,thankyou,"thank you good bye
+"
+22697,negate,"no
+"
+22698,inform,"gastropub
+"
+22699,null,"expen
+"
+22700,request,"what type of food
+"
+22701,request,"can i have the address phone number and post code
+"
+22702,inform,"cheap
+"
+22703,inform,"moderately priced
+"
+22704,inform,"in the east part of town
+"
+22705,inform,"cantonese food
+"
+22706,inform,"spanish food
+"
+22707,inform,"any
+"
+22708,request,"address
+"
+22709,affirm,"yes
+"
+22710,null,"laughing
+"
+22711,inform,"russian
+"
+22712,affirm,"uh yes can i find a moderately priced restaurant and it serve it should serve brazilian food
+"
+22713,request,"what type of food
+"
+22714,negate,"no
+"
+22715,inform,"dont care
+"
+22716,reqalts,"how about indian food
+"
+22717,thankyou,"thank you good bye
+"
+22718,inform,"moderate price range please
+"
+22719,reqalts,"is there anything else
+"
+22720,request,"what is the address
+"
+22721,negate,"no i would like a cuban restaurant
+"
+22722,thankyou,"thank you good bye
+"
+22723,reqalts,"how bout indian food
+"
+22724,thankyou,"thank you goodbye noise
+"
+22725,negate,"no
+"
+22726,inform,"i want a gastropub restaurant
+"
+22727,request,"what is the phone number and post code
+"
+22728,request,"phone number
+"
+22729,request,"phone number
+"
+22730,inform,"spanish food
+"
+22731,null,"noise
+"
+22732,request,"may i have the address phone number and postcode
+"
+22733,inform,"chinese food
+"
+22734,inform,"vegetarian food
+"
+22735,inform,"east
+"
+22736,inform,"gastropub food
+"
+22737,inform,"need one in the west part of town
+"
+22738,inform,"north
+"
+22739,reqalts,"how about french
+"
+22740,request,"what is the address
+"
+22741,negate,"no
+"
+22742,null,"sigh
+"
+22743,request,"may i have the post code
+"
+22744,request,"can i please have the phone number
+"
+22745,inform,"pan asian food
+"
+22746,inform,"are there any serving european food
+"
+22747,inform,"im looking for an expensive restaurant in the south part of town
+"
+22748,request,"address
+"
+22749,inform,"for an expensive restaurant in the east part of town
+"
+22750,request,"phone number
+"
+22751,inform,"id like a portuguese restaurant
+"
+22752,null,"sil
+"
+22753,thankyou,"thank you good bye
+"
+22754,inform,"tuscan food south part of town
+"
+22755,inform,"korean food
+"
+22756,inform,"north side
+"
+22757,affirm,"yes
+"
+22758,inform,"australian food center part of town
+"
+22759,deny,"wrong
+"
+22760,affirm,"yes
+"
+22761,thankyou,"thank you good bye
+"
+22762,inform,"what about turkish
+"
+22763,request,"whats the post code
+"
+22764,reqalts,"how about italian food
+"
+22765,affirm,"yes
+"
+22766,inform,"moderate european food
+"
+22767,inform,"japanese food
+"
+22768,inform,"spanish food
+"
+22769,ack,"kay um
+"
+22770,null,"noise
+"
+22771,thankyou,"thank you goodbye
+"
+22772,request,"whats their phone number
+"
+22773,request,"what is the address and phone number
+"
+22774,request,"address
+"
+22775,inform,"restaurant in the east part of town japanese
+"
+22776,null,"i want to find
+"
+22777,inform,"im looking for a moderately priced restaurant that serves european food
+"
+22778,request,"can i get the phone number
+"
+22779,thankyou,"thank you good bye
+"
+22780,null,"unintelligible
+"
+22781,inform,"british food
+"
+22782,reqalts,"what about earatree food
+"
+22783,inform,"fast food
+"
+22784,reqalts,"is there anything else
+"
+22785,reqalts,"is there anything else
+"
+22786,request,"address
+"
+22787,request,"whats the address
+"
+22788,inform,"are they expensive
+"
+22789,inform,"south part of town
+"
+22790,inform,"expensive restaurant scottish food
+"
+22791,inform,"cheap
+"
+22792,inform,"im looking for a moderately priced restaurant in the west part of town
+"
+22793,thankyou,"thank you good bye
+"
+22794,thankyou,"thank you good bye
+"
+22795,thankyou,"thank you goodbye
+"
+22796,affirm,"right
+"
+22797,bye,"good bye
+"
+22798,request,"okay and whats the addre
+"
+22799,inform,"expensive
+"
+22800,inform,"expensive restaurants
+"
+22801,request,"phone number
+"
+22802,inform,"doesnt matter
+"
+22803,request,"the address
+"
+22804,request,"can i have the phone number
+"
+22805,inform,"north
+"
+22806,thankyou,"thank you good bye
+"
+22807,request,"post number
+"
+22808,inform,"im looking for a christmas food in the south part of town
+"
+22809,request,"what area is it in
+"
+22810,request,"may i get the price range
+"
+22811,thankyou,"thank you good bye
+"
+22812,inform,"im looking for a restaurant in the center part of town
+"
+22813,request,"type of food
+"
+22814,inform,"i dont care
+"
+22815,request,"price range
+"
+22816,request,"great can i have the address and phone number
+"
+22817,inform,"cheap
+"
+22818,request,"whats the phone number
+"
+22819,inform,"a moderately priced restaurant in the north part of town
+"
+22820,inform,"it doesnt matter
+"
+22821,inform,"i would like to find a restaurant in the north part of town that serves kosher food
+"
+22822,affirm,"correct
+"
+22823,null,"noise
+"
+22824,request,"price range
+"
+22825,inform,"im looking for an expensive restaurant
+"
+22826,inform,"it doesnt matter
+"
+22827,inform,"what about a chinese restaurant in the north of town
+"
+22828,inform,"im looking for an expensive restaurant in the east of town
+"
+22829,request,"whats the phone number
+"
+22830,thankyou,"thank you good bye
+"
+22831,request,"may i have the phone number
+"
+22832,request,"address
+"
+22833,thankyou,"thank you good bye
+"
+22834,inform,"north
+"
+22835,request,"can i have the phone number
+"
+22836,inform,"thai food
+"
+22837,inform,"chinese
+"
+22838,inform,"can i have an expensive restaurant
+"
+22839,request,"whats the address
+"
+22840,null,"noise
+"
+22841,bye,"good bye
+"
+22842,request,"what is the address and phone number
+"
+22843,thankyou,"thank you good bye
+"
+22844,inform,"noise north part of town
+"
+22845,inform,"expensive
+"
+22846,inform,"south
+"
+22847,inform,"any type
+"
+22848,thankyou,"thank you good bye
+"
+22849,inform,"im looking for a restaurant that serves expensive food or expensive
+"
+22850,inform,"expensive restaurant in the south part of town
+"
+22851,thankyou,"thank you goodbye
+"
+22852,bye,"good bye
+"
+22853,null,"noise
+"
+22854,inform,"italian food
+"
+22855,inform,"i dont care but i want it to be in the east part of town
+"
+22856,inform,"im looking for a moderately priced restaurant in the west part of town
+"
+22857,confirm,"is it serving french food
+"
+22858,null,"noise
+"
+22859,thankyou,"thank you good bye
+"
+22860,request,"can i get the address and phone number
+"
+22861,request,"phone number
+"
+22862,request,"whats the postcode
+"
+22863,inform,"i dont care
+"
+22864,affirm,"yes
+"
+22865,thankyou,"thank you goodbye
+"
+22866,request,"and the price range
+"
+22867,thankyou,"thank you good bye
+"
+22868,inform,"cuban food
+"
+22869,thankyou,"thank you good bye
+"
+22870,affirm,"yes
+"
+22871,inform,"east
+"
+22872,inform,"in the east part of the town
+"
+22873,request,"address and phone number
+"
+22874,inform,"italian
+"
+22875,null,"noise
+"
+22876,inform,"im looking for an expensive restaurant in the south part of town
+"
+22877,affirm,"ye
+"
+22878,reqalts,"what else do you have
+"
+22879,inform,"a moderately priced restaurant in the west part of town
+"
+22880,reqalts,"is there anything else
+"
+22881,inform,"restaurant
+"
+22882,inform,"cantonese food
+"
+22883,request,"and the post code
+"
+22884,inform,"indonesian
+"
+22885,thankyou,"thank you good bye
+"
+22886,inform,"mediterranean food
+"
+22887,inform,"im looking for an expensive restaurant and it should be served international food
+"
+22888,request,"post code
+"
+22889,inform,"irish
+"
+22890,thankyou,"thank you good bye
+"
+22891,request,"uh what type of food
+"
+22892,request,"whats the phone number and post code
+"
+22893,reqalts,"how about chinese type of food
+"
+22894,request,"and the phone number
+"
+22895,request,"address
+"
+22896,null,"sil
+"
+22897,inform,"im looking for a restaurant in the north part of town
+"
+22898,inform,"im looking for a restaurant in the north part of town serving indian food
+"
+22899,reqalts,"how about korean food
+"
+22900,inform,"portugese
+"
+22901,request,"and the type of food they serve
+"
+22902,inform,"cheap
+"
+22903,thankyou,"thank you good bye
+"
+22904,thankyou,"thank you good bye
+"
+22905,inform,"expensive
+"
+22906,thankyou,"thank you goodbye
+"
+22907,inform,"italian food
+"
+22908,thankyou,"thank you good bye
+"
+22909,inform,"expensive
+"
+22910,request,"what is the address and phone number
+"
+22911,inform,"west side
+"
+22912,thankyou,"thank you good bye
+"
+22913,inform,"im looking for a restaurant in the south part of town
+"
+22914,request,"post code
+"
+22915,inform,"swedish food
+"
+22916,thankyou,"thank you good bye
+"
+22917,request,"phone number
+"
+22918,reqalts,"what about a moderately priced restaurant in the south part of town
+"
+22919,reqalts,"is there anything else
+"
+22920,inform,"east
+"
+22921,inform,"any address
+"
+22922,inform,"not chinese food thai food
+"
+22923,request,"area
+"
+22924,affirm,"yes
+"
+22925,request,"what type of venue
+"
+22926,reqalts,"is there anything else
+"
+22927,affirm,"right
+"
+22928,thankyou,"thank you good bye
+"
+22929,inform,"east
+"
+22930,request,"whats the phone number
+"
+22931,inform,"gastropub
+"
+22932,request,"could i get the address
+"
+22933,reqalts,"anything else
+"
+22934,inform,"id like a pan asian restaurant
+"
+22935,inform,"west side
+"
+22936,thankyou,"thank you good bye
+"
+22937,thankyou,"thank you
+"
+22938,request,"phone
+"
+22939,thankyou,"ah thank you goodbye
+"
+22940,null,"unintelligible
+"
+22941,inform,"i want a restaurant in the west part of town that serves jamaican
+"
+22942,inform,"eartrain
+"
+22943,inform,"turkish
+"
+22944,null,"noise
+"
+22945,thankyou,"thank you good bye
+"
+22946,bye,"good bye
+"
+22947,inform,"it does not matter
+"
+22948,inform,"looking for an expensive restaurant that serves
+"
+22949,affirm,"yes
+"
+22950,thankyou,"thank you good bye
+"
+22951,request,"whats the address
+"
+22952,inform,"any part
+"
+22953,inform,"cheap restaurant in the east part of town
+"
+22954,null,"knocking
+"
+22955,null,"unintelligible
+"
+22956,inform,"cheap
+"
+22957,request,"address
+"
+22958,request,"phone number and address
+"
+22959,thankyou,"thank you good bye
+"
+22960,thankyou,"thank you good bye
+"
+22961,inform,"unusual
+"
+22962,request,"phone number
+"
+22963,thankyou,"thank you good bye
+"
+22964,null,"give me the least
+"
+22965,request,"what is the address
+"
+22966,inform,"im looking for a eritrean restaurant in the center of town
+"
+22967,inform,"european food
+"
+22968,reqalts,"how about creative food
+"
+22969,inform,"i would like traditional food in the south part of town
+"
+22970,request,"what type of food do they serve
+"
+22971,inform,"dont care east part of town
+"
+22972,thankyou,"thank you good bye
+"
+22973,inform,"i dont care
+"
+22974,null,"sil
+"
+22975,inform,"uh cheap restaurant in the north part of town
+"
+22976,request,"phone number
+"
+22977,inform,"uh it doesnt matter
+"
+22978,inform,"cheap
+"
+22979,reqalts,"how about north american food
+"
+22980,request,"what is the address and phone number
+"
+22981,request,"what is the address
+"
+22982,request,"phone number
+"
+22983,inform,"im looking for an expensive restaurant and it should serve international food
+"
+22984,inform,"im looking for a restaurant in the north part of town
+"
+22985,inform,"south part of town
+"
+22986,request,"and whats the price range
+"
+22987,inform,"west
+"
+22988,null,"sil
+"
+22989,request,"could i get the phone number and post code
+"
+22990,affirm,"yes
+"
+22991,thankyou,"thank you good bye
+"
+22992,request,"and the address
+"
+22993,request,"what is the address
+"
+22994,inform,"gastropub
+"
+22995,inform,"malaysian
+"
+22996,inform,"im looking for an expensive restaurant in the south part of town
+"
+22997,reqalts,"is there anything else
+"
+22998,reqalts,"how about korean food
+"
+22999,thankyou,"thank you good bye
+"
+23000,request,"whats the phone number
+"
+23001,thankyou,"thank you good bye
+"
+23002,request,"whats the phone number talking
+"
+23003,null,"noise
+"
+23004,inform,"looking for something with gastropub on the east side of town
+"
+23005,negate,"no pan asian food
+"
+23006,thankyou,"thank you good bye
+"
+23007,reqalts,"anything else
+"
+23008,request,"could i have the address
+"
+23009,inform,"moderate price range
+"
+23010,request,"type of food
+"
+23011,inform,"im looking for a cheap restaurant that serves welsh food
+"
+23012,inform,"a cheap
+"
+23013,inform,"okay ah how bout portuguese
+"
+23014,reqalts,"is there any other ones anything else
+"
+23015,inform,"dont care
+"
+23016,request,"what area of town is it
+"
+23017,thankyou,"thank you goodbye
+"
+23018,thankyou,"thank you good bye
+"
+23019,inform,"im looking for a cheap restaurant in the east part of town
+"
+23020,affirm,"yes
+"
+23021,null,"sil
+"
+23022,inform,"steak house food noise steak house food
+"
+23023,request,"what is the address
+"
+23024,thankyou,"thank you good bye
+"
+23025,inform,"indian food
+"
+23026,request,"phone number
+"
+23027,thankyou,"thank you good bye
+"
+23028,inform,"im looking for italian food
+"
+23029,thankyou,"thank you good bye
+"
+23030,thankyou,"um thank you good bye
+"
+23031,request,"what is the phone number
+"
+23032,reqalts,"anything else
+"
+23033,inform,"im looking for a moderately priced restaurant in the south part of town
+"
+23034,request,"telephone number
+"
+23035,thankyou,"thank you goodbye
+"
+23036,request,"and the phone number
+"
+23037,inform,"im looking for a cheap spanish restaurant
+"
+23038,inform,"i dont care
+"
+23039,request,"phone number
+"
+23040,reqalts,"how about chinese food
+"
+23041,inform,"im looking for a restaurant in the south part of town it should serve kosher food
+"
+23042,request,"the phone number
+"
+23043,thankyou,"thank you good bye
+"
+23044,request,"and what is the price range
+"
+23045,inform,"im looking for a restaurant that serves tuscan food
+"
+23046,affirm,"yes
+"
+23047,inform,"restaurant in any area
+"
+23048,inform,"south
+"
+23049,inform,"im looking for an expensive restaurant serving international food
+"
+23050,request,"address
+"
+23051,inform,"korean food moderate price
+"
+23052,request,"phone number
+"
+23053,reqalts,"how about portuguese good
+"
+23054,inform,"belgian food
+"
+23055,request,"what is the post code
+"
+23056,inform,"i dont care
+"
+23057,inform,"vietnamese food
+"
+23058,reqalts,"uh what about indian
+"
+23059,request,"address
+"
+23060,inform,"east part ot tow
+"
+23061,inform,"it doesnt matter
+"
+23062,thankyou,"thank you good bye
+"
+23063,request,"what is the post code
+"
+23064,reqalts,"how about italian food
+"
+23065,reqalts,"how about a restaurant in the east part of town that serves indian food
+"
+23066,thankyou,"thank you good bye
+"
+23067,inform,"okay moderate price range gastropub
+"
+23068,request,"the phone number
+"
+23069,inform,"i dont care
+"
+23070,inform,"could i have a moderately priced restaurant that serves thai food please
+"
+23071,reqalts,"how about indian food
+"
+23072,affirm,"yes
+"
+23073,request,"what type of food
+"
+23074,inform,"im looking for something cheap
+"
+23075,inform,"do you have a place that serves turkish food
+"
+23076,null,"static
+"
+23077,inform,"im looking for a restaurant in the east part of town
+"
+23078,request,"okay whats the phone number
+"
+23079,request,"what type of food
+"
+23080,request,"post code
+"
+23081,inform,"im looking for a restaurant in the east part of town that serves world food
+"
+23082,null,"is
+"
+23083,request,"whats the price range
+"
+23084,request,"address
+"
+23085,request,"phone number
+"
+23086,request,"address
+"
+23087,inform,"i dont care
+"
+23088,request,"uh can i get the address
+"
+23089,request,"can i have the address and phone number please
+"
+23090,inform,"dont care
+"
+23091,negate,"no steak house
+"
+23092,negate,"no im looking for austria asian food
+"
+23093,thankyou,"thank you good bye
+"
+23094,inform,"um any type of food
+"
+23095,inform,"im looking for a restaurant in the center that serves bistro food
+"
+23096,request,"what is the address
+"
+23097,hello,"hi
+"
+23098,request,"how much is the food
+"
+23099,inform,"spanish food
+"
+23100,request,"address and phone number
+"
+23101,inform,"i want a restaurant that serves
+"
+23102,inform,"id like a cheap restaurant on the south of town
+"
+23103,request,"type of food does it serve
+"
+23104,null,"noise
+"
+23105,inform,"how bout thai
+"
+23106,inform,"im looking for a cheap restaurant that serves cuban food
+"
+23107,thankyou,"thank you good bye
+"
+23108,inform,"restaurant moderate price
+"
+23109,inform,"im looking for singaporean food
+"
+23110,null,"noise
+"
+23111,inform,"thai food
+"
+23112,inform,"and okay and vietnamese food thank you
+"
+23113,inform,"im looking for a cheap restaurant in the south part of town
+"
+23114,inform,"i need a restaurant in the
+"
+23115,null,"unintelligible
+"
+23116,inform,"im looking for an expensive restaurant and it should serve unusual food
+"
+23117,inform,"any range
+"
+23118,inform,"doesnt matter
+"
+23119,inform,"moderate
+"
+23120,reqalts,"is there anything else
+"
+23121,reqalts,"is there anything else
+"
+23122,inform,"i dont care
+"
+23123,thankyou,"thank you good bye
+"
+23124,null,"sil
+"
+23125,inform,"i dont know
+"
+23126,request,"what price range is it
+"
+23127,thankyou,"thank you good bye
+"
+23128,request,"post code
+"
+23129,request,"whats the address
+"
+23130,inform,"i dont care
+"
+23131,request,"phone number
+"
+23132,inform,"i dont care
+"
+23133,reqalts,"is there anything else
+"
+23134,request,"what is the address and phone number
+"
+23135,inform,"vietnamese food
+"
+23136,thankyou,"thank you goodbye
+"
+23137,request,"where is it
+"
+23138,thankyou,"thank you good bye
+"
+23139,null,"noise
+"
+23140,inform,"what about mediterranean food
+"
+23141,thankyou,"thank you goodbye
+"
+23142,inform,"i dont care
+"
+23143,inform,"cheap restaurant
+"
+23144,inform,"any area
+"
+23145,request,"phone number
+"
+23146,request,"what is the address
+"
+23147,request,"price range
+"
+23148,reqalts,"is there anything else
+"
+23149,request,"post code
+"
+23150,thankyou,"thank you good bye
+"
+23151,request,"can you give me the phone number
+"
+23152,inform,"expensive
+"
+23153,request,"whats the address
+"
+23154,request,"alright give me the address
+"
+23155,inform,"im looking for a restaurant in the south part of town that serves vietnamese food
+"
+23156,thankyou,"thank you good bye
+"
+23157,request,"can i have their address
+"
+23158,thankyou,"thank you goodbye
+"
+23159,inform,"any
+"
+23160,inform,"im looking for a cheap restaurant in the west part of town
+"
+23161,reqalts,"how about chinese food
+"
+23162,reqalts,"what about asian oriental food
+"
+23163,inform,"anything
+"
+23164,request,"address
+"
+23165,inform,"im looking for a moderately prices restaurant
+"
+23166,thankyou,"thank you good bye
+"
+23167,confirm,"is it in the center of town
+"
+23168,thankyou,"thank you goodbye
+"
+23169,request,"whats the phone number
+"
+23170,inform,"it doesnt matter
+"
+23171,request,"what type of food do they serve
+"
+23172,request,"what is the phone number
+"
+23173,reqalts,"anything else
+"
+23174,thankyou,"thank you goodbye
+"
+23175,inform,"i dont care
+"
+23176,thankyou,"thank you good bye
+"
+23177,thankyou,"thank you good bye
+"
+23178,inform,"dont care
+"
+23179,request,"and their address
+"
+23180,reqalts,"what about thai
+"
+23181,inform,"i want an expensive restaurant in the east part of town
+"
+23182,request,"address
+"
+23183,inform,"french type of food
+"
+23184,bye,"good bye
+"
+23185,request,"what is the address
+"
+23186,request,"price range
+"
+23187,affirm,"yes spanish food
+"
+23188,inform,"canapes
+"
+23189,inform,"moroccan
+"
+23190,inform,"asian oriental
+"
+23191,inform,"north american
+"
+23192,inform,"i dont care
+"
+23193,inform,"i want a restaurant in the north part of town
+"
+23194,thankyou,"thank you good bye
+"
+23195,inform,"expensive
+"
+23196,inform,"uh restaurant in the west part of town with scottish food
+"
+23197,inform,"international food
+"
+23198,thankyou,"thank you goodbye
+"
+23199,request,"can i have the address
+"
+23200,inform,"good food
+"
+23201,reqalts,"is there anything else
+"
+23202,thankyou,"thank you good bye
+"
+23203,inform,"gastropub food
+"
+23204,inform,"food an
+"
+23205,inform,"hungarian
+"
+23206,null,"sil
+"
+23207,negate,"no
+"
+23208,request,"what is the phone number
+"
+23209,thankyou,"thank you good bye
+"
+23210,inform,"north
+"
+23211,request,"what is the price range
+"
+23212,inform,"im looking for something moderately priced
+"
+23213,inform,"id like a cheap restaurant in the south part of town
+"
+23214,inform,"a cheap
+"
+23215,request,"whats the address
+"
+23216,request,"could i have the phone number
+"
+23217,reqalts,"how about asian oriental
+"
+23218,inform,"i want a restaurant in the center part of town that serves traditional food
+"
+23219,reqalts,"how about korean
+"
+23220,inform,"restaurant the serves english food
+"
+23221,inform,"moderately
+"
+23222,affirm,"yes
+"
+23223,inform,"any kind
+"
+23224,thankyou,"thank you goodbye
+"
+23225,affirm,"uh yes can i find a restaurant in the east part of town that serves chinese
+"
+23226,request,"okay and ah can i get their phone number please
+"
+23227,thankyou,"thank you good bye
+"
+23228,request,"what is the address
+"
+23229,thankyou,"thank you
+"
+23230,request,"phone number
+"
+23231,inform,"moderate
+"
+23232,thankyou,"thank you good bye
+"
+23233,inform,"vietnamese food
+"
+23234,deny,"no not indian scandinavian food
+"
+23235,inform,"polish food
+"
+23236,reqalts,"how about british type of food
+"
+23237,inform,"cheap restaurant
+"
+23238,thankyou,"thank you goodbye
+"
+23239,inform,"chinese
+"
+23240,request,"okay whats the phone number
+"
+23241,inform,"i want scottish food
+"
+23242,inform,"i dont care
+"
+23243,inform,"jamaican food
+"
+23244,request,"what is the address of the
+"
+23245,inform,"uh the south
+"
+23246,inform,"i dont care
+"
+23247,request,"address
+"
+23248,affirm,"right
+"
+23249,reqalts,"is there anything else
+"
+23250,request,"and where is that located
+"
+23251,inform,"dont care
+"
+23252,inform,"breath i want a cheap restaura
+"
+23253,request,"what is the phone number
+"
+23254,request,"phone number
+"
+23255,thankyou,"thank you good bye
+"
+23256,reqalts,"how about vietnamese food
+"
+23257,request,"address
+"
+23258,inform,"is the one that serves indian food
+"
+23259,thankyou,"thank you good bye
+"
+23260,affirm,"yes
+"
+23261,thankyou,"thank you goodbye
+"
+23262,affirm,"yes
+"
+23263,request,"can i have their phone number please
+"
+23264,inform,"i dont care
+"
+23265,null,"noise
+"
+23266,request,"could i have their phone number as well
+"
+23267,inform,"i dont care
+"
+23268,reqalts,"is there any thing else
+"
+23269,inform,"south
+"
+23270,request,"whats the address phone number and area
+"
+23271,inform,"that serves turkish food
+"
+23272,inform,"doesnt matter
+"
+23273,thankyou,"thank you good bye
+"
+23274,affirm,"yes
+"
+23275,request,"and price range
+"
+23276,affirm,"yes
+"
+23277,inform,"is there staurant that serves unusual food
+"
+23278,thankyou,"thank you good bye
+"
+23279,thankyou,"thank you good bye
+"
+23280,inform,"afghan food
+"
+23281,inform,"um indian food in the north part
+"
+23282,request,"phone number
+"
+23283,affirm,"yes
+"
+23284,inform,"restaurant in the east part of town
+"
+23285,reqalts,"what about vietnamese food
+"
+23286,reqalts,"is there anything else
+"
+23287,thankyou,"thank you good bye
+"
+23288,inform,"chinese food
+"
+23289,thankyou,"thank you good bye
+"
+23290,null,"sil
+"
+23291,inform,"id like a cheap restaurant in the east part of town
+"
+23292,inform,"chinese food
+"
+23293,inform,"i dont care
+"
+23294,thankyou,"okay thank you good bye
+"
+23295,null,"noise
+"
+23296,request,"and whats the phone number
+"
+23297,inform,"any kind
+"
+23298,affirm,"right
+"
+23299,inform,"unusual food
+"
+23300,request,"phone number
+"
+23301,request,"what type of food is it
+"
+23302,inform,"im looking for something in the west side
+"
+23303,inform,"missing sock
+"
+23304,request,"what type of food
+"
+23305,inform,"may i have a moderately priced restaurant serving english
+"
+23306,reqalts,"how about vietnamese food
+"
+23307,request,"phone number
+"
+23308,thankyou,"thank you good bye
+"
+23309,confirm,"is it in the west part of town
+"
+23310,inform,"i dont care
+"
+23311,inform,"any type of food
+"
+23312,inform,"west
+"
+23313,request,"and whats the price range
+"
+23314,inform,"um dont care
+"
+23315,negate,"no i need a restaurant in the west part of town
+"
+23316,inform,"west
+"
+23317,request,"can i get the phone number
+"
+23318,bye,"bye
+"
+23319,inform,"vietnamese food in any area
+"
+23320,inform,"i dont care
+"
+23321,null,"oh my god
+"
+23322,thankyou,"thank you good bye
+"
+23323,inform,"european food
+"
+23324,affirm,"yes
+"
+23325,request,"whats the phone number
+"
+23326,affirm,"ah yes im looking for persian food though
+"
+23327,thankyou,"thank you good bye
+"
+23328,confirm,"is there a thai restaurant
+"
+23329,request,"how about the address
+"
+23330,thankyou,"thank you good bye
+"
+23331,request,"phone number
+"
+23332,inform,"breath id like to find a moderately priced restaurant in the west part of
+"
+23333,reqalts,"how about indian
+"
+23334,null,"sil
+"
+23335,thankyou,"thank you good bye
+"
+23336,request,"what is the phone number
+"
+23337,hello,"hi im looking for cuban food
+"
+23338,affirm,"yes
+"
+23339,affirm,"yes can i get an expensive restaurant in the south part of town
+"
+23340,inform,"eritrean
+"
+23341,negate,"no
+"
+23342,inform,"im looking for a restaurant in the south part of town that serves christmas food
+"
+23343,thankyou,"thank you good bye
+"
+23344,inform,"i dont care
+"
+23345,thankyou,"thank you good bye
+"
+23346,inform,"spanish
+"
+23347,inform,"i am looking for an expensive restaurant that serves
+"
+23348,inform,"unintelligible food
+"
+23349,inform,"doesnt matter
+"
+23350,thankyou,"thank you good bye
+"
+23351,inform,"expensive restaurant
+"
+23352,request,"phone number
+"
+23353,request,"can i have the address
+"
+23354,inform,"any
+"
+23355,inform,"im looking for belgian food
+"
+23356,negate,"no
+"
+23357,null,"noise
+"
+23358,thankyou,"thank you good bye
+"
+23359,reqalts,"is there anything else
+"
+23360,request,"whats the address
+"
+23361,reqalts,"is there anything else
+"
+23362,thankyou,"thank you good bye
+"
+23363,thankyou,"okay thank you good bye
+"
+23364,thankyou,"thank you good bye
+"
+23365,thankyou,"thank you good bye
+"
+23366,affirm,"yes
+"
+23367,request,"whats the address
+"
+23368,inform,"doesnt matter
+"
+23369,request,"what is the price range
+"
+23370,null,"sil
+"
+23371,inform,"vietnamese food
+"
+23372,repeat,"cant repeat
+"
+23373,thankyou,"thank you good bye
+"
+23374,affirm,"yes
+"
+23375,inform,"im looking for a restaurant in the center that serves caribbean food
+"
+23376,reqalts,"anything else
+"
+23377,inform,"canapes
+"
+23378,inform,"european food
+"
+23379,inform,"any area
+"
+23380,affirm,"yea
+"
+23381,affirm,"yes
+"
+23382,thankyou,"thank you good bye
+"
+23383,inform,"looking for portuguese food in the south part of town
+"
+23384,thankyou,"thank you good bye
+"
+23385,inform,"hungarian food
+"
+23386,request,"what is the address
+"
+23387,inform,"something serving swiss food
+"
+23388,request,"phone number
+"
+23389,null,"noise
+"
+23390,affirm,"yes
+"
+23391,null,"serves
+"
+23392,thankyou,"thank you goodbye
+"
+23393,inform,"center area
+"
+23394,affirm,"yes in the west part of town
+"
+23395,inform,"i need an expensive restaurant that serves afghan food
+"
+23396,request,"post code
+"
+23397,affirm,"yes
+"
+23398,request,"phone number
+"
+23399,thankyou,"thank you good bye
+"
+23400,affirm,"right
+"
+23401,confirm,"is it moderately priced
+"
+23402,request,"phone number
+"
+23403,bye,"good bye
+"
+23404,reqalts,"how about north american food
+"
+23405,request,"whats the address
+"
+23406,reqalts,"what are my other options
+"
+23407,request,"signature dish
+"
+23408,inform,"moderately priced
+"
+23409,inform,"im looking for english food in the west part of town
+"
+23410,inform,"i do not care
+"
+23411,request,"what is the address and phone number
+"
+23412,request,"type of food
+"
+23413,reqalts,"how about chinese
+"
+23414,inform,"european
+"
+23415,negate,"no
+"
+23416,inform,"any
+"
+23417,request,"phone number and address
+"
+23418,inform,"i dont care
+"
+23419,inform,"cheap restaurant
+"
+23420,inform,"looking for a singaporean restaurant in the center
+"
+23421,inform,"in the south side
+"
+23422,thankyou,"thank you good bye
+"
+23423,thankyou,"thank you good bye
+"
+23424,null,"sil
+"
+23425,inform,"north part of town
+"
+23426,thankyou,"thank you good bye
+"
+23427,inform,"korean food
+"
+23428,inform,"international
+"
+23429,null,"unintelligible
+"
+23430,inform,"mexican food
+"
+23431,request,"type of food
+"
+23432,inform,"indian food
+"
+23433,null,"sil
+"
+23434,null,"medium
+"
+23435,request,"phone number
+"
+23436,request,"address
+"
+23437,inform,"european food
+"
+23438,inform,"south
+"
+23439,affirm,"yes
+"
+23440,affirm,"yeah im looking for a restaurant in the south part of town that serves international food
+"
+23441,request,"whats the address
+"
+23442,reqalts,"another
+"
+23443,inform,"dont care
+"
+23444,thankyou,"thank you good bye
+"
+23445,thankyou,"thank you good bye
+"
+23446,inform,"im looking for a moderately priced restaurant in the north part of town
+"
+23447,confirm,"is that in the north part of town
+"
+23448,thankyou,"thank you goodbye
+"
+23449,inform,"north american food
+"
+23450,inform,"hungarian
+"
+23451,inform,"west part of town
+"
+23452,request,"um what is the address and phone number
+"
+23453,thankyou,"thank you good bye
+"
+23454,inform,"east
+"
+23455,inform,"east part of town
+"
+23456,inform,"i got to find a cheap restaurant that serves mexican food
+"
+23457,reqalts,"what about australian asian
+"
+23458,inform,"modern european food
+"
+23459,inform,"i dont care
+"
+23460,inform,"moderately priced
+"
+23461,request,"phone number
+"
+23462,request,"address
+"
+23463,inform,"italian food
+"
+23464,inform,"im looking for french food
+"
+23465,request,"and the area
+"
+23466,reqalts,"how about british food
+"
+23467,thankyou,"thank you good bye
+"
+23468,reqalts,"is there anything else
+"
+23469,request,"whats the address and phone number
+"
+23470,inform,"dont know
+"
+23471,thankyou,"thank you good bye
+"
+23472,null,"post
+"
+23473,null,"sil
+"
+23474,inform,"the east part of town
+"
+23475,request,"whats its address
+"
+23476,null,"noise
+"
+23477,inform,"vietnamese
+"
+23478,inform,"italian food
+"
+23479,request,"what is the post code
+"
+23480,inform,"thai
+"
+23481,inform,"moderate
+"
+23482,request,"type of food
+"
+23483,inform,"what about a restaurant serving thai food
+"
+23484,inform,"im looking for a moderately priced
+"
+23485,thankyou,"thank you good bye
+"
+23486,inform,"in the east part of town
+"
+23487,request,"what kind of food is that
+"
+23488,inform,"dont care
+"
+23489,thankyou,"thank you good bye
+"
+23490,inform,"i dont care
+"
+23491,request,"whats the address
+"
+23492,inform,"any type of food
+"
+23493,reqalts,"is there anything else
+"
+23494,inform,"russian food
+"
+23495,request,"whats the price range
+"
+23496,request,"address
+"
+23497,inform,"east
+"
+23498,negate,"no i want american food
+"
+23499,thankyou,"thank you good bye
+"
+23500,request,"uh does it serve
+"
+23501,reqalts,"is there anything else
+"
+23502,affirm,"yes
+"
+23503,thankyou,"thank you good b
+"
+23504,repeat,"repeat
+"
+23505,reqalts,"anything else
+"
+23506,inform,"moderately priced
+"
+23507,thankyou,"thank you good bye
+"
+23508,inform,"im looking for a cheap restaurant in the south part of town
+"
+23509,inform,"the turkiesh food
+"
+23510,inform,"seafood
+"
+23511,inform,"a restaurant in the center of town
+"
+23512,reqalts,"is there anything else
+"
+23513,affirm,"yes
+"
+23514,inform,"south
+"
+23515,request,"whats the address
+"
+23516,inform,"austrian food
+"
+23517,reqalts,"is there anything else
+"
+23518,request,"where is the area of the venue
+"
+23519,request,"may i get the address and phone number
+"
+23520,request,"what is the address and phone number
+"
+23521,inform,"im looking for a restaurant in any area and it should serve turkish
+"
+23522,inform,"any part
+"
+23523,reqalts,"how about mediterranean food
+"
+23524,thankyou,"thank you good bye
+"
+23525,thankyou,"thank you good bye
+"
+23526,inform,"any part
+"
+23527,reqalts,"what about thai food
+"
+23528,inform,"expensive restaurant
+"
+23529,affirm,"yes
+"
+23530,inform,"i want an irish restaurant thats expensive
+"
+23531,thankyou,"thank you good bye
+"
+23532,request,"what is the address
+"
+23533,null,"sil
+"
+23534,null,"unintelligible
+"
+23535,thankyou,"thank you goodbye
+"
+23536,inform,"any
+"
+23537,request,"whats the address
+"
+23538,inform,"any area is fine with me
+"
+23539,inform,"looking for a cheap spanish restaurant
+"
+23540,thankyou,"okay thank you good bye
+"
+23541,affirm,"yes
+"
+23542,inform,"korean food
+"
+23543,affirm,"yeah i need um um m
+"
+23544,hello,"hi im looking for a restaurant that serves spanish food
+"
+23545,inform,"indian food noise
+"
+23546,request,"whats the address
+"
+23547,inform,"i am looking for a moderately priced restaurant in the south part of town
+"
+23548,thankyou,"thank you good bye
+"
+23549,inform,"south expensive
+"
+23550,inform,"im looking for one east part of town
+"
+23551,thankyou,"thank you good bye
+"
+23552,inform,"chinese restaurant please
+"
+23553,request,"whats the phone number
+"
+23554,inform,"north
+"
+23555,inform,"i want expensive food in the east part of town
+"
+23556,request,"phone number
+"
+23557,inform,"asian oriental
+"
+23558,request,"and the phone number
+"
+23559,inform,"im looking for romanian food
+"
+23560,request,"phone number
+"
+23561,thankyou,"thank you good bye
+"
+23562,inform,"food
+"
+23563,thankyou,"thank you goodbye
+"
+23564,inform,"i dont care the center part of town
+"
+23565,inform,"hungarian food in the center of town
+"
+23566,inform,"i dont care
+"
+23567,inform,"mediterranean
+"
+23568,request,"phone number
+"
+23569,thankyou,"thank you good bye
+"
+23570,request,"and the phone number
+"
+23571,inform,"south
+"
+23572,request,"telephone number
+"
+23573,reqalts,"what about indian food in the cheap price range
+"
+23574,inform,"looking for a cheap restaurant that serves creative food
+"
+23575,inform,"asian oriental
+"
+23576,request,"what is the post code
+"
+23577,inform,"dont care
+"
+23578,request,"address
+"
+23579,inform,"im looking for thai
+"
+23580,inform,"the south part of town
+"
+23581,inform,"spanish
+"
+23582,inform,"dont care
+"
+23583,bye,"okay good bye
+"
+23584,negate,"no
+"
+23585,request,"address
+"
+23586,inform,"cheap list
+"
+23587,inform,"id like to find a restaurant
+"
+23588,inform,"im looking for a restaurant in the east part of town serving australian
+"
+23589,inform,"cheap
+"
+23590,request,"in the wouth part of town
+"
+23591,inform,"international
+"
+23592,reqalts,"anything else
+"
+23593,inform,"i want sea food
+"
+23594,inform,"i would like an expensive restaurant that serves korean food
+"
+23595,request,"phone number
+"
+23596,reqalts,"is there anything else
+"
+23597,request,"whats the address
+"
+23598,inform,"a cheap restaurant
+"
+23599,thankyou,"thank you good bye
+"
+23600,null,"cough
+"
+23601,inform,"south part of town
+"
+23602,inform,"french food
+"
+23603,request,"telephone number
+"
+23604,request,"phone number
+"
+23605,null,"there
+"
+23606,null,"noise
+"
+23607,request,"may i have the address
+"
+23608,confirm,"does it serve fusion food
+"
+23609,hello,"hi im looking for an restaurant in the center that serves korean food
+"
+23610,null,"unintelligible
+"
+23611,inform,"moderately priced
+"
+23612,inform,"any
+"
+23613,inform,"oriental
+"
+23614,affirm,"yes
+"
+23615,null,"okay uh what about the other
+"
+23616,inform,"bistro
+"
+23617,request,"whats the phone number
+"
+23618,null,"survey
+"
+23619,request,"and the area
+"
+23620,request,"what is the phone number
+"
+23621,reqalts,"how about korean food
+"
+23622,inform,"id like to find a moderately priced restaurant
+"
+23623,inform,"could i have a restaurant that serves thai food
+"
+23624,inform,"im looking for a romanian restaurant
+"
+23625,inform,"any price range
+"
+23626,request,"what area
+"
+23627,request,"post code
+"
+23628,inform,"im looking for a restaurant that serves romanian food
+"
+23629,thankyou,"thank you good bye
+"
+23630,inform,"any
+"
+23631,request,"can i have the address
+"
+23632,inform,"im looking for a cheap restaurant in the west part of town
+"
+23633,inform,"okay looking for a cheap restaurant serving caribbean food
+"
+23634,inform,"i dont care
+"
+23635,request,"what is the post code
+"
+23636,inform,"expensive
+"
+23637,request,"and whats their phone number
+"
+23638,confirm,"is it expensive
+"
+23639,inform,"vietnamese
+"
+23640,inform,"thai food
+"
+23641,thankyou,"thank you good bye
+"
+23642,inform,"north part
+"
+23643,reqalts,"i dont want that one whats another one
+"
+23644,inform,"i dont care
+"
+23645,affirm,"yes
+"
+23646,repeat,"repeat
+"
+23647,inform,"a restaurant cheap north part of town
+"
+23648,inform,"in the south part of the town
+"
+23649,affirm,"yes
+"
+23650,thankyou,"thank you goodbye
+"
+23651,inform,"anything
+"
+23652,bye,"goodbye
+"
+23653,affirm,"yes i would like to know the address
+"
+23654,null,"dress
+"
+23655,request,"postcode
+"
+23656,inform,"uh i dont care
+"
+23657,inform,"moderate
+"
+23658,thankyou,"thank you good bye
+"
+23659,thankyou,"thank you goodbye
+"
+23660,inform,"noise east
+"
+23661,reqalts,"what about portuguese food
+"
+23662,negate,"no indian
+"
+23663,inform,"im looking for an expensive restaurant in the east part of town
+"
+23664,request,"phone number
+"
+23665,negate,"no australian food
+"
+23666,request,"what is the address and phone number
+"
+23667,thankyou,"thank you good bye
+"
+23668,thankyou,"breath thank you goodbye
+"
+23669,inform,"im looking for moderately priced restaurant in the east part of town
+"
+23670,request,"do you have a phone number
+"
+23671,request,"post code
+"
+23672,reqalts,"what about vietnamese food
+"
+23673,deny,"not european fusion
+"
+23674,inform,"persian
+"
+23675,request,"can i have the address of the phone number of the venue
+"
+23676,thankyou,"thank you good bye
+"
+23677,thankyou,"thank you good bye
+"
+23678,inform,"scandanavian
+"
+23679,thankyou,"can i okay thank you
+"
+23680,request,"what is the address
+"
+23681,inform,"looking for a moderately priced restaurant in the west part of town
+"
+23682,request,"what is the address
+"
+23683,null,"noise
+"
+23684,inform,"any
+"
+23685,request,"phone number
+"
+23686,inform,"dont care
+"
+23687,inform,"any
+"
+23688,inform,"scottish
+"
+23689,inform,"restaurant south
+"
+23690,inform,"any area
+"
+23691,affirm,"yes
+"
+23692,inform,"i need a cheap restaurant in the west part of town
+"
+23693,thankyou,"thank you good bye
+"
+23694,thankyou,"thank you good bye
+"
+23695,request,"address and phone number
+"
+23696,affirm,"yes italian food
+"
+23697,request,"phone number
+"
+23698,negate,"breath no american food
+"
+23699,inform,"i would like it to be cheap
+"
+23700,inform,"any
+"
+23701,inform,"doesnt matter
+"
+23702,inform,"food
+"
+23703,reqalts,"what about vietnamese type of food
+"
+23704,inform,"west
+"
+23705,inform,"caribbean food
+"
+23706,request,"what is the phone number
+"
+23707,inform,"asian oriental
+"
+23708,inform,"british food
+"
+23709,inform,"pan asian food
+"
+23710,reqalts,"is there a restaurant in the north part of town that serves indian food
+"
+23711,request,"what part of town is chiquito mexican restaurant in
+"
+23712,inform,"food
+"
+23713,thankyou,"thank you good bye
+"
+23714,request,"phone number
+"
+23715,inform,"im looking for a cheap restaurant in the south part of town
+"
+23716,inform,"malyasian
+"
+23717,inform,"moderate
+"
+23718,inform,"uh it does i dont care
+"
+23719,null,"unintelligible
+"
+23720,inform,"scottish food
+"
+23721,null,"looking for a
+"
+23722,request,"type of food does it serve
+"
+23723,inform,"it doesnt matter
+"
+23724,inform,"im looking for spanish food
+"
+23725,thankyou,"thank you good bye
+"
+23726,thankyou,"thank you good bye
+"
+23727,inform,"um i dont care
+"
+23728,thankyou,"thank you good bye
+"
+23729,reqalts,"how about the south part of town
+"
+23730,request,"and the phone number
+"
+23731,affirm,"yes
+"
+23732,inform,"expensive restaurant
+"
+23733,reqalts,"uh what about chinese food
+"
+23734,request,"can i have the address
+"
+23735,negate,"no
+"
+23736,thankyou,"thank you good bye
+"
+23737,request,"address
+"
+23738,null,"unintelligible
+"
+23739,inform,"vietnamese food
+"
+23740,request,"whats the phone number
+"
+23741,inform,"moderately priced
+"
+23742,inform,"expensive restaurant
+"
+23743,request,"may i have the phone number and address
+"
+23744,inform,"um im looking for a moderately priced restaurant in the south part of town
+"
+23745,inform,"expensive
+"
+23746,affirm,"yes
+"
+23747,inform,"asian
+"
+23748,thankyou,"thank you good bye
+"
+23749,request,"and the phone number
+"
+23750,inform,"i dont care
+"
+23751,request,"whats the address
+"
+23752,inform,"italian food
+"
+23753,bye,"good bye
+"
+23754,affirm,"yes
+"
+23755,inform,"dont care
+"
+23756,request,"okay can i get the address
+"
+23757,thankyou,"thank you goodbye
+"
+23758,inform,"any
+"
+23759,inform,"cheap restaurant
+"
+23760,thankyou,"thank you good bye
+"
+23761,inform,"cheap restaurant in the west part of town
+"
+23762,inform,"hi id like a moderately priced restaurant in the north
+"
+23763,affirm,"yeah
+"
+23764,inform,"east
+"
+23765,reqalts,"okay how about modern european food
+"
+23766,inform,"polynesian food east of town
+"
+23767,inform,"im looking for a cheap restaurant in the west part of town
+"
+23768,request,"address
+"
+23769,inform,"it doesnt matter
+"
+23770,inform,"i need a restaurant serving modern european food
+"
+23771,inform,"asian oriental type of food
+"
+23772,reqalts,"is there anything else
+"
+23773,request,"phone number
+"
+23774,request,"can i have the address
+"
+23775,inform,"want one that serves international food
+"
+23776,thankyou,"thank you good bye
+"
+23777,thankyou,"thank you good bye
+"
+23778,inform,"noise french food
+"
+23779,inform,"doesnt matter
+"
+23780,inform,"moderately priced restaurant in the north part of town
+"
+23781,hello,"hi im looking for a moderately priced restaurant in the south part of town
+"
+23782,thankyou,"thank you good bye
+"
+23783,affirm,"ye
+"
+23784,inform,"dont care
+"
+23785,affirm,"yes
+"
+23786,inform,"restaurant
+"
+23787,inform,"um do not care
+"
+23788,inform,"south
+"
+23789,request,"can i have the phone number
+"
+23790,inform,"restaurant in the east part of town
+"
+23791,request,"post code
+"
+23792,request,"can i have his phone number
+"
+23793,request,"may i have its phone number
+"
+23794,null,"unintelligible
+"
+23795,thankyou,"thank you good bye
+"
+23796,null,"noise
+"
+23797,reqalts,"what about vietnamese food
+"
+23798,inform,"russian food
+"
+23799,inform,"caribbean food
+"
+23800,request,"phone number
+"
+23801,inform,"jamaican food
+"
+23802,inform,"vietnamese
+"
+23803,request,"and the phone number
+"
+23804,request,"and what area
+"
+23805,inform,"moderate
+"
+23806,request,"address phone number
+"
+23807,inform,"cheap
+"
+23808,request,"address
+"
+23809,thankyou,"thank you good bye
+"
+23810,affirm,"yes im looking for barbecue food
+"
+23811,affirm,"yes
+"
+23812,inform,"i am looking for a moderately priced restaurant serving cantonese food
+"
+23813,inform,"expensive
+"
+23814,inform,"north
+"
+23815,thankyou,"thank you goodbye
+"
+23816,inform,"japanese food
+"
+23817,inform,"uh east
+"
+23818,request,"phone number
+"
+23819,reqalts,"is there anything else
+"
+23820,request,"and the address
+"
+23821,inform,"thai
+"
+23822,inform,"cheap
+"
+23823,inform,"im looking for a expensive restaurant that serves vegetarian food
+"
+23824,inform,"any
+"
+23825,inform,"i dont care
+"
+23826,request,"can i get the address
+"
+23827,inform,"airatarin
+"
+23828,thankyou,"thank you good bye
+"
+23829,inform,"a moderately place restaurant
+"
+23830,request,"what is the price range
+"
+23831,inform,"moderately priced
+"
+23832,request,"the phone number
+"
+23833,thankyou,"thank you good bye
+"
+23834,confirm,"is it expensive
+"
+23835,negate,"no thai
+"
+23836,inform,"polynesian food
+"
+23837,request,"address
+"
+23838,inform,"italian
+"
+23839,affirm,"yes
+"
+23840,reqalts,"i dont want that give me another spanish choice
+"
+23841,inform,"any kind of food id like a cheap restaurant
+"
+23842,negate,"tv_noise no
+"
+23843,inform,"spanish food
+"
+23844,inform,"asian oriental
+"
+23845,thankyou,"thank you good bye
+"
+23846,inform,"cross over
+"
+23847,inform,"im looking for a moderate priced restaurant in the south part of town
+"
+23848,inform,"i dont care
+"
+23849,thankyou,"thank you good bye
+"
+23850,inform,"cheap
+"
+23851,request,"address
+"
+23852,negate,"no
+"
+23853,inform,"chinese
+"
+23854,inform,"asian
+"
+23855,inform,"im looking for a cheap restaurant
+"
+23856,null,"freakin
+"
+23857,inform,"a restaurant that serves creative food
+"
+23858,null,"cough
+"
+23859,request,"address and phone number
+"
+23860,request,"may i get the address
+"
+23861,null,"noise
+"
+23862,inform,"moderately priced
+"
+23863,affirm,"yes
+"
+23864,inform,"find restaurant in south of town serving international f
+"
+23865,inform,"cheap
+"
+23866,ack,"okay um
+"
+23867,request,"phone number
+"
+23868,inform,"scottish
+"
+23869,inform,"west
+"
+23870,inform,"im looking for a restaurant
+"
+23871,inform,"cheap restaurant
+"
+23872,request,"what is the address
+"
+23873,inform,"breath a cheap restaurant in the north part of town
+"
+23874,request,"can i have the address and phone number please
+"
+23875,null,"sil
+"
+23876,request,"what is the address
+"
+23877,inform,"looking for a cheap restaurant in the south part of town
+"
+23878,request,"address
+"
+23879,reqalts,"how about korean food
+"
+23880,reqalts,"anything else
+"
+23881,request,"whats the address to that please
+"
+23882,null,"sil
+"
+23883,inform,"in the east part of town
+"
+23884,request,"whats the address
+"
+23885,thankyou,"thank you good bye
+"
+23886,inform,"i need an expensive restaurant
+"
+23887,inform,"i would like to find a restaurant in any area serving international food
+"
+23888,inform,"the south part of town
+"
+23889,inform,"north american
+"
+23890,inform,"and british food
+"
+23891,reqalts,"anything else
+"
+23892,request,"what is their post code
+"
+23893,affirm,"yes
+"
+23894,null,"system
+"
+23895,request,"price range
+"
+23896,inform,"i dont care
+"
+23897,request,"okay can i have the phone number
+"
+23898,inform,"any kind of food
+"
+23899,null,"okay
+"
+23900,request,"can i get the address and phone number
+"
+23901,request,"phone number
+"
+23902,request,"okay whats the phone number
+"
+23903,request,"and can i have the post code
+"
+23904,inform,"chinese in the south part of town
+"
+23905,inform,"im looking for portuguese food
+"
+23906,thankyou,"thank you
+"
+23907,thankyou,"thank you good bye
+"
+23908,inform,"moderately priced
+"
+23909,thankyou,"thank you good bye
+"
+23910,inform,"vietnamese type of food
+"
+23911,inform,"unusual food
+"
+23912,request,"what is the address and phone number
+"
+23913,thankyou,"thank you goodbye
+"
+23914,request,"ah whats the phone number
+"
+23915,request,"phone number
+"
+23916,null,"inaudible
+"
+23917,inform,"i dont care
+"
+23918,request,"telephone number
+"
+23919,thankyou,"thank you goodbye
+"
+23920,inform,"doesnt matter
+"
+23921,thankyou,"okay thank you and goodbye
+"
+23922,inform,"im looking for a moderately priced restaurant that serves tur
+"
+23923,request,"what is the address
+"
+23924,request,"the phone number for bloomsbury
+"
+23925,negate,"no
+"
+23926,reqalts,"anything else
+"
+23927,null,"breathing
+"
+23928,thankyou,"thank you good bye
+"
+23929,request,"phone number
+"
+23930,thankyou,"thank you good bye
+"
+23931,inform,"dont care
+"
+23932,inform,"gastropub
+"
+23933,negate,"no there is no such venue how about portuguese food
+"
+23934,inform,"i want to find a restaurant in the west part of town that serves vietnamese food
+"
+23935,inform,"malaysian
+"
+23936,reqalts,"what about indian food
+"
+23937,inform,"im looking for a moderately priced restaurant that serves uh
+"
+23938,inform,"can i find a restaurant in the south that is moderately priced
+"
+23939,request,"okay and can i get the phone number
+"
+23940,inform,"moderate
+"
+23941,thankyou,"thank you
+"
+23942,request,"address and phone number
+"
+23943,inform,"swedish food
+"
+23944,inform,"i need a persian restaurant in the south part of town
+"
+23945,inform,"irish
+"
+23946,inform,"any area
+"
+23947,request,"phone number
+"
+23948,reqalts,"anything else
+"
+23949,inform,"im looking for a restaurant in the east part of town that serves international
+"
+23950,inform,"it doesnt matter
+"
+23951,request,"whats the phone number
+"
+23952,inform,"im looking for a moderately priced restaurant uh serving halal food
+"
+23953,affirm,"yes
+"
+23954,inform,"i dont care
+"
+23955,request,"whats the phone number
+"
+23956,thankyou,"thank you good bye
+"
+23957,null,"sil
+"
+23958,inform,"moderately priced restaurant
+"
+23959,inform,"iam looking for a restaurant that serves bistro food
+"
+23960,inform,"any
+"
+23961,thankyou,"thank you good bye
+"
+23962,inform,"i dont care tv_noise
+"
+23963,ack,"okay and what about the address
+"
+23964,reqalts,"anything else
+"
+23965,thankyou,"thank you good bye
+"
+23966,inform,"i dont care about the price range
+"
+23967,inform,"any
+"
+23968,request,"may i have the postcode
+"
+23969,inform,"the center of town
+"
+23970,reqalts,"is there another
+"
+23971,inform,"i am looking for an expensive restaurant serving kitalian food
+"
+23972,request,"whats the address
+"
+23973,affirm,"yea i want indian food
+"
+23974,request,"and whats the price range
+"
+23975,reqalts,"anything else
+"
+23976,inform,"doesnt matter
+"
+23977,request,"what type of food does it serve
+"
+23978,inform,"dont care
+"
+23979,request,"and what type of food do they serve
+"
+23980,request,"and whats the phone number
+"
+23981,reqalts,"anything else
+"
+23982,reqalts,"is there anything else
+"
+23983,affirm,"yes
+"
+23984,inform,"im looking for a moderately priced restaurant that serves japanese
+"
+23985,reqalts,"what about chinese food
+"
+23986,inform,"is there mediterranean food
+"
+23987,thankyou,"thank you good bye
+"
+23988,inform,"i am looking for a moderately priced restaurant in the south part of town
+"
+23989,inform,"im looking for
+"
+23990,inform,"dont care
+"
+23991,reqalts,"anything else
+"
+23992,inform,"im looking for a restaurant serving unintelligible
+"
+23993,request,"whats the address
+"
+23994,negate,"uh no oh
+"
+23995,affirm,"yes
+"
+23996,request,"what area of town
+"
+23997,reqalts,"is there anything else
+"
+23998,inform,"turkish food
+"
+23999,request,"how about the post code
+"
+24000,affirm,"yes
+"
+24001,inform,"east
+"
+24002,inform,"canapes
+"
+24003,inform,"italian
+"
+24004,inform,"mexican food
+"
+24005,null,"unintelligible
+"
+24006,bye,"good bye
+"
+24007,request,"what is the address
+"
+24008,negate,"no unintelligible
+"
+24009,inform,"moderate
+"
+24010,inform,"international
+"
+24011,inform,"east
+"
+24012,inform,"im sorry i meant creative food
+"
+24013,request,"phone number
+"
+24014,inform,"the south part of town
+"
+24015,inform,"indian food
+"
+24016,affirm,"yes
+"
+24017,affirm,"yes
+"
+24018,thankyou,"thank you good bye
+"
+24019,thankyou,"thank you good bye
+"
+24020,request,"what is the address and phone number
+"
+24021,inform,"restaurant in any area international food
+"
+24022,inform,"italian food
+"
+24023,inform,"im looking for a cheap restaurant in the west part of town
+"
+24024,inform,"romanian food
+"
+24025,thankyou,"thank you good bye
+"
+24026,thankyou,"thank you good bye
+"
+24027,inform,"is there one in the west area
+"
+24028,inform,"is there one that serves indian food
+"
+24029,inform,"im looking for a restaurant in the west part of town
+"
+24030,null,"noise
+"
+24031,reqalts,"how about korean type food
+"
+24032,ack,"okay show me the least
+"
+24033,null,"noise
+"
+24034,inform,"expensive
+"
+24035,inform,"um is doesnt matter
+"
+24036,request,"whats the address
+"
+24037,reqalts,"uh is there any other
+"
+24038,null,"unintelligible
+"
+24039,inform,"jamaican food
+"
+24040,null,"how about unintelligible
+"
+24041,inform,"scandinavian
+"
+24042,inform,"im looking for a moderately priced restaurant serving fusion food
+"
+24043,affirm,"yes
+"
+24044,reqalts,"what about thai food
+"
+24045,request,"phone number
+"
+24046,request,"what is the post code
+"
+24047,inform,"dont care
+"
+24048,hello,"hi i am looking for a moderately priced restaurant in the east part of town
+"
+24049,inform,"find me a restaurant in the center of town
+"
+24050,request,"address
+"
+24051,request,"what is the price range
+"
+24052,inform,"im looking for a restaurant in any area that serves belgian food
+"
+24053,bye,"good bye
+"
+24054,null,"unintelligible
+"
+24055,inform,"im looking for moderately priced restaurant serving austrian food
+"
+24056,request,"price
+"
+24057,thankyou,"thank you goodbye
+"
+24058,thankyou,"thank you good bye
+"
+24059,inform,"and it should be in the north part of town
+"
+24060,inform,"east
+"
+24061,request,"whats their address
+"
+24062,inform,"center of town
+"
+24063,thankyou,"thank you good bye
+"
+24064,inform,"im looking for expensive restaurants in the east part of town
+"
+24065,request,"whats the address
+"
+24066,inform,"east
+"
+24067,thankyou,"thank you good bye
+"
+24068,inform,"asian oriental
+"
+24069,thankyou,"thank you good bye
+"
+24070,reqalts,"next
+"
+24071,inform,"any price range
+"
+24072,inform,"im looking for a restaurant in the south part of town
+"
+24073,affirm,"right
+"
+24074,reqalts,"what about portugese
+"
+24075,confirm,"does it serve canapes food
+"
+24076,null,"noise
+"
+24077,inform,"european restaurant
+"
+24078,affirm,"mmhm
+"
+24079,thankyou,"thank you good bye
+"
+24080,request,"phone number
+"
+24081,request,"what is their phone number
+"
+24082,inform,"cheap
+"
+24083,inform,"asian oriental
+"
+24084,request,"whats the post code
+"
+24085,thankyou,"thank you good bye
+"
+24086,inform,"barbecue
+"
+24087,request,"what is the address
+"
+24088,inform,"im looking for a expensive restaurant serving mediterranean food
+"
+24089,inform,"im looking for eritrean food
+"
+24090,thankyou,"thank you good bye
+"
+24091,thankyou,"thank you good bye
+"
+24092,thankyou,"thank you good bye
+"
+24093,null,"sil
+"
+24094,request,"address
+"
+24095,reqalts,"is there anything else
+"
+24096,inform,"any
+"
+24097,affirm,"yes
+"
+24098,inform,"south
+"
+24099,thankyou,"unintelligible thank you goodbye
+"
+24100,request,"what is the type of food
+"
+24101,thankyou,"thank you good bye
+"
+24102,inform,"spanish food
+"
+24103,thankyou,"thank you good bye
+"
+24104,inform,"i am looking for a restaurant in the south part of town
+"
+24105,request,"telephone
+"
+24106,thankyou,"thank you good bye
+"
+24107,inform,"a cheap restaurant that serves basque food
+"
+24108,request,"phone number
+"
+24109,request,"the address
+"
+24110,inform,"indian food
+"
+24111,thankyou,"noise thank you goodbye
+"
+24112,affirm,"yes
+"
+24113,inform,"cheap
+"
+24114,inform,"it doesnt matter i need the north part of town
+"
+24115,inform,"catalan
+"
+24116,inform,"european food
+"
+24117,request,"whats the price range
+"
+24118,null,"sil
+"
+24119,inform,"i would like to find a moderately priced restaurant in the east part of
+"
+24120,inform,"any price range
+"
+24121,inform,"cheap
+"
+24122,request,"could i have the address and phone number please
+"
+24123,null,"sil
+"
+24124,reqalts,"is there anything else
+"
+24125,inform,"vietnamese
+"
+24126,inform,"what about vietnamese
+"
+24127,inform,"food
+"
+24128,null,"noise
+"
+24129,inform,"the center of town
+"
+24130,request,"type of food
+"
+24131,inform,"asian oriental
+"
+24132,request,"okay can i have the phone number
+"
+24133,request,"phone number and post code
+"
+24134,inform,"dont care
+"
+24135,request,"okay whats the phone number
+"
+24136,request,"and the postal code
+"
+24137,inform,"moderately priced restaurant
+"
+24138,thankyou,"thank you good bye
+"
+24139,inform,"mexican food
+"
+24140,affirm,"yes
+"
+24141,thankyou,"thank you good bye
+"
+24142,bye,"good bye
+"
+24143,deny,"i dont want chinese
+"
+24144,inform,"im looking for european food
+"
+24145,inform,"moderate
+"
+24146,request,"and the post code
+"
+24147,hello,"halo
+"
+24148,inform,"any
+"
+24149,inform,"cheap price range
+"
+24150,request,"can i get a phone number please
+"
+24151,inform,"i need to find a restaurant in the west part of town that serves chinese food
+"
+24152,inform,"restaurant in the north part of
+"
+24153,request,"the address please
+"
+24154,null,"sil
+"
+24155,inform,"im looking for vegetarian food
+"
+24156,request,"address
+"
+24157,request,"phone number
+"
+24158,affirm,"yes
+"
+24159,request,"post code
+"
+24160,request,"what kind of food is it
+"
+24161,inform,"im looking for a restaurant in the east part of town that serves indian food
+"
+24162,inform,"in the east part of town
+"
+24163,thankyou,"thank you good bye
+"
+24164,thankyou,"thank you goodbye
+"
+24165,request,"and phone number
+"
+24166,affirm,"yes
+"
+24167,inform,"creative food
+"
+24168,inform,"expensive indonesian
+"
+24169,thankyou,"thank you good bye
+"
+24170,affirm,"yes west part of town
+"
+24171,thankyou,"thank you good bye
+"
+24172,request,"what is the phone number
+"
+24173,inform,"scottish
+"
+24174,thankyou,"thank you good bye
+"
+24175,inform,"thai food
+"
+24176,affirm,"yes
+"
+24177,inform,"east
+"
+24178,null,"noise
+"
+24179,request,"and what type of food
+"
+24180,request,"may i have the phone number and address
+"
+24181,request,"and the telephone number
+"
+24182,null,"sil
+"
+24183,thankyou,"thank you goodbye
+"
+24184,null,"unintelligible
+"
+24185,inform,"south
+"
+24186,reqalts,"are there any others
+"
+24187,inform,"any area
+"
+24188,hello,"hello
+"
+24189,request,"whats the phone number
+"
+24190,thankyou,"thank you good bye
+"
+24191,thankyou,"thank you good bye
+"
+24192,inform,"i dont care
+"
+24193,inform,"italian
+"
+24194,thankyou,"thank you good bye
+"
+24195,request,"and the postal code
+"
+24196,inform,"any
+"
+24197,thankyou,"thank you good bye
+"
+24198,request,"whats the phone number
+"
+24199,inform,"any
+"
+24200,inform,"iam looking for a restaurant in any area that serves swiss food
+"
+24201,inform,"asian restaurant
+"
+24202,confirm,"do they serve unintelligible food
+"
+24203,request,"what is the address and the type of food
+"
+24204,inform,"north
+"
+24205,inform,"looking for persian food
+"
+24206,inform,"i need a cheap restaurant in the east part of town
+"
+24207,null,"unintelligible
+"
+24208,inform,"japanese
+"
+24209,inform,"moderately priced
+"
+24210,inform,"breath can you find me danish restaurant
+"
+24211,request,"address
+"
+24212,null,"noise
+"
+24213,inform,"i would like mexican food
+"
+24214,reqalts,"okay give me another option
+"
+24215,request,"the post code
+"
+24216,null,"noise
+"
+24217,inform,"moderately
+"
+24218,inform,"south
+"
+24219,inform,"spanish
+"
+24220,inform,"im looking for a cheap restaurant that serves vietnamese food
+"
+24221,inform,"british
+"
+24222,inform,"center
+"
+24223,thankyou,"thank you good bye
+"
+24224,thankyou,"thank you good bye
+"
+24225,request,"whats the address
+"
+24226,request,"whats the phone number
+"
+24227,inform,"european food
+"
+24228,reqalts,"im sorry but what about chinese food
+"
+24229,inform,"im looking for an expensive restaurant in the south part of town
+"
+24230,request,"the address
+"
+24231,request,"whats the phone number
+"
+24232,request,"what is the price range
+"
+24233,request,"address
+"
+24234,inform,"expensive
+"
+24235,null,"unintelligible
+"
+24236,thankyou,"thank you good bye
+"
+24237,inform,"restaurant
+"
+24238,null,"sil
+"
+24239,thankyou,"thank you good bye
+"
+24240,reqalts,"how about spanish food
+"
+24241,negate,"no
+"
+24242,request,"may i have the address
+"
+24243,inform,"on north
+"
+24244,negate,"no im looking for asian oriental
+"
+24245,request,"could i have the address phone number
+"
+24246,inform,"it doesnt matter
+"
+24247,inform,"cheap restaurant
+"
+24248,affirm,"yes
+"
+24249,inform,"african
+"
+24250,inform,"im looking for a restaurant in the north part of town
+"
+24251,inform,"chinese food
+"
+24252,inform,"it doesnt matter
+"
+24253,inform,"international food
+"
+24254,request,"can i get the address
+"
+24255,thankyou,"thank you good bye
+"
+24256,inform,"north
+"
+24257,request,"okay give me address
+"
+24258,inform,"i am looking for a restaurant in the moderate price range that serves russian
+"
+24259,request,"okay what about the post code
+"
+24260,inform,"i want a restaurant in the center that serves seafood
+"
+24261,inform,"i dont care
+"
+24262,request,"phone number
+"
+24263,inform,"i dont care
+"
+24264,reqalts,"what about european
+"
+24265,inform,"west
+"
+24266,inform,"barbecue
+"
+24267,inform,"turkish food
+"
+24268,inform,"in the south part of town
+"
+24269,reqalts,"is there anything else
+"
+24270,inform,"italian food instead
+"
+24271,reqalts,"what about chinese food
+"
+24272,request,"whats the address
+"
+24273,request,"what part of town
+"
+24274,inform,"vietnamese food
+"
+24275,negate,"no
+"
+24276,inform,"west part of town
+"
+24277,request,"address
+"
+24278,thankyou,"thanks bye bye
+"
+24279,request,"address
+"
+24280,inform,"im looking for an expensive restaurant that serves european
+"
+24281,request,"what type of food do they serve
+"
+24282,null,"unintelligible
+"
+24283,request,"may i have the phone number
+"
+24284,thankyou,"thank you good bye
+"
+24285,reqalts,"is there a different cheap restaurant in the west part of town
+"
+24286,inform,"portuguese
+"
+24287,reqalts,"is there a restaurant that serves european food
+"
+24288,request,"may i have the post code
+"
+24289,request,"may i have the address and phone number
+"
+24290,inform,"food
+"
+24291,bye,"goodbye
+"
+24292,null,"im loo
+"
+24293,thankyou,"thank you goodbye
+"
+24294,null,"care
+"
+24295,request,"what food is in the west part of town
+"
+24296,request,"post code
+"
+24297,null,"noise
+"
+24298,inform,"im looking for a moderately priced restaurant in the west part of town
+"
+24299,inform,"east part of town
+"
+24300,inform,"im looking for a restaurant that serves unusual food
+"
+24301,request,"phone number
+"
+24302,reqalts,"how about korean food
+"
+24303,null,"sea
+"
+24304,request,"phone number
+"
+24305,null,"noise
+"
+24306,request,"whats the price range
+"
+24307,inform,"lebanese food
+"
+24308,affirm,"yes
+"
+24309,reqalts,"how about a turkish restaurant
+"
+24310,inform,"im looking for a cheap restaurant in the north part of town
+"
+24311,inform,"any
+"
+24312,request,"whats the phone number
+"
+24313,request,"what is the address
+"
+24314,inform,"i am looking for a singaporean restaurant in the north part of town
+"
+24315,inform,"any moderately
+"
+24316,request,"type of food
+"
+24317,request,"what is the address
+"
+24318,reqalts,"anything else
+"
+24319,inform,"jamaican
+"
+24320,reqalts,"is there anything else
+"
+24321,request,"can i get the phone number
+"
+24322,request,"and whats the post code
+"
+24323,reqalts,"how about moroccan food
+"
+24324,thankyou,"thank you good bye
+"
+24325,request,"type of food
+"
+24326,inform,"uh turkish
+"
+24327,thankyou,"thank you good bye
+"
+24328,inform,"indian food
+"
+24329,inform,"im looking for a moderately priced restaurant in the west part of town
+"
+24330,thankyou,"thank you goodbye
+"
+24331,reqalts,"is there anything else
+"
+24332,affirm,"yes
+"
+24333,request,"type of food do they serve
+"
+24334,null,"inaudible
+"
+24335,null,"okay
+"
+24336,null,"opean
+"
+24337,thankyou,"thank you good bye
+"
+24338,inform,"the south part of town
+"
+24339,inform,"cheap restaurant in the west part of town
+"
+24340,request,"can i get the address
+"
+24341,inform,"brazilian
+"
+24342,inform,"im looking for a moderately priced restaurant in the north part of town
+"
+24343,affirm,"yes
+"
+24344,thankyou,"thank you good bye
+"
+24345,request,"phone number
+"
+24346,request,"and their phone number
+"
+24347,inform,"greek food in the moderate
+"
+24348,request,"what is the price range
+"
+24349,thankyou,"thank you good bye
+"
+24350,null,"noise
+"
+24351,thankyou,"thank you good bye
+"
+24352,thankyou,"thank you good bye
+"
+24353,inform,"thai food
+"
+24354,thankyou,"thank you good bye
+"
+24355,request,"whats the address
+"
+24356,inform,"the west part of town
+"
+24357,request,"phone number
+"
+24358,inform,"im looking for thai food
+"
+24359,request,"what kind of food does it serve
+"
+24360,inform,"south
+"
+24361,inform,"north
+"
+24362,request,"the address phone number and post code
+"
+24363,reqalts,"how about european food
+"
+24364,thankyou,"thank you good bye
+"
+24365,inform,"im looking for a restaurant in the east part of town that serves canapes
+"
+24366,request,"what is the type of food
+"
+24367,inform,"id like a moderately priced restaurant that serves cuban food please
+"
+24368,null,"noise
+"
+24369,inform,"north
+"
+24370,inform,"im looking for a cheap restaurant in the south part of town
+"
+24371,request,"uh address
+"
+24372,thankyou,"thank you good bye
+"
+24373,request,"can i have an address and phone number
+"
+24374,inform,"moderately priced restaurant
+"
+24375,inform,"italian food
+"
+24376,reqalts,"what about italian food
+"
+24377,inform,"doesnt matter
+"
+24378,inform,"im looking for a cheap restaurant in the east part of town
+"
+24379,inform,"i dont care
+"
+24380,reqalts,"anything else
+"
+24381,request,"what is the address phone number and post code
+"
+24382,inform,"any
+"
+24383,inform,"spanish food
+"
+24384,reqalts,"can i try another one
+"
+24385,thankyou,"thank you good bye
+"
+24386,inform,"anything
+"
+24387,reqalts,"is there anything else
+"
+24388,inform,"german food
+"
+24389,inform,"any
+"
+24390,bye,"okay good bye
+"
+24391,thankyou,"thank you good bye
+"
+24392,null,"unintelligible
+"
+24393,inform,"in the west
+"
+24394,request,"address
+"
+24395,request,"address
+"
+24396,null,"what is the
+"
+24397,inform,"want something in the south side of town thats moderately priced
+"
+24398,inform,"high priced
+"
+24399,inform,"south
+"
+24400,inform,"dont care
+"
+24401,inform,"im looking for swedish food
+"
+24402,inform,"spanish food
+"
+24403,thankyou,"thank you good bye
+"
+24404,inform,"i dont care
+"
+24405,inform,"id like a restaurant in the north part of town that serves tur
+"
+24406,reqalts,"how about italian
+"
+24407,thankyou,"thank you good bye
+"
+24408,inform,"im looking for a restaurant in the south part of town that serves greek food
+"
+24409,null,"sil
+"
+24410,request,"what is the phone number and post code
+"
+24411,inform,"um im looking for a restaurant serving thai food
+"
+24412,thankyou,"thank you
+"
+24413,inform,"italian
+"
+24414,inform,"west
+"
+24415,affirm,"yes
+"
+24416,null,"noise
+"
+24417,request,"address
+"
+24418,bye,"thanks good bye
+"
+24419,negate,"no
+"
+24420,null,"that serves
+"
+24421,negate,"no
+"
+24422,inform,"bistro food
+"
+24423,request,"what type of food
+"
+24424,null,"sil
+"
+24425,request,"and what about the phone number
+"
+24426,thankyou,"thank you good bye
+"
+24427,null,"noise
+"
+24428,inform,"north part of town austral asian food
+"
+24429,inform,"any food
+"
+24430,request,"whats its address
+"
+24431,request,"what is the phone number
+"
+24432,thankyou,"thank you good bye
+"
+24433,thankyou,"thank you good bye
+"
+24434,thankyou,"thank you goodbye
+"
+24435,request,"phone number
+"
+24436,thankyou,"thank you good bye
+"
+24437,hello,"hello
+"
+24438,affirm,"correct
+"
+24439,bye,"good bye
+"
+24440,inform,"european
+"
+24441,request,"phone number
+"
+24442,thankyou,"thank you good bye
+"
+24443,inform,"in the north part o
+"
+24444,request,"what is the address
+"
+24445,null,"sil
+"
+24446,thankyou,"thank you good bye
+"
+24447,reqalts,"anything else
+"
+24448,request,"address
+"
+24449,request,"can you give me the address and price range
+"
+24450,inform,"swedish food
+"
+24451,request,"could i have the address phone number and price range please
+"
+24452,inform,"asian oriental
+"
+24453,inform,"center part of town
+"
+24454,affirm,"yes
+"
+24455,thankyou,"thank you good bye
+"
+24456,thankyou,"thank you good bye
+"
+24457,request,"whats the address
+"
+24458,reqalts,"what about thai food
+"
+24459,inform,"korean
+"
+24460,inform,"spanish
+"
+24461,request,"what kind of food does it serve
+"
+24462,request,"phone number
+"
+24463,null,"nt care
+"
+24464,request,"whats the phone number
+"
+24465,thankyou,"thank you good bye
+"
+24466,request,"can i get address
+"
+24467,inform,"west
+"
+24468,inform,"im looking for a cheap restaurant in the south part of town
+"
+24469,affirm,"yes
+"
+24470,request,"what is the address
+"
+24471,bye,"okay good bye
+"
+24472,request,"do you have the phone number of the address
+"
+24473,request,"whats the address
+"
+24474,inform,"im looking for an expensive restaurant that serves gastropub food
+"
+24475,inform,"any part
+"
+24476,inform,"lebanese
+"
+24477,inform,"cheap restaurant
+"
+24478,inform,"english food
+"
+24479,reqalts,"is there anything else
+"
+24480,request,"address
+"
+24481,null,"inaudible
+"
+24482,inform,"indian food
+"
+24483,thankyou,"thank you good bye
+"
+24484,affirm,"yes
+"
+24485,request,"phone number
+"
+24486,thankyou,"thank you good bye
+"
+24487,request,"can i have the address
+"
+24488,thankyou,"thank you good bye
+"
+24489,thankyou,"thank you good bye
+"
+24490,inform,"south
+"
+24491,thankyou,"thank you good bye
+"
+24492,inform,"portuguese food
+"
+24493,request,"may i have the phone number to the turkiesh
+"
+24494,affirm,"yes
+"
+24495,request,"can i have the address
+"
+24496,inform,"i dont care
+"
+24497,inform,"south
+"
+24498,reqalts,"anything else
+"
+24499,inform,"cheap restaurant
+"
+24500,inform,"id like to find a restaurant serving crossover food
+"
+24501,request,"can i have the address
+"
+24502,null,"sil
+"
+24503,inform,"west
+"
+24504,request,"phone number
+"
+24505,inform,"doesnt matter
+"
+24506,request,"and can i have the address
+"
+24507,request,"whats the address
+"
+24508,inform,"indian
+"
+24509,inform,"i dont care
+"
+24510,thankyou,"thank you good bye
+"
+24511,request,"the address
+"
+24512,inform,"i need a moderately priced restaurant in the west part of town
+"
+24513,hello,"unintelligible hello
+"
+24514,affirm,"yes
+"
+24515,inform,"any area
+"
+24516,request,"phone number
+"
+24517,null,"i would like
+"
+24518,thankyou,"thank you good bye
+"
+24519,request,"phone number
+"
+24520,thankyou,"thank you good bye
+"
+24521,inform,"sea food
+"
+24522,reqalts,"is there anything else
+"
+24523,inform,"restaurant serving spanish food
+"
+24524,request,"phone number
+"
+24525,request,"whats the phone number
+"
+24526,inform,"cheap
+"
+24527,negate,"no
+"
+24528,thankyou,"thank you good bye
+"
+24529,inform,"italian food in the center
+"
+24530,inform,"i am looking for an expensive restaurant that serves australian food
+"
+24531,thankyou,"thank you good bye
+"
+24532,inform,"i am looking for persian food please
+"
+24533,inform,"vietnamese
+"
+24534,inform,"restaurant in the north part of town that serves hungarian food
+"
+24535,inform,"i want it in the north part of town
+"
+24536,thankyou,"thank you good bye
+"
+24537,request,"address
+"
+24538,request,"and their address
+"
+24539,reqalts,"how about portuguese food
+"
+24540,inform,"i want to find a moderately priced restaurant and it should be in the north part of town
+"
+24541,reqalts,"is there anything else
+"
+24542,request,"and what area of town is it in
+"
+24543,request,"an area
+"
+24544,thankyou,"thank you good bye
+"
+24545,request,"can i get the phone number
+"
+24546,bye,"okay thank you and good bye
+"
+24547,inform,"jamaican food
+"
+24548,thankyou,"thank you good bye
+"
+24549,request,"price range
+"
+24550,thankyou,"thank you good bye
+"
+24551,bye,"okay thank you and good bye
+"
+24552,thankyou,"thank you good bye
+"
+24553,inform,"turkish restaurant
+"
+24554,request,"i need the address
+"
+24555,inform,"austrian
+"
+24556,inform,"i would like an africa restaurant in the center
+"
+24557,thankyou,"thank you good bye
+"
+24558,inform,"korean food
+"
+24559,inform,"looking for a cheap restaurant in the east part of town
+"
+24560,inform,"could i have a restaurant that serves european food
+"
+24561,hello,"hello
+"
+24562,inform,"unintelligible food
+"
+24563,request,"what is the phone number
+"
+24564,thankyou,"thank you
+"
+24565,inform,"doesnt matter
+"
+24566,thankyou,"thank you good bye
+"
+24567,request,"phone number
+"
+24568,request,"address
+"
+24569,request,"phone number
+"
+24570,request,"their address
+"
+24571,thankyou,"thank you good bye
+"
+24572,inform,"japanese
+"
+24573,request,"type of food
+"
+24574,affirm,"yes
+"
+24575,reqalts,"how about cantonese food
+"
+24576,reqalts,"is there a restaurant serving thai food
+"
+24577,inform,"west part of town
+"
+24578,thankyou,"okay thank you good bye
+"
+24579,request,"phone number
+"
+24580,inform,"any kind
+"
+24581,inform,"chinese
+"
+24582,thankyou,"thank you good bye
+"
+24583,inform,"i want a cheap restaurant that serves cuban food
+"
+24584,negate,"no
+"
+24585,inform,"dont care
+"
+24586,request,"uh what is its address
+"
+24587,thankyou,"thank you good bye
+"
+24588,request,"what kind of food
+"
+24589,null,"unintelligible
+"
+24590,inform,"im looking for a cheap restaurant in the south part of town
+"
+24591,request,"what is the area
+"
+24592,bye,"good bye
+"
+24593,inform,"chinese food east part of town
+"
+24594,reqalts,"i want a different res
+"
+24595,request,"address
+"
+24596,inform,"i dont care
+"
+24597,request,"phone number
+"
+24598,inform,"moderate
+"
+24599,null,"sil
+"
+24600,negate,"no not noise
+"
+24601,inform,"international food in the west part of
+"
+24602,request,"whats the address
+"
+24603,inform,"moderately priced any foo
+"
+24604,inform,"north
+"
+24605,thankyou,"thank you good bye
+"
+24606,inform,"any
+"
+24607,request,"whats the phone number
+"
+24608,inform,"korean
+"
+24609,reqalts,"is there anything else
+"
+24610,inform,"thai
+"
+24611,request,"and the phone number
+"
+24612,request,"what is their special dish
+"
+24613,inform,"im looking for a restaurant
+"
+24614,thankyou,"thank you good bye
+"
+24615,reqalts,"anything else
+"
+24616,inform,"restaurant south part of town christmas food
+"
+24617,request,"what is the phone number
+"
+24618,request,"okay can i get the address
+"
+24619,request,"okay um whats the price range
+"
+24620,thankyou,"thank you good bye
+"
+24621,inform,"indian
+"
+24622,request,"phone number
+"
+24623,thankyou,"thank you good bye
+"
+24624,request,"do you have the address of the lucky star
+"
+24625,thankyou,"thank you goodbye
+"
+24626,request,"can i get the address and phone number
+"
+24627,request,"and whats the phone number
+"
+24628,request,"phone number
+"
+24629,reqalts,"okay how about an expensive
+"
+24630,request,"address
+"
+24631,reqalts,"how about international food
+"
+24632,request,"what do they serve
+"
+24633,request,"and what price range is that or nevermind
+"
+24634,request,"what is the phone number
+"
+24635,request,"address and phone number
+"
+24636,thankyou,"say thank you good bye
+"
+24637,request,"address
+"
+24638,request,"area
+"
+24639,reqalts,"next
+"
+24640,inform,"kosher food
+"
+24641,affirm,"ah yes that serves french food
+"
+24642,thankyou,"thank you good bye
+"
+24643,inform,"polynesian food
+"
+24644,request,"phone number
+"
+24645,inform,"i dont care
+"
+24646,request,"address
+"
+24647,request,"the area
+"
+24648,inform,"moderately priced restaurant in the south part of town
+"
+24649,inform,"italian
+"
+24650,inform,"i need a restaurant that serves asian oriental food
+"
+24651,request,"what is the phone number
+"
+24652,inform,"south town
+"
+24653,inform,"chineese
+"
+24654,thankyou,"thank you good bye
+"
+24655,reqmore,"more
+"
+24656,reqalts,"how about vietnamese food
+"
+24657,null,"noise
+"
+24658,affirm,"yes
+"
+24659,inform,"any
+"
+24660,request,"may i have the address
+"
+24661,inform,"im looking for something serves japanese food
+"
+24662,thankyou,"thank you good bye
+"
+24663,request,"can you give me the phone number
+"
+24664,inform,"welsh food
+"
+24665,affirm,"yes
+"
+24666,thankyou,"thank you good bye
+"
+24667,thankyou,"thank you good bye
+"
+24668,request,"what type of food
+"
+24669,reqalts,"is there anything else
+"
+24670,null,"okay
+"
+24671,inform,"i do not care
+"
+24672,request,"can i have the address
+"
+24673,inform,"spanish
+"
+24674,request,"what is the address
+"
+24675,bye,"good bye
+"
+24676,null,"sil
+"
+24677,inform,"turkey food
+"
+24678,reqalts,"is there anything else
+"
+24679,thankyou,"thank you good bye
+"
+24680,inform,"vietnamese
+"
+24681,request,"okay could you give me the phone number
+"
+24682,inform,"any kind
+"
+24683,inform,"expensive
+"
+24684,null,"unintelligible
+"
+24685,reqalts,"how about indian food
+"
+24686,thankyou,"thank you good bye
+"
+24687,thankyou,"thank you good bye
+"
+24688,thankyou,"thank you good bye
+"
+24689,request,"phone number please
+"
+24690,inform,"im looking for a restaurant that serves mexican food
+"
+24691,reqalts,"is there anything else
+"
+24692,request,"what type of food
+"
+24693,null,"id like to find
+"
+24694,inform,"in the north part of town
+"
+24695,inform,"im looking for a restaurant in the west part of town
+"
+24696,request,"whats the address
+"
+24697,thankyou,"thank you good bye
+"
+24698,null,"sil
+"
+24699,inform,"i need a restaurant that serves halal food
+"
+24700,request,"and the type of food
+"
+24701,null,"noise
+"
+24702,bye,"goodbye
+"
+24703,inform,"spanish food
+"
+24704,affirm,"ye
+"
+24705,inform,"im looking for a restaurant in the east part of town
+"
+24706,reqalts,"what about the north part of town
+"
+24707,request,"could i have the address and phone number of the venue
+"
+24708,inform,"moderate
+"
+24709,reqalts,"what about spanish
+"
+24710,inform,"is there one that serves creative food
+"
+24711,thankyou,"thank you good bye
+"
+24712,request,"address
+"
+24713,inform,"looking for cheap eritrean food
+"
+24714,thankyou,"thank you good bye
+"
+24715,reqalts,"what about any area
+"
+24716,negate,"no
+"
+24717,inform,"im looking for a restaurant in the west part
+"
+24718,request,"and the post code
+"
+24719,affirm,"yes
+"
+24720,request,"what is the address
+"
+24721,inform,"i dont care
+"
+24722,request,"address
+"
+24723,request,"phone number
+"
+24724,inform,"im looking for modern european food
+"
+24725,inform,"dont care
+"
+24726,affirm,"yes
+"
+24727,inform,"any type of food
+"
+24728,null,"inaudible
+"
+24729,thankyou,"thank you good bye
+"
+24730,request,"what is the address
+"
+24731,request,"what is the phone number and address
+"
+24732,inform,"i am looking for an expensive restaurant that serves australian food
+"
+24733,thankyou,"thank you goodbye
+"
+24734,reqalts,"how about chinese food
+"
+24735,request,"phone number
+"
+24736,null,"noise
+"
+24737,inform,"cheap restaurant
+"
+24738,request,"and what type of food do they serve
+"
+24739,inform,"any
+"
+24740,inform,"portuguese food
+"
+24741,thankyou,"um thank you goodbye
+"
+24742,thankyou,"thank you good bye
+"
+24743,thankyou,"thank you good bye
+"
+24744,null,"sil
+"
+24745,request,"phone number
+"
+24746,affirm,"noise yes
+"
+24747,inform,"i need a moderately priced restaurant in the south part of town
+"
+24748,thankyou,"thank you good bye
+"
+24749,inform,"any
+"
+24750,inform,"any
+"
+24751,inform,"i want a moderately priced restaurant that serves mediterranean food
+"
+24752,inform,"i dont care
+"
+24753,request,"phone number
+"
+24754,inform,"im looking for moderate priced restaurant in the west
+"
+24755,affirm,"yes
+"
+24756,inform,"im looking for a cheap restaurant that serves malaysian food
+"
+24757,inform,"expensive
+"
+24758,inform,"south
+"
+24759,inform,"i dont care
+"
+24760,request,"address
+"
+24761,inform,"dont care
+"
+24762,reqalts,"how about european food
+"
+24763,request,"addrss
+"
+24764,thankyou,"thank you good bye
+"
+24765,inform,"russian food
+"
+24766,request,"the phone number
+"
+24767,deny,"wrong
+"
+24768,thankyou,"thank you good bye
+"
+24769,inform,"an expensive restaurant in the south part of town
+"
+24770,request,"can i can i have the address and price
+"
+24771,inform,"scottish food
+"
+24772,request,"whats the phone number
+"
+24773,thankyou,"thank you good bye
+"
+24774,null,"sil
+"
+24775,confirm,"does it serve korean
+"
+24776,inform,"moderately priced restaurant
+"
+24777,request,"what is the address and price range
+"
+24778,request,"could you give me a address
+"
+24779,null,"unintelligible
+"
+24780,request,"what is the price range
+"
+24781,request,"whats the address
+"
+24782,request,"phone number
+"
+24783,inform,"asian oriental food
+"
+24784,negate,"no
+"
+24785,reqalts,"next
+"
+24786,thankyou,"thank you good bye
+"
+24787,request,"whats the address
+"
+24788,request,"phone number
+"
+24789,inform,"east
+"
+24790,request,"address
+"
+24791,inform,"im looking for a restaurant in the east part of the town with indian asian food
+"
+24792,negate,"no
+"
+24793,inform,"cheap restaurant north part of town
+"
+24794,request,"what is the post code
+"
+24795,inform,"do not care
+"
+24796,request,"address
+"
+24797,thankyou,"thank you good bye
+"
+24798,inform,"i dont care
+"
+24799,affirm,"yes an expensive restaurant serving african food
+"
+24800,inform,"i dont care
+"
+24801,confirm,"okay is there a chinese restaurant in the north part of town
+"
+24802,confirm,"does it serve canapes food noise
+"
+24803,request,"address
+"
+24804,inform,"doesnt matter
+"
+24805,request,"what is the phone number
+"
+24806,inform,"i dont care
+"
+24807,affirm,"right
+"
+24808,request,"phone number
+"
+24809,request,"whats the phone number
+"
+24810,thankyou,"thank you goodbye
+"
+24811,reqalts,"something else
+"
+24812,request,"could i have the address phone number and area
+"
+24813,affirm,"yes
+"
+24814,thankyou,"thank you good bye
+"
+24815,request,"what is the address
+"
+24816,reqalts,"is there anything else
+"
+24817,inform,"international
+"
+24818,inform,"catalan
+"
+24819,thankyou,"thank you good bye
+"
+24820,thankyou,"thank you good bye
+"
+24821,null,"sil
+"
+24822,request,"address
+"
+24823,reqalts,"how about italian food
+"
+24824,request,"phone number
+"
+24825,thankyou,"thank you good bye
+"
+24826,reqalts,"anything else
+"
+24827,request,"what is the address phone number and post code
+"
+24828,thankyou,"thank you goodbye
+"
+24829,thankyou,"thank you good bye
+"
+24830,inform,"korean food
+"
+24831,request,"can i get the phone number
+"
+24832,thankyou,"thank you good bye
+"
+24833,inform,"i dont care
+"
+24834,thankyou,"thank you good bye
+"
+24835,inform,"chinese food
+"
+24836,request,"whats the type of food
+"
+24837,inform,"i dont care
+"
+24838,thankyou,"thank you good bye
+"
+24839,thankyou,"thank you good bye
+"
+24840,request,"whats the address
+"
+24841,inform,"moderate
+"
+24842,inform,"i dont care about the price range
+"
+24843,inform,"im looking for eritrean food
+"
+24844,request,"whats the post code
+"
+24845,inform,"spanish
+"
+24846,thankyou,"thank you good bye
+"
+24847,request,"address
+"
+24848,inform,"it doesnt matter
+"
+24849,request,"address
+"
+24850,inform,"any
+"
+24851,thankyou,"thank you good bye
+"
+24852,thankyou,"thank you good bye
+"
+24853,inform,"it doesnt matter
+"
+24854,thankyou,"okay thank you good bye
+"
+24855,request,"address and phone number
+"
+24856,reqalts,"is there anything else
+"
+24857,inform,"system im looking for expensive restaurant
+"
+24858,request,"address
+"
+24859,request,"uh whats the price range
+"
+24860,inform,"cantonese
+"
+24861,request,"phone number
+"
+24862,request,"whats the address
+"
+24863,request,"what is the address
+"
+24864,negate,"no
+"
+24865,request,"area
+"
+24866,request,"address
+"
+24867,inform,"christmas food
+"
+24868,request,"post code
+"
+24869,request,"address
+"
+24870,inform,"any type of food
+"
+24871,inform,"expensive
+"
+24872,inform,"christmas food west of town
+"
+24873,request,"phone number
+"
+24874,null,"noise
+"
+24875,request,"whats the phone number and address
+"
+24876,request,"phone number
+"
+24877,inform,"breath can i get a restaurant serving chinese food
+"
+24878,inform,"looking for a cheap restaurant in the west part of town
+"
+24879,request,"phone number
+"
+24880,request,"address
+"
+24881,request,"can i have the address and phone number please
+"
+24882,confirm,"is there a portugeuse food
+"
+24883,inform,"lebanese food
+"
+24884,request,"area
+"
+24885,request,"may i have the address and post code
+"
+24886,thankyou,"thank you goodbye
+"
+24887,reqalts,"how about korean food
+"
+24888,affirm,"yes
+"
+24889,inform,"north
+"
+24890,reqalts,"what about asian oriental
+"
+24891,inform,"moderate
+"
+24892,thankyou,"thank you good bye
+"
+24893,inform,"in the west
+"
+24894,request,"and the phone number
+"
+24895,inform,"international
+"
+24896,thankyou,"thank you good bye
+"
+24897,affirm,"yes
+"
+24898,request,"what is the phone number
+"
+24899,thankyou,"thank you good bye
+"
+24900,negate,"no
+"
+24901,inform,"i need a restaurant in the north
+"
+24902,inform,"any part of town
+"
+24903,inform,"im looking for an expensive restaurant
+"
+24904,bye,"good bye
+"
+24905,affirm,"yes
+"
+24906,inform,"international
+"
+24907,request,"whats the addre
+"
+24908,null,"noise
+"
+24909,inform,"any kind
+"
+24910,null,"noise
+"
+24911,inform,"i want to find a moderately priced restaurant
+"
+24912,request,"what type of food
+"
+24913,inform,"any
+"
+24914,thankyou,"thank you good bye
+"
+24915,inform,"spanish food
+"
+24916,reqalts,"how about vietnamese food
+"
+24917,inform,"i dont care
+"
+24918,bye,"okay good bye
+"
+24919,thankyou,"thank you good bye
+"
+24920,null,"noise
+"
+24921,request,"whats the address
+"
+24922,request,"address
+"
+24923,inform,"south
+"
+24924,request,"whats the post code
+"
+24925,request,"what is the phone number and price range
+"
+24926,reqalts,"is there anything else
+"
+24927,request,"price range
+"
+24928,thankyou,"thank you good bye
+"
+24929,thankyou,"thank you good bye
+"
+24930,inform,"im looking for an expensive restaurant serving kitalian food
+"
+24931,request,"whats the phone number
+"
+24932,request,"can i get the address
+"
+24933,inform,"any area
+"
+24934,negate,"no
+"
+24935,inform,"catalan
+"
+24936,inform,"any
+"
+24937,inform,"im looking for swedish food
+"
+24938,reqalts,"how about thai food
+"
+24939,inform,"east
+"
+24940,request,"what is the address
+"
+24941,thankyou,"um thank you goodbye
+"
+24942,thankyou,"thank you good bye
+"
+24943,thankyou,"thank you good bye
+"
+24944,request,"can i get the phone number and price range
+"
+24945,thankyou,"thank you good bye
+"
+24946,request,"phone number
+"
+24947,inform,"doesnt matter
+"
+24948,request,"type of food
+"
+24949,thankyou,"thank you good bye
+"
+24950,thankyou,"thank you good bye
+"
+24951,request,"address
+"
+24952,inform,"cheap
+"
+24953,request,"phone number
+"
+24954,inform,"south
+"
+24955,inform,"c h e a p cheap
+"
+24956,thankyou,"thank you goodbye
+"
+24957,null,"sil
+"
+24958,affirm,"yes
+"
+24959,affirm,"thats correct
+"
+24960,inform,"im looking for an expensive restaurant in the south part of town
+"
+24961,inform,"the west part of town
+"
+24962,thankyou,"thank you good bye
+"
+24963,inform,"id like a cheap restaurant in the north part of town
+"
+24964,reqalts,"is there anything else
+"
+24965,thankyou,"thank you good bye
+"
+24966,inform,"north
+"
+24967,inform,"im looking for a cheap restaurant in the west part of town
+"
+24968,inform,"im looking for a restaurant in the east part of town
+"
+24969,inform,"im looking for a restaurant in the west part of town that serves
+"
+24970,request,"post code
+"
+24971,inform,"portuguese
+"
+24972,reqalts,"how about mediterranean food
+"
+24973,request,"can i have their address and phone number
+"
+24974,inform,"i need a cheap restaurant
+"
+24975,inform,"moderately priced
+"
+24976,inform,"doesnt matter
+"
+24977,inform,"any
+"
+24978,request,"what type of food do they serve
+"
+24979,inform,"moderate
+"
+24980,request,"whats the price range
+"
+24981,null,"noise
+"
+24982,affirm,"yes
+"
+24983,affirm,"yes
+"
+24984,inform,"looking for a restaurant in the east part of town
+"
+24985,request,"phone number
+"
+24986,thankyou,"thank you good bye
+"
+24987,inform,"north
+"
+24988,inform,"im looking for a cheap restaurant
+"
+24989,request,"whats their address
+"
+24990,thankyou,"thank you good bye
+"
+24991,inform,"any
+"
+24992,null,"what
+"
+24993,inform,"mediterranean food
+"
+24994,inform,"lebanse
+"
+24995,thankyou,"thank you good bye
+"
+24996,inform,"i dont care
+"
+24997,inform,"im looking for an expensive restaurant in the east part
+"
+24998,affirm,"yes
+"
+24999,inform,"asian oriental food
+"
+25000,request,"address
+"
+25001,reqalts,"anything house
+"
+25002,inform,"south part of town
+"
+25003,inform,"italian
+"
+25004,thankyou,"okay thank you good bye
+"
+25005,request,"could have its phone number
+"
+25006,thankyou,"thank you good bye
+"
+25007,request,"address
+"
+25008,request,"what type of food
+"
+25009,request,"what is the address and postcode
+"
+25010,null,"unintelligible
+"
+25011,request,"and the post code
+"
+25012,thankyou,"thank you good bye
+"
+25013,thankyou,"thank you good bye
+"
+25014,thankyou,"thank you good bye
+"
+25015,request,"address
+"
+25016,inform,"chinese food
+"
+25017,inform,"any
+"
+25018,reqalts,"how about rest of town
+"
+25019,inform,"cheap
+"
+25020,thankyou,"thank you good bye
+"
+25021,inform,"i want to find a moderately priced restaurant in the east part town
+"
+25022,affirm,"yes
+"
+25023,inform,"thai
+"
+25024,request,"what is the address
+"
+25025,request,"whats the price range
+"
+25026,inform,"chinese food
+"
+25027,thankyou,"thank you good bye
+"
+25028,inform,"south
+"
+25029,thankyou,"thank you good bye
+"
+25030,request,"can i get the phone number
+"
+25031,null,"is there
+"
+25032,request,"and what is the post code
+"
+25033,request,"what type of food do they serve
+"
+25034,request,"and the area
+"
+25035,inform,"moderately priced
+"
+25036,inform,"can i have an expensive restaurant
+"
+25037,inform,"looking for a cuban food restaurant
+"
+25038,request,"can i have the phone number
+"
+25039,inform,"uh center
+"
+25040,request,"what is the price range
+"
+25041,thankyou,"thank you
+"
+25042,inform,"swedish food
+"
+25043,thankyou,"thank you good bye
+"
+25044,null,"that serves unintelligible
+"
+25045,request,"phone number
+"
+25046,request,"whats the address
+"
+25047,request,"and postcode
+"
+25048,inform,"type food
+"
+25049,inform,"vietnamese food
+"
+25050,negate,"no
+"
+25051,thankyou,"thank you good bye
+"
+25052,inform,"moderately
+"
+25053,thankyou,"thank you goodbye
+"
+25054,request,"phone number
+"
+25055,confirm,"is it in the center of town
+"
+25056,inform,"any
+"
+25057,null,"sil
+"
+25058,request,"my i have the phone number
+"
+25059,bye,"good bye
+"
+25060,reqalts,"how about a moderately priced
+"
+25061,inform,"australian
+"
+25062,inform,"mexican food
+"
+25063,request,"and whats the post code
+"
+25064,inform,"im looking for a restaurant in any area that
+"
+25065,thankyou,"thank you good bye
+"
+25066,affirm,"yes
+"
+25067,inform,"moderately priced
+"
+25068,inform,"ah what have you got for thai food
+"
+25069,thankyou,"thank you good bye
+"
+25070,thankyou,"thank you good bye
+"
+25071,inform,"im looking for a restaurant in the west part of town
+"
+25072,thankyou,"thank you good bye
+"
+25073,request,"the address and phone number
+"
+25074,inform,"im looking for a moderately priced restaurant that serves sea food
+"
+25075,null,"noise
+"
+25076,request,"phone number
+"
+25077,bye,"alright thank you good bye
+"
+25078,reqalts,"anything else
+"
+25079,inform,"im looking for a restaurant in the south part of town
+"
+25080,request,"what is the phone number
+"
+25081,inform,"im looking for a restaurant that serves polynesian food
+"
+25082,thankyou,"thank you good bye
+"
+25083,inform,"im looking for a restaurant in the west part of town
+"
+25084,inform,"cheap
+"
+25085,inform,"doesnt matter
+"
+25086,inform,"european now
+"
+25087,inform,"like a restaurant that serves asian oriental
+"
+25088,inform,"kosher for in the central
+"
+25089,inform,"north part of town
+"
+25090,confirm,"is it in the center
+"
+25091,thankyou,"thank you goodbye
+"
+25092,request,"i would like the address and phone number
+"
+25093,thankyou,"thank you good bye
+"
+25094,bye,"okay forget it goodbye
+"
+25095,inform,"italian food
+"
+25096,request,"what is the phone numbere
+"
+25097,request,"phone number
+"
+25098,reqalts,"what about a restaurant that serves chinese food
+"
+25099,affirm,"ye
+"
+25100,reqalts,"is there a restaurant that serves vietnamese food
+"
+25101,inform,"im looking for a expensive restaurant that serves indonesian food
+"
+25102,inform,"moderately priced
+"
+25103,inform,"any price range
+"
+25104,thankyou,"thank you good bye
+"
+25105,inform,"looking for a moderately priced restaurant in the east part of town
+"
+25106,inform,"in the west part of town
+"
+25107,reqalts,"how about asian oriental
+"
+25108,inform,"i want a cheap restaurant that serves unusual food
+"
+25109,request,"phone number
+"
+25110,inform,"british
+"
+25111,reqalts,"what about italian
+"
+25112,request,"what is the address
+"
+25113,inform,"thai food
+"
+25114,reqalts,"anything else
+"
+25115,reqalts,"is there anything else
+"
+25116,request,"address
+"
+25117,request,"what is the type of food
+"
+25118,null,"system
+"
+25119,inform,"i need a restaurant in the center of town that includes international food
+"
+25120,inform,"north
+"
+25121,reqalts,"how about british type of food
+"
+25122,request,"what is the type of food
+"
+25123,thankyou,"thank you good bye
+"
+25124,inform,"expensive
+"
+25125,affirm,"yes
+"
+25126,bye,"you good bye
+"
+25127,request,"post code
+"
+25128,thankyou,"thank you good bye
+"
+25129,null,"noise
+"
+25130,inform,"i dont care
+"
+25131,inform,"the center of town
+"
+25132,inform,"any area expensive price range
+"
+25133,reqalts,"are there any other expensive restaurants in the east part of town
+"
+25134,inform,"any
+"
+25135,inform,"im looking for a restaurant in the center
+"
+25136,thankyou,"thank you good bye
+"
+25137,inform,"indian
+"
+25138,affirm,"yes
+"
+25139,inform,"barbecue food
+"
+25140,inform,"gastro pub food
+"
+25141,inform,"lebanese
+"
+25142,request,"location
+"
+25143,inform,"is there any expensive restaurant
+"
+25144,reqalts,"is there anything else
+"
+25145,request,"and the post code
+"
+25146,reqalts,"how bout the center part of town
+"
+25147,null,"sil
+"
+25148,negate,"no is there anything else
+"
+25149,inform,"in the north part of town
+"
+25150,inform,"south
+"
+25151,inform,"italian
+"
+25152,request,"what is the phone number
+"
+25153,inform,"id like a restaurant that serves gastropub food
+"
+25154,inform,"i would like australian asian food
+"
+25155,request,"phone number
+"
+25156,request,"whats the address
+"
+25157,thankyou,"thank you good bye
+"
+25158,thankyou,"thank you goodbye
+"
+25159,request,"post code
+"
+25160,reqalts,"how about asian oriental food
+"
+25161,thankyou,"thank you good bye
+"
+25162,request,"okay can i have the address
+"
+25163,reqalts,"other
+"
+25164,inform,"sea food
+"
+25165,inform,"i want a modern european food
+"
+25166,request,"type of food
+"
+25167,thankyou,"thank you good bye
+"
+25168,inform,"expensive
+"
+25169,inform,"center
+"
+25170,inform,"noise i dont care about the price range
+"
+25171,inform,"international
+"
+25172,affirm,"yes
+"
+25173,thankyou,"thank you good bye
+"
+25174,null,"system
+"
+25175,thankyou,"thank you good bye
+"
+25176,request,"phone number
+"
+25177,request,"phone number
+"
+25178,inform,"spanish
+"
+25179,inform,"im looking for a restaurant in the east part of town that serves british food
+"
+25180,inform,"i want a restaurant in the north part of town
+"
+25181,thankyou,"thank you good bye
+"
+25182,inform,"im looking for a cheap restaurant in the north part of town
+"
+25183,inform,"could i have a restaurant in the center
+"
+25184,request,"phone number and price range
+"
+25185,inform,"moderate west
+"
+25186,inform,"im looking for a cheap restaurant in the north part of town
+"
+25187,inform,"dont care
+"
+25188,reqalts,"how about indian food
+"
+25189,inform,"im looking for a restaurant in the north part of town and it should serve
+"
+25190,reqalts,"is there anything else
+"
+25191,inform,"international food
+"
+25192,request,"the address
+"
+25193,null,"unintelligible
+"
+25194,inform,"im looking for an expensive restauran
+"
+25195,null,"unintelligible
+"
+25196,request,"what is the phone number
+"
+25197,request,"address
+"
+25198,inform,"any
+"
+25199,inform,"expensive
+"
+25200,thankyou,"thank you good bye
+"
+25201,inform,"any kind
+"
+25202,inform,"doesnt matter
+"
+25203,request,"address and post code
+"
+25204,inform,"any area
+"
+25205,request,"phone number
+"
+25206,reqalts,"anything else
+"
+25207,inform,"chinese food
+"
+25208,request,"and whats their phone number
+"
+25209,inform,"gastropub food
+"
+25210,request,"area
+"
+25211,inform,"it doesnt matter
+"
+25212,inform,"india
+"
+25213,inform,"british food
+"
+25214,inform,"north american food
+"
+25215,inform,"cheap restaurant mediterranean food
+"
+25216,inform,"the center
+"
+25217,request,"whats the address
+"
+25218,inform,"french food
+"
+25219,inform,"im looking for british food
+"
+25220,inform,"im looking for a restaurant that serves indian food
+"
+25221,inform,"im looking for a restaurant that serves irish food
+"
+25222,affirm,"yes id like to find a cheap restaurant in the north part of town
+"
+25223,inform,"expensive
+"
+25224,inform,"cheap
+"
+25225,request,"part of town
+"
+25226,request,"whats the phone number
+"
+25227,reqalts,"how about italian
+"
+25228,null,"sil
+"
+25229,inform,"im looking for an expensive restaurant in the south part of town
+"
+25230,inform,"im looking for traditional food
+"
+25231,request,"phone number
+"
+25232,inform,"cuban food
+"
+25233,request,"could i have the address and phone number
+"
+25234,inform,"vietnamese
+"
+25235,inform,"i want to find a cheap restaurant and it should be in the north part of
+"
+25236,null,"cough
+"
+25237,inform,"moderately priced
+"
+25238,request,"what price range is this venue
+"
+25239,request,"address
+"
+25240,request,"could i have their phone number and address please
+"
+25241,inform,"i dont care
+"
+25242,inform,"chinese food
+"
+25243,inform,"cheap
+"
+25244,thankyou,"thank you good bye
+"
+25245,inform,"expensive
+"
+25246,thankyou,"thank you good bye
+"
+25247,inform,"i dont care
+"
+25248,affirm,"yes
+"
+25249,inform,"looking for a moderately priced restaurant that serves brazilian
+"
+25250,request,"phone number
+"
+25251,reqalts,"what else
+"
+25252,thankyou,"thank you good bye
+"
+25253,affirm,"uh huh
+"
+25254,inform,"chinese food please
+"
+25255,inform,"im looking for an expensive restaurant in the east part of town
+"
+25256,deny,"dont want that
+"
+25257,thankyou,"thank you good bye
+"
+25258,inform,"that should be in the east part of town
+"
+25259,inform,"british food
+"
+25260,inform,"i want a restaurant in the center of town
+"
+25261,affirm,"yes
+"
+25262,request,"can i get their address and phone number
+"
+25263,request,"what type of food is it
+"
+25264,request,"what is their post code
+"
+25265,thankyou,"thank you good bye
+"
+25266,request,"and whats the phone number
+"
+25267,thankyou,"thank you good bye
+"
+25268,affirm,"yes
+"
+25269,request,"address
+"
+25270,thankyou,"thank you goodbye
+"
+25271,inform,"cheap
+"
+25272,negate,"no caribbean
+"
+25273,thankyou,"okay thank you good bye
+"
+25274,inform,"moderate
+"
+25275,thankyou,"thank you good bye
+"
+25276,inform,"afghan
+"
+25277,affirm,"yes
+"
+25278,reqalts,"is there anything else
+"
+25279,request,"and whats the price range
+"
+25280,inform,"indian
+"
+25281,thankyou,"thank you good bye
+"
+25282,request,"what is their phone number
+"
+25283,negate,"um no
+"
+25284,inform,"im searching for mediterranean food
+"
+25285,inform,"anything
+"
+25286,inform,"is there an indian restaurant the east of town
+"
+25287,inform,"it doesnt matter dear
+"
+25288,inform,"the expensive
+"
+25289,request,"what is the address
+"
+25290,request,"i need the address phone number and post code
+"
+25291,null,"noise
+"
+25292,inform,"i want indonesian food
+"
+25293,request,"phone number
+"
+25294,inform,"noise looking for an expensive restaurant
+"
+25295,request,"phone number
+"
+25296,inform,"any
+"
+25297,inform,"east
+"
+25298,reqalts,"is there another restaurant
+"
+25299,request,"the address
+"
+25300,inform,"im looking for a restaurant in the north
+"
+25301,inform,"im looking for a restaurant that has unintelligible
+"
+25302,inform,"eritrean food noise
+"
+25303,request,"may i have the phone number
+"
+25304,inform,"any
+"
+25305,affirm,"yes
+"
+25306,request,"what is the address and phone number
+"
+25307,inform,"im looking for a cheap restaurant in the east part of town
+"
+25308,null,"sil
+"
+25309,reqalts,"how about indian food
+"
+25310,thankyou,"thank you goodbye
+"
+25311,inform,"im looking for a restaurant in the east part of town that serves spanish food
+"
+25312,null,"noise
+"
+25313,hello,"hello and welcome to the cambridge
+"
+25314,null,"unintelligible
+"
+25315,inform,"i want a restaurant that serves creative food
+"
+25316,request,"whats the phone number
+"
+25317,request,"whats the address
+"
+25318,affirm,"yes
+"
+25319,inform,"id like a restaurant in the north part of town serving indian food
+"
+25320,request,"whats the address
+"
+25321,request,"no price
+"
+25322,inform,"yea im looking for a moderately priced restaurant
+"
+25323,inform,"italian
+"
+25324,reqalts,"are there any restaurants serving indian food
+"
+25325,null,"can i have an
+"
+25326,null,"noise
+"
+25327,request,"okay can i have the address and the phone number please
+"
+25328,thankyou,"thank you good bye
+"
+25329,negate,"no
+"
+25330,null,"now
+"
+25331,negate,"no
+"
+25332,inform,"west
+"
+25333,null,"noise
+"
+25334,inform,"south
+"
+25335,inform,"north american
+"
+25336,null,"sil
+"
+25337,inform,"oh anything
+"
+25338,inform,"expensive
+"
+25339,reqalts,"how about a gastropub
+"
+25340,inform,"thai food
+"
+25341,null,"noise
+"
+25342,inform,"moderately priced swedish food
+"
+25343,inform,"british food
+"
+25344,inform,"west
+"
+25345,null,"sil
+"
+25346,null,"noise
+"
+25347,thankyou,"thank you good bye
+"
+25348,inform,"east side
+"
+25349,inform,"doesnt matter
+"
+25350,inform,"cuban food
+"
+25351,affirm,"yes
+"
+25352,inform,"belgian
+"
+25353,inform,"expensive
+"
+25354,thankyou,"thank you good bye
+"
+25355,inform,"indian food
+"
+25356,inform,"vietnam
+"
+25357,affirm,"yes
+"
+25358,thankyou,"thank you good bye
+"
+25359,confirm,"is there a chinese food
+"
+25360,confirm,"is it moderately priced
+"
+25361,request,"phone number and area
+"
+25362,inform,"i dont care
+"
+25363,request,"what is the address
+"
+25364,bye,"okay bye
+"
+25365,request,"what is the address
+"
+25366,inform,"moderate price range
+"
+25367,request,"what is the phone number
+"
+25368,inform,"uh what about modern european
+"
+25369,request,"what is the phone number
+"
+25370,request,"what is the phone number
+"
+25371,thankyou,"thank you good bye
+"
+25372,inform,"looking for a restaurant
+"
+25373,inform,"catalan
+"
+25374,inform,"scandinavian food
+"
+25375,reqalts,"how about indian type of food
+"
+25376,inform,"west part
+"
+25377,request,"phone number
+"
+25378,negate,"no
+"
+25379,inform,"seafood
+"
+25380,request,"what is the phone number
+"
+25381,inform,"moderate price
+"
+25382,request,"phone number
+"
+25383,request,"and can you tell me the post code
+"
+25384,thankyou,"thank you good bye
+"
+25385,inform,"im looking for a cheap restaurant in the south part of town
+"
+25386,inform,"gastropub
+"
+25387,inform,"cheap price range
+"
+25388,inform,"well i dont care about the price range
+"
+25389,reqalts,"okay fine what about asian food
+"
+25390,null,"noise
+"
+25391,request,"can i get the address and phone number
+"
+25392,inform,"it doesnt matter
+"
+25393,inform,"im looking for a moderately priced restaurant that serves labenese food
+"
+25394,inform,"i need to find one in the south part of town
+"
+25395,null,"whats the code
+"
+25396,affirm,"yes
+"
+25397,reqalts,"how about asian oriental
+"
+25398,inform,"any area
+"
+25399,request,"area of venue
+"
+25400,inform,"indian food
+"
+25401,thankyou,"thank you good bye
+"
+25402,request,"address phone number price range
+"
+25403,thankyou,"thank you good bye
+"
+25404,inform,"any
+"
+25405,thankyou,"thank you good bye
+"
+25406,null,"now
+"
+25407,request,"can i get the address
+"
+25408,inform,"im looking for a restaurant that serves vegetarian food
+"
+25409,request,"what is the address
+"
+25410,request,"what type of food does it serve
+"
+25411,null,"sil
+"
+25412,request,"price range
+"
+25413,request,"and the address
+"
+25414,inform,"spanish food
+"
+25415,request,"can i have the address
+"
+25416,request,"whats the address and phone number
+"
+25417,inform,"asian
+"
+25418,negate,"no thank you good bye
+"
+25419,inform,"im looking for a restaurant that serves world food
+"
+25420,thankyou,"breath thank you goodbye
+"
+25421,request,"can i get the phone number
+"
+25422,inform,"im looking for an expensive restaurant in the south part of town
+"
+25423,inform,"iam looking for a restaurant in the center
+"
+25424,inform,"north
+"
+25425,confirm,"is that persian food
+"
+25426,thankyou,"thank you goodbye
+"
+25427,inform,"thai food
+"
+25428,negate,"no
+"
+25429,reqalts,"anything else
+"
+25430,thankyou,"thank you good bye
+"
+25431,reqalts,"how about portuguese food
+"
+25432,reqalts,"how about turkish
+"
+25433,inform,"any price range
+"
+25434,thankyou,"thank you good bye
+"
+25435,inform,"um im trying to find a restaurant in the unintelligible of town
+"
+25436,inform,"chinese
+"
+25437,inform,"id like an expensive restaurant that serves fusion food
+"
+25438,request,"whats the address phone number and post code
+"
+25439,inform,"im looking for a cheap restaurant in the south part of town
+"
+25440,request,"can i have the address and phone number
+"
+25441,null,"sil
+"
+25442,reqalts,"give me something else
+"
+25443,request,"good whats the address
+"
+25444,request,"what is the phone number
+"
+25445,request,"what is the price range
+"
+25446,confirm,"does it serve canapes food
+"
+25447,reqalts,"how about spanish food
+"
+25448,inform,"south of town
+"
+25449,request,"price range
+"
+25450,inform,"italian
+"
+25451,negate,"no
+"
+25452,inform,"turkish
+"
+25453,request,"what type of food does the venue
+"
+25454,request,"type of food
+"
+25455,inform,"asian oriental type of food
+"
+25456,request,"price range
+"
+25457,reqalts,"how about international type of food
+"
+25458,thankyou,"thank you good bye
+"
+25459,inform,"im looking for an expensive restaurant in the south part of town
+"
+25460,request,"address
+"
+25461,thankyou,"thank you good bye
+"
+25462,inform,"looking for moderately priced restaurant in the north part of town
+"
+25463,inform,"i want to find an expensive restaurant in the south part of town
+"
+25464,null,"noise
+"
+25465,inform,"gastropub food
+"
+25466,inform,"center
+"
+25467,reqalts,"anything else
+"
+25468,null,"okay
+"
+25469,inform,"gastropub
+"
+25470,inform,"any
+"
+25471,affirm,"yes
+"
+25472,confirm,"does it serve canapes food
+"
+25473,reqalts,"anything else
+"
+25474,inform,"may i have the cheap restaurant in the south part of town
+"
+25475,reqalts,"is there anything else
+"
+25476,bye,"good bye
+"
+25477,request,"whats the phone number of burger kitchen
+"
+25478,inform,"mexican
+"
+25479,thankyou,"thank you good bye
+"
+25480,request,"may i have the phone number please
+"
+25481,inform,"restaurant in north part of town
+"
+25482,inform,"expensive european food
+"
+25483,inform,"uh the center
+"
+25484,inform,"east
+"
+25485,null,"sil
+"
+25486,reqalts,"is there anything else
+"
+25487,inform,"im trying to find a cheap restaurant in the east of town
+"
+25488,thankyou,"thank you good bye
+"
+25489,reqalts,"how about italian food
+"
+25490,inform,"i dont care
+"
+25491,inform,"moderate
+"
+25492,inform,"any
+"
+25493,thankyou,"thank you
+"
+25494,null,"unintelligible
+"
+25495,inform,"expensive
+"
+25496,null,"noise
+"
+25497,inform,"im looking for a restaurant in the north part of town that serves belgian food
+"
+25498,thankyou,"thank you goodbye
+"
+25499,request,"address
+"
+25500,null,"sil
+"
