@@ -1,5 +1,4 @@
 from sklearn.feature_extraction.text import CountVectorizer
-import numpy as np
 import pandas as pd
 
 
@@ -12,6 +11,14 @@ def create_bag_of_words(dataframe: pd.DataFrame):
     vocab = vectorizer.fit_transform(corpus)
 
     return vocab.toarray(), vectorizer
+
+
+def transform_to_bag_of_words(vectorizer, dataframe: pd.DataFrame):
+    sentences = []
+    for _, row in dataframe.iterrows():
+        sentences.append(row['utterance'])
+    embedded_sentences = vectorizer.transform(sentences)
+    return embedded_sentences.toarray()
 
 
 def create_list_of_labels(dataframe: pd.DataFrame):
