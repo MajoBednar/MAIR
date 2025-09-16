@@ -84,6 +84,48 @@ def always_label_inform(df):
     performance = correct_labeled/total 
     return performance
 
+
+"""
+Method that implements baseline rules found from empirical evulation of the dataset.
+Applying these rules gives and approximate performance of 0.86
+"""
+def baseline_rules(df):
+    # Number of total utterances 
+    compare_df = df.copy()
+    total = len(df)
+
+    # Set standard label to inform 
+    df['dialog_act'] = 'inform'
+
+    # If yes is in utterance label affirm 
+    df.loc[df['utterance'].str.contains('yes', case=False, na=False), 'dialog_act'] = 'affirm'
+    
+    # If goodbye or bye is in utterance label bye 
+    df.loc[df['utterance'].str.contains('bye|goodbye', case=False, na=False), 'dialog_act'] = 'bye'
+
+    # If the word no is in utterance label negate 
+    df.loc[df['utterance'].str.contains(r'\bno\b', case=False, na=False), 'dialog_act'] = 'negate'
+
+    # If thank is in utterance label thankyou 
+    df.loc[df['utterance'].str.contains('thank', case=False, na=False), 'dialog_act'] = 'thankyou'
+
+    # If cough, unintelligible, noise or sil is in utterance label null 
+    df.loc[df['utterance'].str.contains('cough|unintelligible|noise|sil', case=False, na=False), 'dialog_act'] = 'null'
+
+    # If Phone number, address, post code or postcode is in utterance label request 
+    df.loc[df['utterance'].str.contains('phone number|address|post code|what|postcode', case=False, na=False), 'dialog_act'] = 'request'
+
+    # If another is in utternce label requalts 
+    df.loc[df['utterance'].str.contains('another', case=False, na=False), 'dialog_act'] = 'requalts'
+
+    # Calculate the correct labeled dialog acts
+    matches = (df["dialog_act"] == compare_df["dialog_act"])
+    
+    correct_labeled = matches.sum()
+
+    performance = correct_labeled/total 
+    return performance
+
 def main():
     #Create dataframes and output length 
     dialog_data = read_dialog_file()
