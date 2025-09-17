@@ -1,5 +1,5 @@
 from ui import select_dataset, select_model
-from ml_models import MLModel
+from ml_models import MLModel, DecisionTree, LogReg, MLP
 from bow import transform_to_bag_of_words, create_list_of_labels, create_list_of_utterances
 
 
