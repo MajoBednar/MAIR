@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 """
 Reads the dialog data and puts it in a dataframe with two collumns:
@@ -99,13 +100,13 @@ class BaselineRules:
         predictions = []
         for utterance in features:
             prediction = 'inform'
-            prediction = 'affirm' if utterance.contains('yes', case=False, na=False) else prediction
-            prediction = 'bye' if utterance.contains('bye|goodbye', case=False, na=False) else prediction
-            prediction = 'negate' if utterance.contains(r'\bno\b', case=False, na=False) else prediction
-            prediction = 'thankyou' if utterance.contains('thank', case=False, na=False) else prediction
-            prediction = 'null' if utterance.contains('cough|unintelligible|noise|sil', case=False, na=False) else prediction
-            prediction = 'request' if utterance.contains('phone number|address|post code|what|postcode', case=False, na=False) else prediction
-            prediction = 'requalts' if utterance.contains('another', case=False, na=False) else prediction
+            prediction = 'affirm' if bool(re.search('yes', utterance, flags=re.IGNORECASE)) else prediction
+            prediction = 'bye' if bool(re.search('bye|goodbye', utterance, flags=re.IGNORECASE)) else prediction
+            prediction = 'negate' if bool(re.search(r'\bno\b', utterance, flags=re.IGNORECASE)) else prediction
+            prediction = 'thankyou' if bool(re.search('thank', utterance, flags=re.IGNORECASE)) else prediction
+            prediction = 'null' if bool(re.search('cough|unintelligible|noise|sil', utterance, flags=re.IGNORECASE)) else prediction
+            prediction = 'request' if bool(re.search('phone number|address|post code|what|postcode', utterance, flags=re.IGNORECASE)) else prediction
+            prediction = 'requalts' if bool(re.search('another', utterance, flags=re.IGNORECASE)) else prediction
             predictions.append(prediction)
         return predictions
 
