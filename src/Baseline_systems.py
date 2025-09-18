@@ -74,6 +74,11 @@ def dialog_act_counter(df):
 A baseline system that, regardless of the content of the utterance, always assigns the majority class of in the data.
 --> Majority class is inform found in dialog_act_counter.
 """
+class AlwaysLabelInform:
+    def predict(self, features):
+        return ['inform'] * len(features)
+
+
 def always_label_inform(df):
     #Number of total utterances
     total = len(df)
@@ -89,6 +94,22 @@ def always_label_inform(df):
 Method that implements baseline rules found from empirical evulation of the dataset.
 Applying these rules gives and approximate performance of 0.86
 """
+class BaselineRules:
+    def predict(self, features):
+        predictions = []
+        for utterance in features:
+            prediction = 'inform'
+            prediction = 'affirm' if utterance.contains('yes', case=False, na=False) else prediction
+            prediction = 'bye' if utterance.contains('bye|goodbye', case=False, na=False) else prediction
+            prediction = 'negate' if utterance.contains(r'\bno\b', case=False, na=False) else prediction
+            prediction = 'thankyou' if utterance.contains('thank', case=False, na=False) else prediction
+            prediction = 'null' if utterance.contains('cough|unintelligible|noise|sil', case=False, na=False) else prediction
+            prediction = 'request' if utterance.contains('phone number|address|post code|what|postcode', case=False, na=False) else prediction
+            prediction = 'requalts' if utterance.contains('another', case=False, na=False) else prediction
+            predictions.append(prediction)
+        return predictions
+
+
 def baseline_rules(df):
     # Number of total utterances 
     compare_df = df.copy()

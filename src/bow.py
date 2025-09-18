@@ -27,3 +27,11 @@ def create_list_of_labels(dataframe: pd.DataFrame):
         labels.append(row['dialog_act'])
 
     return labels
+
+
+def create_list_of_utterances(dataframe: pd.DataFrame):
+    utterances = []
+    for _, row in dataframe.iterrows():
+        utterances.append(row['utterance'])
+
+    return utterances
