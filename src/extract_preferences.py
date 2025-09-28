@@ -70,7 +70,7 @@ def extract_preferences(utterance: str):
     """
     Returns preferences for price range, area and food.
     If no preference for that category was expressed, return empty string ('').
-    A preference for each category must be in the term domina of that category, or 'any'.
+    A preference for each category must be in the term domain of that category, or 'any'.
     If a preference term is not in the corresponding term domain, an 'unknown_XXX'
     preference is returned (XXX being the preference term used).
     (In case of an unknown preference, the dialog system should re-ask for that preference,
