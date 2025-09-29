@@ -27,6 +27,10 @@ SYSTEM_UTTERANCES = {
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
 
+CONFIG = {
+    "levenshtein_dist": 3
+}
+
 def nextstate(currentstate, context, utterance, restaurant_df):
     """
     This function implements the state transition diagram for the restaurant recommendation dialogue system.
@@ -40,7 +44,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         if dialog_act == "hello":
             return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
         elif dialog_act == "inform":
-            price, area, food = extract_preferences(utterance)
+            price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
             if area: context['area'] = area
             if food: context['food'] = food
             if price: context['price'] = price
@@ -58,7 +62,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             return "welcome", context, SYSTEM_UTTERANCES["welcome"]
 
     if currentstate == "ask_preferences":
-        price, area, food = extract_preferences(utterance)
+        price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if area: context['area'] = area
         if food: context['food'] = food
         if price: context['price'] = price
@@ -72,7 +76,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             return "suggest_restaurant", context, None
 
     if currentstate == "ask_area":
-        price, area, food = extract_preferences(utterance)
+        price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if area:
             context['area'] = area
             if not context.get('food'):
@@ -85,7 +89,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
 
     if currentstate == "ask_food":
-        price, area, food = extract_preferences(utterance)
+        price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if food:
             context['food'] = food
             if not context.get('price'):
@@ -96,7 +100,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
 
     if currentstate == "ask_price":
-        price, area, food = extract_preferences(utterance)
+        price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if price:
             context['price'] = price
             return "suggest_restaurant", context, None
