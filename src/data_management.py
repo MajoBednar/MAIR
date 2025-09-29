@@ -1,4 +1,5 @@
 import pandas as pd
+import random
 
 
 def load_data_as_df(path: str):
@@ -46,9 +47,15 @@ def load_df_from_csv(path: str):
     return pd.read_csv(path)
 
 
-if __name__ == '__main__':
-    df = load_data_as_df('data/dialog_acts.dat')
-    df_no_duplicates = remove_duplicates(df)
+def add_new_property(path: str, property_name: str, property_values: list[str]):
+    df = load_df_from_csv(path)
+    print(df.head(10), '\n')
+    df[property_name] = [random.choice(property_values) for _ in range(len(df))]
+    print(df.head(10))
+    df.to_csv(path, index=False)
 
-    split_and_save_datasets(df, 'data', 'dialog_acts_full')
-    split_and_save_datasets(df_no_duplicates, 'data', 'dialog_acts_no_duplicates')
+
+if __name__ == '__main__':
+    add_new_property('data/restaurant_info.csv', 'foodquality', ['good', 'mediocre'])
+    add_new_property('data/restaurant_info.csv', 'crowdedness', ['busy', 'not busy'])
+    add_new_property('data/restaurant_info.csv', 'lengthofstay', ['long stay', 'short stay'])
