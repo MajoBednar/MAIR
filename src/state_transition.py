@@ -12,7 +12,7 @@ model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'nn_full.pk
 dialog_act_classifier = MLModel.load(model_path)
 
 SYSTEM_UTTERANCES = {
-    "welcome": "Welcome! How can I help you?",
+    "welcome": "Welcome to the restaurant recommendation system! How can I assist you today?",
     "ask_preferences": "Please tell me your preferences (area, food type, price range).",
     "ask_area": "Which area are you interested in?",
     "ask_food": "What type of food would you like?",
@@ -22,7 +22,11 @@ SYSTEM_UTTERANCES = {
     "confirm_price": "You want a {price} restaurant, correct?",
     "no_match": "Sorry, no restaurant matches your preferences. Would you like to try different preferences?",
     "suggest_restaurant": "I suggest: {restaurant}. Would you like more information or another suggestion?",
-    "provide_info": "Here is the information you requested about {restaurant}.",
+    "provide_info": "Here is the information you requested about {restaurant}.", #TODO
+    "provide_postcode": "The postcode for {restaurant} is {postcode}.", #TODO
+    "provide_phone": "The phone number for {restaurant} is {phone}.", #TODO
+    "provide_address": "The address for {restaurant} is {addr}.", #TODO
+    "ask_additional_preferences": "Do you have any additional preferences?", #TODO (1c)
     "goodbye": "Goodbye!",
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
@@ -40,6 +44,8 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     utterance = utterance.lower().strip()
     dialog_act = dialog_act_classifier.predict_sentence(utterance)[0]
 
+
+    # State 1a: Welcome
     if currentstate == "welcome":
         if dialog_act == "hello":
             return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
@@ -61,6 +67,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "welcome", context, SYSTEM_UTTERANCES["welcome"]
 
+    # State 1b: Ask Preferences
     if currentstate == "ask_preferences":
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if area: context['area'] = area
@@ -75,6 +82,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "suggest_restaurant", context, None
 
+    # State 2: Ask for area preference
     if currentstate == "ask_area":
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if area:
@@ -88,6 +96,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
 
+    # State 3: Ask for food preference
     if currentstate == "ask_food":
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if food:
@@ -99,6 +108,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
 
+    # State 4: Ask for price preference
     if currentstate == "ask_price":
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if price:
@@ -107,6 +117,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
 
+    # State 6: Suggest Restaurant
     if currentstate == "suggest_restaurant":
         price = context.get('price')
         area = context.get('area')
@@ -122,14 +133,17 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             context['alternatives'] = []
             return "no_match", context, SYSTEM_UTTERANCES["no_match"]
 
+    # State 5: Ask other preferences
     if currentstate == "no_match":
         context['area'] = None
         context['food'] = None
         context['price'] = None
         return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
 
+    # Awaiting user response
     if currentstate == "await_user_response":
         if dialog_act == "request":
+            #TODO: classify what info is requested (postcode, phone, address) and chose provide_info, provide_postcode, provide_phone, provide_address accordingly.
             return "provide_info", context, SYSTEM_UTTERANCES["provide_info"].format(restaurant=context['suggested'])
         elif dialog_act in ["reqalts", "reqmore"]:
             if context.get('alternatives'):
@@ -147,7 +161,9 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "await_user_response", context, SYSTEM_UTTERANCES["clarify"]
 
+    # State 7: Provide Information TODO: expand with postcode, phone, address
     if currentstate == "provide_info":
+        #TODO: classify what info is requested (postcode, phone, address)
         return "await_user_response", context, SYSTEM_UTTERANCES["clarify"]
 
     if currentstate == "goodbye":

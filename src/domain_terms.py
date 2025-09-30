@@ -11,6 +11,8 @@ FOOD_TERMS = [
     'persian', 'jamaican', 'lebanese', 'cuban', 'japanese', 'catalan',
     'world', 'swedish', 'any'
 ]
+CROWDEDNESS_TERMS = ['busy', 'not busy', 'any']
+LENGTHOFSTAY_TERMS = ['short stay', 'long stay', 'any']
 
 
 def main():
@@ -18,6 +20,8 @@ def main():
     print(df['pricerange'].unique())
     print(df['area'].unique())
     print(df['food'].unique())
+    print(df['crowdedness'].unique())
+    print(df['lengthofstay'].unique())
 
 
 if __name__ == '__main__':

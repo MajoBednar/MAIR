@@ -1,6 +1,6 @@
 import re
 from Levenshtein import distance
-from domain_terms import PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS
+from domain_terms import PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS, CROWDEDNESS_TERMS, LENGTHOFSTAY_TERMS
 
 
 def autocorrect(term: str, true_domain: list[str], max_correcting_dist):
@@ -12,7 +12,7 @@ def autocorrect(term: str, true_domain: list[str], max_correcting_dist):
     corrected_term = None
     true_smallest_edit_distance = 100
     smallest_edit_distance = 100
-    for domain in (PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS):
+    for domain in (PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS, CROWDEDNESS_TERMS, LENGTHOFSTAY_TERMS):
         for domain_term in domain:
             edit_distance = distance(term, domain_term)
             # print(term, domain_term, edit_distance)
@@ -67,6 +67,27 @@ def extract_food_pref(utterance: str, max_correcting_dist):
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
     return preference
 
+#TODO: need to extract consequents (from the 1c assignment table)
+def extract_crowdedness_pref(utterance: str, max_correcting_dist):
+    preference = None
+    crowdedness = re.findall(r'\b(\w\w+)\s+crowded', utterance)
+    if crowdedness:
+        preference = autocorrect(crowdedness[0], ['busy', 'not busy'], max_correcting_dist) if preference is None else preference
+    crowdedness = re.findall(r'\b(\w\w+)\s+busy', utterance)
+    if crowdedness:
+        preference = autocorrect(crowdedness[0], ['busy', 'not busy'], max_correcting_dist) if preference is None else preference
+    return preference
+
+#TODO: need to extract consequents (from the 1c assignment table)
+def extract_lengthofstay_pref(utterance: str, max_correcting_dist):
+    preference = None
+    lengthofstay = re.findall(r'\b(\w\w+)\s+stay', utterance)
+    if lengthofstay:
+        preference = autocorrect(lengthofstay[0], ['short', 'long'], max_correcting_dist) if preference is None else preference
+    lengthofstay = re.findall(r'\b(\w\w+)\s+time', utterance)
+    if lengthofstay:
+        preference = autocorrect(lengthofstay[0], ['short', 'long'], max_correcting_dist) if preference is None else preference
+    return preference
 
 def extract_preferences(utterance: str, max_correcting_dist=3):
     """
@@ -82,7 +103,9 @@ def extract_preferences(utterance: str, max_correcting_dist=3):
     price_range_pref = extract_price_range_pref(utterance, max_correcting_dist)
     area_pref = extract_area_pref(utterance, max_correcting_dist)
     food_pref = extract_food_pref(utterance, max_correcting_dist)
-    return price_range_pref, area_pref, food_pref
+    crowdedness_pref = extract_crowdedness_pref(utterance, max_correcting_dist)
+    lengthofstay_pref = extract_lengthofstay_pref(utterance, max_correcting_dist)
+    return price_range_pref, area_pref, food_pref, crowdedness_pref, lengthofstay_pref
 
 
 def main():
