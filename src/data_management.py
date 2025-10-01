@@ -43,6 +43,15 @@ def split_and_save_datasets(dataframe, path: str, name: str):
     df_test.to_csv(path + '/' + name + '_test.csv')
 
 
+def display_information_training_set(df):
+    label_counts = df['dialog_act'].value_counts()
+    print(label_counts)
+
+    df['word_count'] = df['utterance'].str.split().str.len()
+    print(f'Shortest utterance has {df["word_count"].min()} words.')
+    print(f'Longest utterance has {df["word_count"].max()} words.')
+
+
 def load_df_from_csv(path: str):
     return pd.read_csv(path)
 
@@ -56,6 +65,9 @@ def add_new_property(path: str, property_name: str, property_values: list[str]):
 
 
 if __name__ == '__main__':
-    add_new_property('data/restaurant_info.csv', 'foodquality', ['good', 'mediocre'])
-    add_new_property('data/restaurant_info.csv', 'crowdedness', ['busy', 'not busy'])
-    add_new_property('data/restaurant_info.csv', 'lengthofstay', ['long stay', 'short stay'])
+    df_duplicates = load_df_from_csv('data/dialog_acts_full_train.csv')
+    df_no_duplicates = load_df_from_csv('data/dialog_acts_no_duplicates_train.csv')
+
+    display_information_training_set(df_duplicates)
+    print('-----')
+    display_information_training_set(df_no_duplicates)
