@@ -1,4 +1,5 @@
-from extract_preferences import extract_preferences
+from extract_preferences import extract_preferences, extract_additional_preference
+from infer_properties import infer_properties, preference_reasoning
 from Restaurant_lookup import restaurant_lookup
 from ml_models import MLModel, MLP
 import sys
@@ -26,7 +27,7 @@ SYSTEM_UTTERANCES = {
     "provide_postcode": "The postcode for {restaurant} is {postcode}.", #TODO
     "provide_phone": "The phone number for {restaurant} is {phone}.", #TODO
     "provide_address": "The address for {restaurant} is {addr}.", #TODO
-    "ask_additional_preferences": "Do you have any additional preferences?", #TODO (1c)
+    "ask_additional_preferences": "Do you have any additional preferences?",
     "goodbye": "Goodbye!",
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
@@ -123,11 +124,12 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         area = context.get('area')
         food = context.get('food')
         matches = restaurant_lookup(restaurant_df, price, area, food)
-        if matches:
-            chosen = random.choice(matches)
-            context['suggested'] = chosen
-            context['alternatives'] = [m for m in matches if m != chosen]
-            return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=chosen)
+        if len(matches) == 1:
+            context['suggested'] = matches
+            return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=matches)
+        if len(matches) > 1:
+            context['alternatives'] = [m for m in matches]
+            return "ask_additional_preferences", context, SYSTEM_UTTERANCES["ask_additional_preferences"]
         else:
             context['suggested'] = None
             context['alternatives'] = []
@@ -139,6 +141,30 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         context['food'] = None
         context['price'] = None
         return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
+
+    # State ?: Ask for additional preferences  TODO: add new state to the transition diagram
+    if currentstate == "ask_additional_preferences":
+        additional_preference = extract_additional_preference(utterance)
+        if additional_preference == 'no':
+            chosen = context["alternatives"].pop(random.randrange(len(context["alternatives"])))
+            context['suggested'] = chosen
+            return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=chosen)
+        restaurant_alternatives = context["alternatives"]
+        context["alternatives"] = []
+        for restaurant in restaurant_alternatives:
+            inferred_properties = infer_properties(restaurant, restaurant_df)
+            preference_satisfied = inferred_properties.is_preference_satisfied(additional_preference)
+            if preference_satisfied:
+                context["alternatives"].append(restaurant)
+        if context["alternatives"]:
+            chosen = context["alternatives"].pop(random.randrange(len(context["alternatives"])))
+            context['suggested'] = chosen
+            chosen += preference_reasoning(additional_preference)
+            return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=chosen)
+        else:
+            context['suggested'] = None
+            context['alternatives'] = []
+            return "no_match", context, SYSTEM_UTTERANCES["no_match"]
 
     # Awaiting user response
     if currentstate == "await_user_response":
@@ -183,6 +209,7 @@ def main():
             print(SYSTEM_UTTERANCES["goodbye"])
             break
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
+        print(context)
         if sysutt:
             print(sysutt)
 

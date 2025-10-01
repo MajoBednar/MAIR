@@ -8,44 +8,33 @@ If there are multiple restaurants with the same number of corresponding criterea
 1. pricerange 
 2. food 
 3. area
-4. crowdedness 
-5. lengthofstay 
 If there are restaurants with the same ammount of fittness a list is returned
 """
-def restaurant_lookup(df, pricerange, area, food, crowdedness, lengthofstay):
+def restaurant_lookup(df, pricerange, area, food):
     # Loop through all restaurants and save a list with scores: 
     # If restaurant has good price range add 1.1 
     # If restaurant has good area add 1
-    # If restaurant has good food add 1.05 
-    # If restaurant has good crowdedness add 1
-    # If restaurant has good lengthofstay add 1
+    # If restaurant has good food add 1.05
     # Return restaurant(s) with hihgest score
 
     scores = []
-    for row in df.iterrows():
+    for _, row in df.iterrows():
         score = 0
 
-        if row['pricerange'] == pricerange:
+        if row['pricerange'] == pricerange or pricerange == 'any':
             score += 1.1
-        if row['area'] == area:
+        if row['area'] == area or area == 'any':
             score += 1
-        if row['food'] == food:
+        if row['food'] == food or food == 'any':
             score += 1.05
-        if row['crowdedness'] == crowdedness:
-            score += 1
-        if row['lengthofstay'] == lengthofstay:
-            score += 1
 
         scores.append(score)
 
     # Add scores to the dataframe
     df['score'] = scores
 
-    # Get the maximum score
-    max_score = df['score'].max()
-  
-    # Define list with restaurants with max score
-    suitable_restaurants = df.loc[df['score'] == max_score, 'restaurantname'].tolist()
+    # Filter out restaurants with score > 3
+    suitable_restaurants = df.loc[df['score'] > 3, 'restaurantname'].tolist()
 
     return suitable_restaurants
 

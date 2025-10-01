@@ -67,27 +67,6 @@ def extract_food_pref(utterance: str, max_correcting_dist):
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
     return preference
 
-#TODO: need to extract consequents (from the 1c assignment table)
-def extract_crowdedness_pref(utterance: str, max_correcting_dist):
-    preference = None
-    crowdedness = re.findall(r'\b(\w\w+)\s+crowded', utterance)
-    if crowdedness:
-        preference = autocorrect(crowdedness[0], ['busy', 'not busy'], max_correcting_dist) if preference is None else preference
-    crowdedness = re.findall(r'\b(\w\w+)\s+busy', utterance)
-    if crowdedness:
-        preference = autocorrect(crowdedness[0], ['busy', 'not busy'], max_correcting_dist) if preference is None else preference
-    return preference
-
-#TODO: need to extract consequents (from the 1c assignment table)
-def extract_lengthofstay_pref(utterance: str, max_correcting_dist):
-    preference = None
-    lengthofstay = re.findall(r'\b(\w\w+)\s+stay', utterance)
-    if lengthofstay:
-        preference = autocorrect(lengthofstay[0], ['short', 'long'], max_correcting_dist) if preference is None else preference
-    lengthofstay = re.findall(r'\b(\w\w+)\s+time', utterance)
-    if lengthofstay:
-        preference = autocorrect(lengthofstay[0], ['short', 'long'], max_correcting_dist) if preference is None else preference
-    return preference
 
 def extract_preferences(utterance: str, max_correcting_dist=3):
     """
@@ -103,9 +82,30 @@ def extract_preferences(utterance: str, max_correcting_dist=3):
     price_range_pref = extract_price_range_pref(utterance, max_correcting_dist)
     area_pref = extract_area_pref(utterance, max_correcting_dist)
     food_pref = extract_food_pref(utterance, max_correcting_dist)
-    crowdedness_pref = extract_crowdedness_pref(utterance, max_correcting_dist)
-    lengthofstay_pref = extract_lengthofstay_pref(utterance, max_correcting_dist)
-    return price_range_pref, area_pref, food_pref, crowdedness_pref, lengthofstay_pref
+    return price_range_pref, area_pref, food_pref
+
+
+def extract_additional_preference(utterance: str):
+    preference = re.findall(r'\b[Nn][Oo]\b', utterance)
+    if preference:
+        return 'no'
+    negation = re.findall(r'[Nn][Oo][Tt]', utterance)
+    if negation:
+        negation = 'not '
+    else:
+        negation = ''
+    preference = re.findall(r'[Tt]ouristic', utterance)
+    if preference:
+        return negation + 'touristic'
+    preference = re.findall(r'[Aa]ssigned\s+seats', utterance)
+    if preference:
+        return negation + 'assigned seats'
+    preference = re.findall(r'[Cc]hildren', utterance)
+    if preference:
+        return negation + 'children'
+    preference = re.findall(r'[Rr]omantic', utterance)
+    if preference:
+        return negation + 'romantic'
 
 
 def main():
@@ -113,6 +113,7 @@ def main():
     while user_input != 'q()':
         user_input = input('Type your preferences for a restaurant\n')
         print(extract_preferences(user_input))
+        print(extract_additional_preference(user_input))
 
 
 if __name__ == '__main__':
