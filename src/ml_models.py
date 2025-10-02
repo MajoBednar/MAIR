@@ -1,37 +1,41 @@
+import joblib
 from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import cross_val_score, GridSearchCV
-import joblib
 
 from data_management import load_df_from_csv
-from bow import create_bag_of_words, create_list_of_labels
+from bag_of_words import create_bag_of_words, create_list_of_labels
 
 
 class MLModel:
+    """General machine learning model class for predicting dialog acts."""
     def __init__(self, bow):
+        """Instantiates the model with bag of words vocabulary."""
         self.bow = bow
         self.model = None
         self.name = 'Unknown'
 
-    def train(self, features, labels):
+    def train(self, features: list, labels: list):
+        """Train the model using features and true labels."""
         self.model.fit(features, labels)
 
-    def predict(self, features):
+    def predict(self, features: list):
+        """Predict a list of labels from a list of inputs."""
         return self.model.predict(features)
 
     def predict_sentence(self, sentence: str):
+        """Predicts a dialog act of a single raw sentence."""
         embedded_sentence = self.bow.transform([sentence.lower()])
         return self.model.predict(embedded_sentence.toarray())
 
     def cross_validation(self, features, labels):
+        """Cross-validation for training a model."""
         scores = cross_val_score(self.model, features, labels, cv=5)
         print(self.name, scores)
 
-    def evaluate_accuracy(self, test_features, test_labels):
-        print(self.model.score(test_features, test_labels))
-
     def tune_hyperparams(self, features, labels, hyperparam_grid):
+        """Tunes model hyperparameters using cross-validation."""
         grid_search = GridSearchCV(self.model, hyperparam_grid, cv=5, scoring='accuracy', verbose=2)
         grid_search.fit(features, labels)
         self.model = grid_search.best_estimator_
@@ -40,21 +44,26 @@ class MLModel:
         print('Cross-validation accuracy was:', grid_search.best_score_)
 
     def save(self, path: str):
-        """Use .pkl as extension."""
+        """Saves the whole model. Use .pkl as extension."""
         joblib.dump(self, path)
 
     @staticmethod
     def load(path: str):
+        """Loads the model from a file."""
         return joblib.load(path)
 
 
 class LogReg(MLModel):
+    """Logistic Regression model for classifying dialog acts."""
     def __init__(self, bow):
+        """Instantiates the model with bag of words vocabulary and appropriate ML model and name."""
         super().__init__(bow)
         self.model = LogisticRegression()
         self.name = 'Logistic Regression'
 
     def tune_hyperparams(self, features, labels, hyperparam_grid=None):
+        """Tunes model hyperparameters using cross-validation.
+        Namely, hyperparameter 'C' for controlling the strength of l2 regularization."""
         if hyperparam_grid is None:
             hyperparam_grid = {
                 'C': [0, 0.01, 0.1, 0.5, 1, 5, 10, 20]
@@ -63,12 +72,16 @@ class LogReg(MLModel):
 
 
 class DecisionTree(MLModel):
+    """Decision tree model for classifying dialog acts."""
     def __init__(self, bow):
+        """Instantiates the model with bag of words vocabulary and appropriate ML model and name."""
         super().__init__(bow)
         self.model = DecisionTreeClassifier()
         self.name = 'Decision Tree'
 
     def tune_hyperparams(self, features, labels, hyperparam_grid=None):
+        """Tunes model hyperparameters using cross-validation.
+        Hyperparameters are criteria for measuring node impurity reduction and maximum depth of a tree."""
         if hyperparam_grid is None:
             hyperparam_grid = {
                 'criterion': ['gini', 'entropy'],
@@ -78,7 +91,9 @@ class DecisionTree(MLModel):
 
 
 class MLP(MLModel):
+    """Feed-forward neural network model for classifying dialog acts."""
     def __init__(self, bow, optimizer='adam', lr=0.001, alpha=1e-5, hidden_layer_sizes=(128, 64)):
+        """Instantiates the model with bag of words vocabulary and appropriate ML model and name."""
         super().__init__(bow)
         self.model = MLPClassifier(
             solver=optimizer,
@@ -89,6 +104,8 @@ class MLP(MLModel):
         self.name = 'Multi-Layer Perceptron'
 
     def tune_hyperparams(self, features, labels, hyperparam_grid=None):
+        """Tunes model hyperparameters using cross-validation.
+        Hyperparameters are the layer sizes, learning rate and batch size."""
         if hyperparam_grid is None:
             hyperparam_grid = {
                 'hidden_layer_sizes': [(64,), (128,), (128, 64), (256, 128)],
@@ -99,15 +116,7 @@ class MLP(MLModel):
 
 
 def main():
-    # df = load_df_from_csv('data/dialog_acts_no_duplicates_train.csv')
-    # features, vectorizer = create_bag_of_words(df)
-    # labels = create_list_of_labels(df)
-    #
-    # nn = MLP(vectorizer)
-    #
-    # nn.tune_hyperparams(features, labels)
-    # nn.save('models/nn_no_duplicates.pkl')
-
+    """Used for train, tuning and saving models."""
     df = load_df_from_csv('data/dialog_acts_full_train.csv')
     features, vectorizer = create_bag_of_words(df)
     labels = create_list_of_labels(df)

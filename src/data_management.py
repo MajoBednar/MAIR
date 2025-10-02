@@ -3,6 +3,7 @@ import random
 
 
 def load_data_as_df(path: str):
+    """Creates a dataframe of dialog acts and utterances from a dialog_acts.dat file."""
     dialog_acts = []
     utterances = []
 
@@ -25,25 +26,25 @@ def load_data_as_df(path: str):
 
 
 def remove_duplicates(dataframe):
+    """Removes duplicate utterances from a dataframe."""
     df_without_duplicates = dataframe.drop_duplicates(subset=['utterance'], keep='first')
     return df_without_duplicates
 
 
 def split_and_save_datasets(dataframe, path: str, name: str):
+    """Shuffles and splits a dataframe to 85% train and 15% test sets. Also saves them to .csv files."""
     df_shuffled = dataframe.sample(frac=1).reset_index(drop=True)
-
     split_index = int(0.85 * df_shuffled.shape[0])
-    print('Original len:', df_shuffled.shape[0])
+
     df_train = df_shuffled.iloc[:split_index]
     df_test = df_shuffled.iloc[split_index:]
-    print('Train len:', df_train.shape[0])
-    print('Test len:', df_test.shape[0])
 
     df_train.to_csv(path + '/' + name + '_train.csv')
     df_test.to_csv(path + '/' + name + '_test.csv')
 
 
 def display_information_training_set(df):
+    """Displays the dialog_act label counts and min and max utterance lengths of a dataframe"""
     label_counts = df['dialog_act'].value_counts()
     print(label_counts)
 
@@ -53,14 +54,14 @@ def display_information_training_set(df):
 
 
 def load_df_from_csv(path: str):
+    """Loads .csv file to a dataframe."""
     return pd.read_csv(path)
 
 
 def add_new_property(path: str, property_name: str, property_values: list[str]):
+    """Adds a new property filled with given property_values at random to a .csv file."""
     df = load_df_from_csv(path)
-    print(df.head(10), '\n')
     df[property_name] = [random.choice(property_values) for _ in range(len(df))]
-    print(df.head(10))
     df.to_csv(path, index=False)
 
 
