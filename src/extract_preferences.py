@@ -43,6 +43,14 @@ def extract_price_range_pref(utterance: str, max_correcting_dist):
     if price_range:
         preference = autocorrect(price_range[0], PRICE_RANGE_TERMS, max_correcting_dist) \
             if preference is None else preference
+        
+    # NEW: direct keyword fallback
+    if preference is None:
+        for word in utterance.split():
+            candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
+            if candidate not in (None, f"unknown_{word}"):
+                preference = candidate
+                break
     return preference
 
 
@@ -54,6 +62,14 @@ def extract_area_pref(utterance: str, max_correcting_dist):
     area = re.findall(r'in\s+the\s+(\w\w+)\b', utterance)
     if area:
         preference = autocorrect(area[0], AREA_TERMS, max_correcting_dist) if preference is None else preference
+
+    # NEW: direct keyword fallback
+    if preference is None:
+        for word in utterance.split():
+            candidate = autocorrect(word, AREA_TERMS, max_correcting_dist)
+            if candidate not in (None, f"unknown_{word}"):
+                preference = candidate
+                break
     return preference
 
 
@@ -65,6 +81,14 @@ def extract_food_pref(utterance: str, max_correcting_dist):
     food = re.findall(r'\b(\w\w+)\s+restaurant', utterance)
     if food and food[0] != 'priced':
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
+
+    # NEW: direct keyword fallback
+    if preference is None:
+        for word in utterance.split():
+            candidate = autocorrect(word, FOOD_TERMS, max_correcting_dist)
+            if candidate not in (None, f"unknown_{word}"):
+                preference = candidate
+                break
     return preference
 
 

@@ -44,6 +44,9 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     """
     utterance = utterance.lower().strip()
     dialog_act = dialog_act_classifier.predict_sentence(utterance)[0]
+    # Output for debug
+    print('Dialog act: ', dialog_act)
+    print('Current state is: ', currentstate)
 
 
     # State 1a: Welcome
