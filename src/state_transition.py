@@ -13,7 +13,10 @@ model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'nn_full.pk
 dialog_act_classifier = MLModel.load(model_path)
 
 SYSTEM_UTTERANCES = {
-    "welcome": "Welcome to the restaurant recommendation system! How can I assist you today?",
+    "welcome": "Welcome to the restaurant recommendation system! \n"
+    "I can help you find a restaurant based on your preferences for area, food type, and price range.\n"
+    "If you don't care about a certain preference, just say 'any'.\n"
+    "Lets get started! Please tell me your preferences.",
     "ask_preferences": "Please tell me your preferences (area, food type, price range).",
     "ask_area": "Which area are you interested in?",
     "ask_food": "What type of food would you like?",
@@ -33,7 +36,8 @@ SYSTEM_UTTERANCES = {
 }
 
 CONFIG = {
-    "levenshtein_dist": 3
+    "levenshtein_dist": 3,
+    "use_confirmation": True
 }
 
 def nextstate(currentstate, context, utterance, restaurant_df):
@@ -91,12 +95,15 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if area:
             context['area'] = area
-            if not context.get('food'):
-                return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
-            elif not context.get('price'):
-                return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+            if CONFIG.get("use_confirmation", False):
+                return "confirm_area", context, SYSTEM_UTTERANCES["confirm_area"].format(area=area)
             else:
-                return "suggest_restaurant", context, None
+                if not context.get('food'):
+                    return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
+                elif not context.get('price'):
+                    return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+                else:
+                    return "suggest_restaurant", context, None
         else:
             return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
 
@@ -105,10 +112,13 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if food:
             context['food'] = food
-            if not context.get('price'):
-                return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+            if CONFIG.get("use_confirmation", False):
+                return "confirm_food", context, SYSTEM_UTTERANCES["confirm_food"].format(food=food)
             else:
-                return "suggest_restaurant", context, None
+                if not context.get('price'):
+                    return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+                else:
+                    return "suggest_restaurant", context, None
         else:
             return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
 
@@ -117,7 +127,10 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if price:
             context['price'] = price
-            return "suggest_restaurant", context, None
+            if CONFIG.get("use_confirmation", False):
+                return "confirm_price", context, SYSTEM_UTTERANCES["confirm_price"].format(price=price)
+            else:
+                return "suggest_restaurant", context, None
         else:
             return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
 
@@ -129,6 +142,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         matches = restaurant_lookup(restaurant_df, price, area, food)
         if len(matches) == 1:
             context['suggested'] = matches
+            #TODO: might take this out and immediately go to ask_additional_preferences
             return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=matches)
         if len(matches) > 1:
             context['alternatives'] = [m for m in matches]
@@ -145,7 +159,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         context['price'] = None
         return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
 
-    # State ?: Ask for additional preferences  TODO: add new state to the transition diagram
+    # State ??: Ask for additional preferences  TODO: add new state to the transition diagram
     if currentstate == "ask_additional_preferences":
         additional_preference = extract_additional_preference(utterance)
         if additional_preference == 'no':
@@ -190,13 +204,79 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "await_user_response", context, SYSTEM_UTTERANCES["clarify"]
 
-    # State 7: Provide Information TODO: expand with postcode, phone, address
+    # State 7: Provide Information
     if currentstate == "provide_info":
-        #TODO: classify what info is requested (postcode, phone, address)
-        return "await_user_response", context, SYSTEM_UTTERANCES["clarify"]
+        # Classify what info is requested (postcode, phone, address)
+        requested_info = None
+        if "postcode" in utterance or "zip" in utterance:
+            requested_info = "postcode"
+        elif "phone" in utterance or "number" in utterance or "contact" in utterance:
+            requested_info = "phone"
+        elif "address" in utterance or "location" in utterance:
+            requested_info = "address"
 
+        restaurant = context.get('suggested')
+        if isinstance(restaurant, list):  # If suggested is a list, pick the first
+            restaurant = restaurant[0] if restaurant else None
+
+        if restaurant is not None and requested_info:
+            # Find the restaurant row in the dataframe
+            row = restaurant_df[restaurant_df['name'].str.lower() == restaurant.lower()]
+            if not row.empty:
+                if requested_info == "postcode":
+                    postcode = row.iloc[0].get('postcode', 'unknown')
+                    return "await_user_response", context, SYSTEM_UTTERANCES["provide_postcode"].format(restaurant=restaurant, postcode=postcode)
+                elif requested_info == "phone":
+                    phone = row.iloc[0].get('phone', 'unknown')
+                    return "await_user_response", context, SYSTEM_UTTERANCES["provide_phone"].format(restaurant=restaurant, phone=phone)
+                elif requested_info == "address":
+                    addr = row.iloc[0].get('address', 'unknown')
+                    return "await_user_response", context, SYSTEM_UTTERANCES["provide_address"].format(restaurant=restaurant, addr=addr)
+            # If restaurant not found or info missing
+            return "await_user_response", context, f"Sorry, I couldn't find the {requested_info} for {restaurant}."
+        else:
+            # If info type not recognized or restaurant missing
+            return "await_user_response", context, "Sorry, I couldn't understand what information you requested. Please ask for postcode, phone, or address."
     if currentstate == "goodbye":
         return "goodbye", context, SYSTEM_UTTERANCES["goodbye"]
+
+    # State 12: Confirm Area
+    if currentstate == "confirm_area":
+        if dialog_act == "affirm":
+            if not context.get('food'):
+                return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
+            elif not context.get('price'):
+                return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+            else:
+                return "suggest_restaurant", context, None
+        elif dialog_act == "deny":
+            context['area'] = None
+            return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
+        else:
+            return "confirm_area", context, SYSTEM_UTTERANCES["confirm_area"].format(area=context['area'])
+        
+    # State 13: Confirm Food
+    if currentstate == "confirm_food":
+        if dialog_act == "affirm":
+            if not context.get('price'):
+                return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+            else:
+                return "suggest_restaurant", context, None
+        elif dialog_act == "deny":
+            context['food'] = None
+            return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
+        else:
+            return "confirm_food", context, SYSTEM_UTTERANCES["confirm_food"].format(food=context['food'])
+        
+    # State 14: Confirm Price
+    if currentstate == "confirm_price":
+        if dialog_act == "affirm":
+            return "suggest_restaurant", context, None
+        elif dialog_act == "deny":
+            context['price'] = None
+            return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
+        else:
+            return "confirm_price", context, SYSTEM_UTTERANCES["confirm_price"].format(price=context['price'])
 
     return "welcome", context, SYSTEM_UTTERANCES["clarify"]
 
@@ -212,6 +292,7 @@ def main():
             print(SYSTEM_UTTERANCES["goodbye"])
             break
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
+        # Debug output
         print(context)
         if sysutt:
             print(sysutt)
