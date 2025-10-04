@@ -109,6 +109,10 @@ class BaselineRules:
             prediction = 'requalts' if bool(re.search('another', utterance, flags=re.IGNORECASE)) else prediction
             predictions.append(prediction)
         return predictions
+    
+    # New wrapper for a single sentence
+    def predict_sentence(self, utterance):
+        return self.predict([utterance])
 
 
 def baseline_rules(df):

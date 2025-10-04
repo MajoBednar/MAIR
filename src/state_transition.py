@@ -1,16 +1,28 @@
 from extract_preferences import extract_preferences, extract_additional_preference
 from infer_properties import infer_properties, preference_reasoning
 from Restaurant_lookup import restaurant_lookup
+from Baseline_systems import BaselineRules
 from ml_models import MLModel, MLP
 import sys
 import pandas as pd
 import os
 import random
 
+CONFIG = {
+    "levenshtein_dist": 3,
+    "use_confirmation": True,
+    "caps_output": False,
+    "use_baseline_dialog_act_recognition": True
+}
+
 # Load a pretrained dialog act classifier
-sys.modules['__main__'].MLP = MLP  # Ensure MLP is available for unpickling
-model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'nn_full.pkl')
-dialog_act_classifier = MLModel.load(model_path)
+if CONFIG["use_baseline_dialog_act_recognition"]:
+    dialog_act_classifier = BaselineRules()
+
+else:
+    sys.modules['__main__'].MLP = MLP  # Ensure MLP is available for unpickling
+    model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'nn_full.pkl')
+    dialog_act_classifier = MLModel.load(model_path)
 
 SYSTEM_UTTERANCES = {
     "welcome": "Welcome to the restaurant recommendation system! \n"
@@ -35,11 +47,7 @@ SYSTEM_UTTERANCES = {
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
 
-CONFIG = {
-    "levenshtein_dist": 3,
-    "use_confirmation": True,
-    "caps_output": True
-}
+
 
 def nextstate(currentstate, context, utterance, restaurant_df):
     """
