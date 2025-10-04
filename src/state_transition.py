@@ -292,8 +292,7 @@ def main():
             print(SYSTEM_UTTERANCES["goodbye"])
             break
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
-        # Debug output
-        print(context)
+        print(context) # For debugging
         if sysutt:
             print(sysutt)
 
