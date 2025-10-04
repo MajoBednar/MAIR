@@ -37,7 +37,8 @@ SYSTEM_UTTERANCES = {
 
 CONFIG = {
     "levenshtein_dist": 3,
-    "use_confirmation": True
+    "use_confirmation": True,
+    "caps_output": True
 }
 
 def nextstate(currentstate, context, utterance, restaurant_df):
@@ -285,16 +286,20 @@ def main():
     restaurant_df = pd.read_csv(data_path)
     state = "welcome"
     context = {'area': None, 'food': None, 'price': None, 'suggested': None, 'alternatives': []}
-    print(SYSTEM_UTTERANCES["welcome"])
+    # Print welcome in correct casing
+    welcome = SYSTEM_UTTERANCES["welcome"]
+    print(welcome.upper() if CONFIG.get("caps_output", False) else welcome)
+
     while True:
         user_input = input("> ")
         if user_input.strip().lower() in ["quit", "exit", "q()", "bye"]:
-            print(SYSTEM_UTTERANCES["goodbye"])
+            goodbye = SYSTEM_UTTERANCES["goodbye"]
+            print(goodbye.upper() if CONFIG.get("caps_output", False) else goodbye)
             break
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
         print(context) # For debugging
         if sysutt:
-            print(sysutt)
+            print(sysutt.upper() if CONFIG.get("caps_output", False) else sysutt)
 
 if __name__ == '__main__':
     main()
