@@ -47,6 +47,7 @@ SYSTEM_UTTERANCES = {
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
 
+
 def nextstate(currentstate, context, utterance, restaurant_df):
     """
     This function implements the state transition diagram for the restaurant recommendation dialogue system.
@@ -55,9 +56,6 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     """
     utterance = utterance.lower().strip()
     dialog_act = dialog_act_classifier.predict_sentence(utterance)[0]
-    # Output for debug
-    print('Dialog act: ', dialog_act)
-    print('Current state is: ', currentstate)
 
     # State 1: Welcome
     if currentstate == "welcome":
@@ -290,6 +288,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
 
     return "welcome", context, SYSTEM_UTTERANCES["clarify"]
 
+
 def main():
     # Initialize restaurant dataframe and state transition parameters
     data_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'restaurant_info.csv')
@@ -311,9 +310,9 @@ def main():
                 break
 
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
-        print(context) # For debugging
         if sysutt:
             print(sysutt.upper() if CONFIG.get("caps_output", False) else sysutt)
+
 
 if __name__ == '__main__':
     main()
