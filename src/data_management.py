@@ -44,7 +44,7 @@ def split_and_save_datasets(dataframe, path: str, name: str):
 
 
 def display_information_training_set(df):
-    """Displays the dialog_act label counts and min and max utterance lengths of a dataframe"""
+    """Displays the dialog_act label counts and min and max utterance lengths of a dataframe."""
     label_counts = df['dialog_act'].value_counts()
     print(label_counts)
 

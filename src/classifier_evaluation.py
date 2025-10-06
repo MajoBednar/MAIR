@@ -3,7 +3,7 @@ from sklearn.metrics import f1_score
 
 from data_management import load_df_from_csv
 from ml_models import MLModel, DecisionTree, LogReg, MLP
-from Baseline_systems import AlwaysLabelInform, BaselineRules
+from baseline_systems import AlwaysLabelInform, BaselineRules
 from bag_of_words import transform_to_bag_of_words, create_list_of_labels, create_list_of_utterances
 
 
@@ -85,6 +85,8 @@ def main():
 
     print('Accuracy:', compute_accuracy(predictions, true_labels))
     print('F1:      ', compute_f1(predictions, true_labels))
+    print()
+    prompt(model)
 
 
 if __name__ == '__main__':
