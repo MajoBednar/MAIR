@@ -25,10 +25,10 @@ else:
     dialog_act_classifier = MLModel.load(model_path)
 
 SYSTEM_UTTERANCES = {
-    "welcome": "Welcome to the restaurant recommendation system! \n"
-    "I can help you find a restaurant based on your preferences for area, food type, and price range.\n"
-    "If you don't care about a certain preference, just say 'any'.\n"
-    "Lets get started! Please tell me your preferences.",
+    "welcome":  "Welcome to the restaurant recommendation system! \n"
+                "I can help you find a restaurant based on your preferences for area, food type, and price range.\n"
+                "If you don't care about a certain preference, just say 'any'.\n"
+                "Lets get started! Please tell me your preferences.",
     "ask_preferences": "Please tell me your preferences (area, food type, price range).",
     "ask_area": "Which area are you interested in?",
     "ask_food": "What type of food would you like?",
@@ -37,7 +37,6 @@ SYSTEM_UTTERANCES = {
     "confirm_food": "You want {food} food, correct?",
     "confirm_price": "You want a {price} restaurant, correct?",
     "no_match": "Sorry, no restaurant matches your preferences. Would you like to try different preferences?",
-    "provide_info": "Here is the information you requested about {restaurant}.",
     "provide_postcode": "The postcode for {restaurant} is {postcode}.", 
     "provide_phone": "The phone number for {restaurant} is {phone}.", 
     "provide_address": "The address for {restaurant} is {addr}.",
@@ -197,7 +196,8 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     # Awaiting user response..
     if currentstate == "await_user_response":
         if dialog_act == "request":
-            return "provide_info", context, SYSTEM_UTTERANCES["provide_info"].format(restaurant=context['suggested'])
+            # Immediately process the info request in the same turn
+            return nextstate("provide_info", context, utterance, restaurant_df)
         elif dialog_act in ["reqalts", "reqmore"]:
             if context.get('alternatives'):
                 chosen = random.choice(context['alternatives'])
@@ -231,7 +231,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
 
         if restaurant is not None and requested_info:
             # Find the restaurant row in the dataframe
-            row = restaurant_df[restaurant_df['name'].str.lower() == restaurant.lower()]
+            row = restaurant_df[restaurant_df['restaurantname'].str.lower() == restaurant.lower()]
             if not row.empty:
                 if requested_info == "postcode":
                     postcode = row.iloc[0].get('postcode', 'unknown')
