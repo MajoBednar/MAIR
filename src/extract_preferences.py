@@ -1,6 +1,17 @@
 import re
 from Levenshtein import distance
-from domain_terms import PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS, CROWDEDNESS_TERMS, LENGTHOFSTAY_TERMS
+
+PRICE_RANGE_TERMS = ['cheap', 'moderate', 'expensive', 'any']
+AREA_TERMS = ['east', 'west', 'north', 'south', 'centre', 'any']
+FOOD_TERMS = [
+    'british', 'modern european', 'italian', 'romanian', 'seafood', 'chinese',
+    'steakhouse', 'asian oriental', 'french', 'portuguese', 'indian', 'spanish',
+    'european', 'vietnamese', 'korean', 'thai', 'moroccan', 'swiss', 'fusion',
+    'gastropub', 'tuscan', 'international', 'traditional', 'mediterranean',
+    'polynesian', 'african', 'turkish', 'bistro', 'north american', 'australasian',
+    'persian', 'jamaican', 'lebanese', 'cuban', 'japanese', 'catalan',
+    'world', 'swedish', 'any'
+]
 
 
 def autocorrect(term: str, true_domain: list[str], max_correcting_dist: int) -> str | None:
@@ -12,10 +23,9 @@ def autocorrect(term: str, true_domain: list[str], max_correcting_dist: int) -> 
     corrected_term = None
     true_smallest_edit_distance = 100
     smallest_edit_distance = 100
-    for domain in (PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS, CROWDEDNESS_TERMS, LENGTHOFSTAY_TERMS):
+    for domain in (PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS):
         for domain_term in domain:
             edit_distance = distance(term, domain_term)
-            # print(term, domain_term, edit_distance)
             if domain == true_domain:
                 if edit_distance <= max_correcting_dist and edit_distance < true_smallest_edit_distance:
                     corrected_term = domain_term
