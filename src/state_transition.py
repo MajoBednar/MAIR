@@ -37,18 +37,16 @@ SYSTEM_UTTERANCES = {
     "confirm_food": "You want {food} food, correct?",
     "confirm_price": "You want a {price} restaurant, correct?",
     "no_match": "Sorry, no restaurant matches your preferences. Would you like to try different preferences?",
+    "provide_info": "Here is the information you requested about {restaurant}.",
+    "provide_postcode": "The postcode for {restaurant} is {postcode}.", 
+    "provide_phone": "The phone number for {restaurant} is {phone}.", 
+    "provide_address": "The address for {restaurant} is {addr}.",
     "suggest_restaurant": "I suggest: {restaurant}. Would you like more information or another suggestion?",
-    "provide_info": "Here is the information you requested about {restaurant}.", #TODO
-    "provide_postcode": "The postcode for {restaurant} is {postcode}.", #TODO
-    "provide_phone": "The phone number for {restaurant} is {phone}.", #TODO
-    "provide_address": "The address for {restaurant} is {addr}.", #TODO
     "ask_additional_preferences": "There are multiple restaurants to choose from.\n"
                                   "What is your additional preference (touristic/assigned seats/children/romantic)?",
     "goodbye": "Goodbye!",
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
-
-
 
 def nextstate(currentstate, context, utterance, restaurant_df):
     """
@@ -62,8 +60,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     print('Dialog act: ', dialog_act)
     print('Current state is: ', currentstate)
 
-
-    # State 1a: Welcome
+    # State 1: Welcome
     if currentstate == "welcome":
         if dialog_act == "hello":
             return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
@@ -85,7 +82,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         else:
             return "welcome", context, SYSTEM_UTTERANCES["welcome"]
 
-    # State 1b: Ask Preferences
+    # State 5: Ask Preferences
     if currentstate == "ask_preferences":
         price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
         if area: context['area'] = area
@@ -152,7 +149,6 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         matches = restaurant_lookup(restaurant_df, price, area, food)
         if len(matches) == 1:
             context['suggested'] = matches
-            #TODO: might take this out and immediately go to ask_additional_preferences
             return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=matches)
         if len(matches) > 1:
             context['alternatives'] = [m for m in matches]
@@ -162,14 +158,14 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             context['alternatives'] = []
             return "no_match", context, SYSTEM_UTTERANCES["no_match"]
 
-    # State 5: Ask other preferences
+    # No restaurant match available: reset the preferences and ask again (go to state 5)
     if currentstate == "no_match":
         context['area'] = None
         context['food'] = None
         context['price'] = None
         return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
 
-    # State ??: Ask for additional preferences  TODO: add new state to the transition diagram
+    # State 8: Ask for additional preferences  
     if currentstate == "ask_additional_preferences":
         additional_preference = extract_additional_preference(utterance)
         restaurant_alternatives = context["alternatives"]
@@ -189,10 +185,9 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             context['alternatives'] = []
             return "no_match", context, SYSTEM_UTTERANCES["no_match"]
 
-    # Awaiting user response
+    # Awaiting user response..
     if currentstate == "await_user_response":
         if dialog_act == "request":
-            #TODO: classify what info is requested (postcode, phone, address) and chose provide_info, provide_postcode, provide_phone, provide_address accordingly.
             return "provide_info", context, SYSTEM_UTTERANCES["provide_info"].format(restaurant=context['suggested'])
         elif dialog_act in ["reqalts", "reqmore"]:
             if context.get('alternatives'):
@@ -287,6 +282,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     return "welcome", context, SYSTEM_UTTERANCES["clarify"]
 
 def main():
+    # Initialize restaurant dataframe and state transition parameters
     data_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'restaurant_info.csv')
     restaurant_df = pd.read_csv(data_path)
     state = "welcome"
@@ -296,11 +292,15 @@ def main():
     print(welcome.upper() if CONFIG.get("caps_output", False) else welcome)
 
     while True:
-        user_input = input("> ")
-        if user_input.strip().lower() in ["quit", "exit", "q()", "bye"]:
-            goodbye = SYSTEM_UTTERANCES["goodbye"]
-            print(goodbye.upper() if CONFIG.get("caps_output", False) else goodbye)
-            break
+        if state in ["suggest_restaurant", "no_match"]:
+            user_input = "" # Skip user input to automatically suggest or handle no match
+        else:
+            user_input = input("> ")
+            if user_input.strip().lower() in ["quit", "exit", "q()", "bye"]:
+                goodbye = SYSTEM_UTTERANCES["goodbye"]
+                print(goodbye.upper() if CONFIG.get("caps_output", False) else goodbye)
+                break
+
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
         print(context) # For debugging
         if sysutt:
