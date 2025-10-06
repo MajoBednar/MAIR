@@ -27,6 +27,8 @@ class InferredProperties:
 
     def is_preference_satisfied(self, preference):
         """Returns True if a preference is satisfied."""
+        if preference is None:
+            return True
         if preference == 'touristic' and self.touristic is True:
             return True
         if preference == 'not touristic' and self.touristic is False:
@@ -67,6 +69,8 @@ def preference_reasoning(preference: str):
         return main_clause + 'it allows you to stay for a long time'
     if preference == 'not romantic':
         return main_clause + 'it is busy'
+    if preference is None:
+        return ''
 
 
 def main():
