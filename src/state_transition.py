@@ -66,9 +66,18 @@ def nextstate(currentstate, context, utterance, restaurant_df):
             return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
         elif dialog_act == "inform":
             price, area, food = extract_preferences(utterance, CONFIG["levenshtein_dist"])
-            if area: context['area'] = area
-            if food: context['food'] = food
-            if price: context['price'] = price
+            if area: 
+                context['area'] = area
+                if CONFIG.get("use_confirmation", False):
+                    return "confirm_area", context, SYSTEM_UTTERANCES["confirm_area"].format(area=area)
+            if food: 
+                context['food'] = food
+                if CONFIG.get("use_confirmation", False):
+                    return "confirm_food", context, SYSTEM_UTTERANCES["confirm_food"].format(food=food)
+            if price: 
+                context['price'] = price
+                if CONFIG.get("use_confirmation", False):
+                    return "confirm_price", context, SYSTEM_UTTERANCES["confirm_price"].format(price=price)
             if not context.get('area'):
                 return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
             elif not context.get('food'):
