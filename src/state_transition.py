@@ -1,6 +1,6 @@
 from extract_preferences import extract_preferences, extract_additional_preference
 from infer_properties import InferredProperties, preference_reasoning
-from Restaurant_lookup import restaurant_lookup
+from restaurant_lookup import restaurant_lookup
 from baseline_systems import BaselineRules
 from ml_models import MLModel, MLP
 import sys
