@@ -16,20 +16,23 @@ FOOD_TERMS = [
 
 def autocorrect(term: str, true_domain: list[str], max_correcting_dist: int) -> str | None:
     """
-    Autocorrects the term parameter to the closest term in the domain parameter.
+    Autocorrects the :param term to the closest term in the :param true_domain.
     This is done with Levenshtein edit distance. If the edit distance is > :param max_correcting_dist,
-    'unknown_XXX' is returned, XXX being the term in question.
+    or if the term is closer to any of the terms in the other domains, None is returned.
     """
     corrected_term = None
     true_smallest_edit_distance = 100
     smallest_edit_distance = 100
+
     for domain in (PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS):
         for domain_term in domain:
             edit_distance = distance(term, domain_term)
+            # autocorrect to the closest word from wanted domain
             if domain == true_domain:
                 if edit_distance <= max_correcting_dist and edit_distance < true_smallest_edit_distance:
                     corrected_term = domain_term
                     true_smallest_edit_distance = edit_distance
+            # check if words from other domains are closer to the given term
             else:
                 if edit_distance <= max_correcting_dist and edit_distance < smallest_edit_distance:
                     smallest_edit_distance = edit_distance
@@ -42,8 +45,6 @@ def autocorrect(term: str, true_domain: list[str], max_correcting_dist: int) -> 
     if corrected_term == "any":
         return "any" if term == "any" else None
 
-    if corrected_term is None:
-        return 'unknown_' + term
     return corrected_term
 
 
@@ -56,12 +57,15 @@ def keyword_fallback(utterance: str, term_domain: list[str]) -> str | None:
 
 
 def extract_price_range_pref(utterance: str, max_correcting_dist: int) -> str | None:
+    """Extracts a preference for price range, or None."""
     preference = None
-    price_range = re.findall(r'\b(\w\w+)\s+restaurant', utterance)
+    # check for a suitable word occurring before 'restaurant'
+    price_range = re.findall(r'\b(\w+)\s+restaurant', utterance)
     if price_range and price_range[0] != 'priced':
         preference = autocorrect(price_range[0], PRICE_RANGE_TERMS, max_correcting_dist) \
             if preference is None else preference
-    price_range = re.findall(r'\b(\w\w+)\s+price', utterance)
+    # check for a suitable word occurring before 'price'
+    price_range = re.findall(r'\b(\w+)\s+price', utterance)
     if price_range:
         preference = autocorrect(price_range[0], PRICE_RANGE_TERMS, max_correcting_dist) \
             if preference is None else preference
@@ -78,11 +82,14 @@ def extract_price_range_pref(utterance: str, max_correcting_dist: int) -> str | 
 
 
 def extract_area_pref(utterance: str, max_correcting_dist: int) -> str | None:
+    """Extracts a preference for area, or None."""
     preference = None
-    area = re.findall(r'\b(\w\w+)\s+area', utterance)
+    # check for a suitable word occurring before 'area'
+    area = re.findall(r'\b(\w+)\s+area', utterance)
     if area:
         preference = autocorrect(area[0], AREA_TERMS, max_correcting_dist) if preference is None else preference
-    area = re.findall(r'in\s+the\s+(\w\w+)\b', utterance)
+    # check for a suitable word occurring after 'in the'
+    area = re.findall(r'in\s+the\s+(\w+)\b', utterance)
     if area:
         preference = autocorrect(area[0], AREA_TERMS, max_correcting_dist) if preference is None else preference
 
@@ -98,11 +105,14 @@ def extract_area_pref(utterance: str, max_correcting_dist: int) -> str | None:
 
 
 def extract_food_pref(utterance: str, max_correcting_dist: int) -> str | None:
+    """Extracts a preference for food, or None."""
     preference = None
-    food = re.findall(r'\b(\w\w+)\s+food', utterance)
+    # check for a suitable word occurring before 'food'
+    food = re.findall(r'\b(\w+)\s+food', utterance)
     if food:
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
-    food = re.findall(r'\b(\w\w+)\s+restaurant', utterance)
+    # check for a suitable word occurring before 'restaurant'
+    food = re.findall(r'\b(\w+)\s+restaurant', utterance)
     if food and food[0] != 'priced':
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
 
@@ -120,12 +130,8 @@ def extract_food_pref(utterance: str, max_correcting_dist: int) -> str | None:
 def extract_preferences(utterance: str, max_correcting_dist: int = 3) -> tuple:
     """
     Returns preferences for price range, area and food.
-    If no preference for that category was expressed, return empty string ('').
     A preference for each category must be in the term domain of that category, or 'any'.
-    If a preference term is not in the corresponding term domain, an 'unknown_XXX'
-    preference is returned (XXX being the preference term used).
-    (In case of an unknown preference, the dialog system should re-ask for that preference,
-    stating that such XXX preference is not possible.)
+    If no preference for that category was expressed, return None.
     """
     utterance = utterance.lower()
     price_range_pref = extract_price_range_pref(utterance, max_correcting_dist)
@@ -135,22 +141,28 @@ def extract_preferences(utterance: str, max_correcting_dist: int = 3) -> tuple:
 
 
 def extract_additional_preference(utterance: str) -> str | None:
+    """Extract additional preferences. Also check if negation was present."""
     if re.findall(r'[Nn][Oo]', utterance) or re.findall(r'[Dd][Oo][Nn].?[Tt]', utterance):
         negation = 'not '
     else:
         negation = ''
+
     preference = re.findall(r'[Tt]ouristic', utterance)
     if preference:
         return negation + 'touristic'
+
     preference = re.findall(r'[Aa]ssigned\s+seats', utterance)
     if preference:
         return negation + 'assigned seats'
+
     preference = re.findall(r'[Cc]hildren', utterance)
     if preference:
         return negation + 'children'
+
     preference = re.findall(r'[Rr]omantic', utterance)
     if preference:
         return negation + 'romantic'
+
     return None
 
 
