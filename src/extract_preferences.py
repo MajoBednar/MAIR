@@ -24,9 +24,13 @@ def autocorrect(term: str, true_domain: list[str], max_correcting_dist: int) -> 
                 if edit_distance <= max_correcting_dist and edit_distance < smallest_edit_distance:
                     smallest_edit_distance = edit_distance
 
-    # if a term is corrected, but it was actually a term from another domain
+    # If a term is corrected, but it was actually a term from another domain
     if smallest_edit_distance < true_smallest_edit_distance:
         return None  # no preference was expressed for THIS domain
+    
+    # Safeguard: never autocorrect into 'any'
+    if corrected_term == "any":
+        return "any" if term == "any" else None
 
     if corrected_term is None:
         return 'unknown_' + term
@@ -51,8 +55,20 @@ def extract_price_range_pref(utterance: str, max_correcting_dist: int) -> str | 
     if price_range:
         preference = autocorrect(price_range[0], PRICE_RANGE_TERMS, max_correcting_dist) \
             if preference is None else preference
+        
+    # Direct keyword fallback, only if no explicit 'any' was given
 
     if preference is None:
+        # Check if 'any' is explicitly tied to this category
+        if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
+            preference = "any"
+        else:
+            # Only look for domain terms if no explicit 'any' was given
+            for word in utterance.split():
+                candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
+                if candidate not in (None, f"unknown_{word}"):
+                    preference = candidate
+                    break
         preference = keyword_fallback(utterance, PRICE_RANGE_TERMS)
     return preference
 
@@ -66,8 +82,19 @@ def extract_area_pref(utterance: str, max_correcting_dist: int) -> str | None:
     if area:
         preference = autocorrect(area[0], AREA_TERMS, max_correcting_dist) if preference is None else preference
 
+    # Direct keyword fallback, only if no explicit 'any' was given
     if preference is None:
         preference = keyword_fallback(utterance, AREA_TERMS)
+        # Check if 'any' is explicitly tied to this category
+        if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
+            preference = "any"
+        else:
+            # Only look for domain terms if no explicit 'any' was given
+            for word in utterance.split():
+                candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
+                if candidate not in (None, f"unknown_{word}"):
+                    preference = candidate
+                    break
     return preference
 
 
@@ -80,8 +107,19 @@ def extract_food_pref(utterance: str, max_correcting_dist: int) -> str | None:
     if food and food[0] != 'priced':
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
 
+    # Direct keyword fallback, only if no explicit 'any' was given
     if preference is None:
         preference = keyword_fallback(utterance, FOOD_TERMS)
+        # Check if 'any' is explicitly tied to this category
+        if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
+            preference = "any"
+        else:
+            # Only look for domain terms if no explicit 'any' was given
+            for word in utterance.split():
+                candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
+                if candidate not in (None, f"unknown_{word}"):
+                    preference = candidate
+                    break
     return preference
 
 
