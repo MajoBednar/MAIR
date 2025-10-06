@@ -8,9 +8,11 @@ If there are multiple restaurants with the same number of corresponding criterea
 1. pricerange 
 2. food 
 3. area
+4. crowdedness 
+5. lengthofstay 
 If there are restaurants with the same ammount of fittness a list is returned
 """
-def restaurant_lookup(df, pricerange, area, food):
+def restaurant_lookup(df, pricerange, area, food, crowdedness=None, lengthofstay=None):
     # Loop through all restaurants and save a list with scores: 
     # If restaurant has good price range add 1.1 
     # If restaurant has good area add 1
