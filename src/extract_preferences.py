@@ -57,19 +57,13 @@ def extract_price_range_pref(utterance: str, max_correcting_dist: int) -> str | 
             if preference is None else preference
         
     # Direct keyword fallback, only if no explicit 'any' was given
-
     if preference is None:
         # Check if 'any' is explicitly tied to this category
         if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
             preference = "any"
         else:
             # Only look for domain terms if no explicit 'any' was given
-            for word in utterance.split():
-                candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
-                if candidate not in (None, f"unknown_{word}"):
-                    preference = candidate
-                    break
-        preference = keyword_fallback(utterance, PRICE_RANGE_TERMS)
+            preference = keyword_fallback(utterance, PRICE_RANGE_TERMS)
     return preference
 
 
@@ -84,17 +78,12 @@ def extract_area_pref(utterance: str, max_correcting_dist: int) -> str | None:
 
     # Direct keyword fallback, only if no explicit 'any' was given
     if preference is None:
-        preference = keyword_fallback(utterance, AREA_TERMS)
         # Check if 'any' is explicitly tied to this category
         if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
             preference = "any"
         else:
             # Only look for domain terms if no explicit 'any' was given
-            for word in utterance.split():
-                candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
-                if candidate not in (None, f"unknown_{word}"):
-                    preference = candidate
-                    break
+            preference = keyword_fallback(utterance, AREA_TERMS)
     return preference
 
 
@@ -109,17 +98,12 @@ def extract_food_pref(utterance: str, max_correcting_dist: int) -> str | None:
 
     # Direct keyword fallback, only if no explicit 'any' was given
     if preference is None:
-        preference = keyword_fallback(utterance, FOOD_TERMS)
         # Check if 'any' is explicitly tied to this category
         if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
             preference = "any"
         else:
             # Only look for domain terms if no explicit 'any' was given
-            for word in utterance.split():
-                candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
-                if candidate not in (None, f"unknown_{word}"):
-                    preference = candidate
-                    break
+            preference = keyword_fallback(utterance, FOOD_TERMS)
     return preference
 
 
