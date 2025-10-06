@@ -3,7 +3,7 @@ from Levenshtein import distance
 from domain_terms import PRICE_RANGE_TERMS, AREA_TERMS, FOOD_TERMS, CROWDEDNESS_TERMS, LENGTHOFSTAY_TERMS
 
 
-def autocorrect(term: str, true_domain: list[str], max_correcting_dist):
+def autocorrect(term: str, true_domain: list[str], max_correcting_dist: int) -> str | None:
     """
     Autocorrects the term parameter to the closest term in the domain parameter.
     This is done with Levenshtein edit distance. If the edit distance is > :param max_correcting_dist,
@@ -33,7 +33,15 @@ def autocorrect(term: str, true_domain: list[str], max_correcting_dist):
     return corrected_term
 
 
-def extract_price_range_pref(utterance: str, max_correcting_dist):
+def keyword_fallback(utterance: str, term_domain: list[str]) -> str | None:
+    """Traverses an utterance to find if a domain term is present. Returns that domain term."""
+    for word in utterance.split():
+        if word in term_domain:
+            return word
+    return None
+
+
+def extract_price_range_pref(utterance: str, max_correcting_dist: int) -> str | None:
     preference = None
     price_range = re.findall(r'\b(\w\w+)\s+restaurant', utterance)
     if price_range and price_range[0] != 'priced':
@@ -43,18 +51,13 @@ def extract_price_range_pref(utterance: str, max_correcting_dist):
     if price_range:
         preference = autocorrect(price_range[0], PRICE_RANGE_TERMS, max_correcting_dist) \
             if preference is None else preference
-        
-    # NEW: direct keyword fallback
+
     if preference is None:
-        for word in utterance.split():
-            candidate = autocorrect(word, PRICE_RANGE_TERMS, max_correcting_dist)
-            if candidate not in (None, f"unknown_{word}"):
-                preference = candidate
-                break
+        preference = keyword_fallback(utterance, PRICE_RANGE_TERMS)
     return preference
 
 
-def extract_area_pref(utterance: str, max_correcting_dist):
+def extract_area_pref(utterance: str, max_correcting_dist: int) -> str | None:
     preference = None
     area = re.findall(r'\b(\w\w+)\s+area', utterance)
     if area:
@@ -63,17 +66,12 @@ def extract_area_pref(utterance: str, max_correcting_dist):
     if area:
         preference = autocorrect(area[0], AREA_TERMS, max_correcting_dist) if preference is None else preference
 
-    # NEW: direct keyword fallback
     if preference is None:
-        for word in utterance.split():
-            candidate = autocorrect(word, AREA_TERMS, max_correcting_dist)
-            if candidate not in (None, f"unknown_{word}"):
-                preference = candidate
-                break
+        preference = keyword_fallback(utterance, AREA_TERMS)
     return preference
 
 
-def extract_food_pref(utterance: str, max_correcting_dist):
+def extract_food_pref(utterance: str, max_correcting_dist: int) -> str | None:
     preference = None
     food = re.findall(r'\b(\w\w+)\s+food', utterance)
     if food:
@@ -82,17 +80,12 @@ def extract_food_pref(utterance: str, max_correcting_dist):
     if food and food[0] != 'priced':
         preference = autocorrect(food[0], FOOD_TERMS, max_correcting_dist) if preference is None else preference
 
-    # NEW: direct keyword fallback
     if preference is None:
-        for word in utterance.split():
-            candidate = autocorrect(word, FOOD_TERMS, max_correcting_dist)
-            if candidate not in (None, f"unknown_{word}"):
-                preference = candidate
-                break
+        preference = keyword_fallback(utterance, FOOD_TERMS)
     return preference
 
 
-def extract_preferences(utterance: str, max_correcting_dist=3):
+def extract_preferences(utterance: str, max_correcting_dist: int = 3) -> tuple:
     """
     Returns preferences for price range, area and food.
     If no preference for that category was expressed, return empty string ('').
@@ -109,7 +102,7 @@ def extract_preferences(utterance: str, max_correcting_dist=3):
     return price_range_pref, area_pref, food_pref
 
 
-def extract_additional_preference(utterance: str):
+def extract_additional_preference(utterance: str) -> str | None:
     if re.findall(r'[Nn][Oo]', utterance) or re.findall(r'[Dd][Oo][Nn].?[Tt]', utterance):
         negation = 'not '
     else:
@@ -130,6 +123,7 @@ def extract_additional_preference(utterance: str):
 
 
 def main():
+    """Testing preference extraction."""
     user_input = ''
     while user_input != 'q()':
         user_input = input('Type your preferences for a restaurant\n')
