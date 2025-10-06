@@ -2,13 +2,31 @@ import pandas as pd
 
 
 class InferredProperties:
-    def __init__(self):
+    """Class for inferring additional properties about a restaurant."""
+    def __init__(self, restaurant_name=None, df=None):
         self.touristic = None
         self.assigned_seats = None
         self.children = None
         self.romantic = None
+        if restaurant_name and df is not None:
+            self.infer_properties(restaurant_name, df)
+
+    def infer_properties(self, restaurant_name, df):
+        """Infers additional properties about a restaurant."""
+        restaurant = df.loc[df['restaurantname'] == restaurant_name].squeeze()
+        if restaurant['pricerange'] == 'cheap' and restaurant['foodquality'] == 'good':
+            self.touristic = True
+        if restaurant['food'] == 'romanian':
+            self.touristic = False
+        if restaurant['lengthofstay'] == 'long stay':
+            self.children = False
+            self.romantic = True
+        if restaurant['crowdedness'] == 'busy':
+            self.assigned_seats = True
+            self.romantic = False
 
     def is_preference_satisfied(self, preference):
+        """Returns True if a preference is satisfied."""
         if preference == 'touristic' and self.touristic is True:
             return True
         if preference == 'not touristic' and self.touristic is False:
@@ -24,6 +42,7 @@ class InferredProperties:
         return False
 
     def __str__(self):
+        """Neatly prints inferred properties."""
         return (
             f'Inferred properties:\n'
             f'touristic:      {self.touristic}\n'
@@ -33,25 +52,8 @@ class InferredProperties:
         )
 
 
-def infer_properties(restaurant_name, df):
-    print(restaurant_name)
-    restaurant = df.loc[df['restaurantname'] == restaurant_name].squeeze()
-    print(restaurant)
-    inferred_properties = InferredProperties()
-    if restaurant['pricerange'] == 'cheap' and restaurant['foodquality'] == 'good':
-        inferred_properties.touristic = True
-    if restaurant['food'] == 'romanian':
-        inferred_properties.touristic = False
-    if restaurant['lengthofstay'] == 'long stay':
-        inferred_properties.children = False
-        inferred_properties.romantic = True
-    if restaurant['crowdedness'] == 'busy':
-        inferred_properties.assigned_seats = True
-        inferred_properties.romantic = False
-    return inferred_properties
-
-
 def preference_reasoning(preference: str):
+    """Gives a reason why a preference about a restaurant is satisfied."""
     main_clause = f'. The restaurant is {preference} because '
     if preference == 'touristic':
         return main_clause + 'it has cheap and good food'
@@ -68,9 +70,10 @@ def preference_reasoning(preference: str):
 
 
 def main():
+    """Testing the inference of properties."""
     restaurant_df = pd.read_csv('data/restaurant_info.csv')
     restaurant = 'thanh binh'
-    print(infer_properties(restaurant, restaurant_df))
+    print(InferredProperties(restaurant, restaurant_df))
 
 
 if __name__ == '__main__':

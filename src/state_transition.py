@@ -1,5 +1,5 @@
 from extract_preferences import extract_preferences, extract_additional_preference
-from infer_properties import infer_properties, preference_reasoning
+from infer_properties import InferredProperties, preference_reasoning
 from Restaurant_lookup import restaurant_lookup
 from Baseline_systems import BaselineRules
 from ml_models import MLModel, MLP
@@ -178,7 +178,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         restaurant_alternatives = context["alternatives"]
         context["alternatives"] = []
         for restaurant in restaurant_alternatives:
-            inferred_properties = infer_properties(restaurant, restaurant_df)
+            inferred_properties = InferredProperties(restaurant, restaurant_df)
             preference_satisfied = inferred_properties.is_preference_satisfied(additional_preference)
             if preference_satisfied:
                 context["alternatives"].append(restaurant)
