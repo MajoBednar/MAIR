@@ -14,7 +14,9 @@ def restaurant_lookup(df, pricerange, area, food):
     # Loop through all restaurants and save a list with scores: 
     # If restaurant has good price range add 1.1 
     # If restaurant has good area add 1
-    # If restaurant has good food add 1.05
+    # If restaurant has good food add 1.05 
+    # If restaurant has good crowdedness add 1
+    # If restaurant has good lengthofstay add 1
     # Return restaurant(s) with hihgest score
 
     scores = []
@@ -27,14 +29,24 @@ def restaurant_lookup(df, pricerange, area, food):
             score += 1
         if row['food'] == food or food == 'any':
             score += 1.05
+        if row['crowdedness'] == crowdedness or crowdedness == 'any':
+            score += 1
+        if row['lengthofstay'] == lengthofstay or lengthofstay == 'any':
+            score += 1
 
         scores.append(score)
 
     # Add scores to the dataframe
     df['score'] = scores
 
-    # Filter out restaurants with score > 3
-    suitable_restaurants = df.loc[df['score'] > 3, 'restaurantname'].tolist()
+    # Filter out restaurants with score > 5
+    suitable_restaurants = df.loc[df['score'] > 5, 'restaurantname'].tolist()
+
+    # Get the maximum score
+    max_score = df['score'].max()
+  
+    # Define list with restaurants with max score
+    suitable_restaurants = df.loc[df['score'] == max_score, 'restaurantname'].tolist()
 
     return suitable_restaurants
 
