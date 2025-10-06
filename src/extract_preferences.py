@@ -110,11 +110,7 @@ def extract_preferences(utterance: str, max_correcting_dist=3):
 
 
 def extract_additional_preference(utterance: str):
-    preference = re.findall(r'\b[Nn][Oo]\b', utterance)
-    if preference:
-        return 'no'
-    negation = re.findall(r'[Nn][Oo][Tt]', utterance)
-    if negation:
+    if re.findall(r'[Nn][Oo]', utterance) or re.findall(r'[Dd][Oo][Nn].?[Tt]', utterance):
         negation = 'not '
     else:
         negation = ''
@@ -130,6 +126,7 @@ def extract_additional_preference(utterance: str):
     preference = re.findall(r'[Rr]omantic', utterance)
     if preference:
         return negation + 'romantic'
+    return None
 
 
 def main():

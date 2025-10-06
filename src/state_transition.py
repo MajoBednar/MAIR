@@ -12,7 +12,7 @@ CONFIG = {
     "levenshtein_dist": 3,
     "use_confirmation": True,
     "caps_output": False,
-    "use_baseline_dialog_act_recognition": True
+    "use_baseline_dialog_act_recognition": False
 }
 
 # Load a pretrained dialog act classifier
@@ -42,7 +42,8 @@ SYSTEM_UTTERANCES = {
     "provide_postcode": "The postcode for {restaurant} is {postcode}.", #TODO
     "provide_phone": "The phone number for {restaurant} is {phone}.", #TODO
     "provide_address": "The address for {restaurant} is {addr}.", #TODO
-    "ask_additional_preferences": "Do you have any additional preferences?",
+    "ask_additional_preferences": "There are multiple restaurants to choose from.\n"
+                                  "What is your additional preference (touristic/assigned seats/children/romantic)?",
     "goodbye": "Goodbye!",
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
@@ -171,10 +172,6 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     # State ??: Ask for additional preferences  TODO: add new state to the transition diagram
     if currentstate == "ask_additional_preferences":
         additional_preference = extract_additional_preference(utterance)
-        if additional_preference == 'no':
-            chosen = context["alternatives"].pop(random.randrange(len(context["alternatives"])))
-            context['suggested'] = chosen
-            return "await_user_response", context, SYSTEM_UTTERANCES["suggest_restaurant"].format(restaurant=chosen)
         restaurant_alternatives = context["alternatives"]
         context["alternatives"] = []
         for restaurant in restaurant_alternatives:
