@@ -24,9 +24,13 @@ def autocorrect(term: str, true_domain: list[str], max_correcting_dist):
                 if edit_distance <= max_correcting_dist and edit_distance < smallest_edit_distance:
                     smallest_edit_distance = edit_distance
 
-    # if a term is corrected, but it was actually a term from another domain
+    # If a term is corrected, but it was actually a term from another domain
     if smallest_edit_distance < true_smallest_edit_distance:
         return None  # no preference was expressed for THIS domain
+    
+    # Safeguard: never autocorrect into 'any'
+    if corrected_term == "any":
+        return "any" if term == "any" else None
 
     if corrected_term is None:
         return 'unknown_' + term
@@ -44,7 +48,7 @@ def extract_price_range_pref(utterance: str, max_correcting_dist):
         preference = autocorrect(price_range[0], PRICE_RANGE_TERMS, max_correcting_dist) \
             if preference is None else preference
         
-    # NEW: direct keyword fallback
+    # Direct keyword fallback, only if no explicit 'any' was given
     if preference is None:
         # Check if 'any' is explicitly tied to this category
         if re.search(r'\bany\s+(restaurant|food|area|place|spot|type|price|range)\b', utterance):
