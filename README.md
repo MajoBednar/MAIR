@@ -32,9 +32,6 @@ MAIR/
         pip install -r requirements.txt
 ```
 
-2. **Data files:**
-    - Place `restaurant_info.csv` and `dialog_acts.dat` in the `data/` folder.
-
 ## How to use
 
 Run the dialog system from the `src` directory:
