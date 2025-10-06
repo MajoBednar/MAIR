@@ -28,10 +28,9 @@ MAIR/
 ## Setup
 
 1. **Install dependencies:**
-    Required packages are:
-    - pandas
-    - scikit-learn
-    - python-Levenshtein
+```
+        pip install -r requirements.txt
+```
 
 2. **Data files:**
     - Place `restaurant_info.csv` and `dialog_acts.dat` in the `data/` folder.
@@ -49,28 +48,27 @@ Follow the prompts to interact with the restaurant recommendation system.
 
 - **state_transition.py**: Main dialog manager using state transitions and dialog acts.
 - **extract_preferences.py**: Extracts user preferences (area, food, price) from utterances.
-- **Restaurant_lookup.py**: Looks up restaurants matching user preferences.
-- **domain_terms.py**: Contains domain-specific terms (areas, food types, price ranges).
+- **restaurant_lookup.py**: Looks up restaurants matching user preferences.
+- **infer_properties**: Infer other properties (romantic, touristic), based on prespecified rules.
 - **data_management.py**: Handles data loading and saving.
-- **bow.py**: Bag-of-words feature extraction.
+- **bag_of_words.py**: Bag-of-words feature extraction.
 - **ml_models.py**: Machine learning models for dialog act classification.
-- **Baseline_systems.py**: Baseline classifiers and data splitting.
+- **baseline_systems.py**: Baseline classifiers and data splitting.
 - **classifier_evaluation.py**: Evaluation scripts for classifiers.
-- **ui.py**: (Optional) User interface components.
+
 
 ## Notes
 
 - All user input is converted to lowercase for processing.
-- Dialog acts are classified using a ML classifier.
+- Dialog acts are classified using either a baseline classifier or a ML classifier.
 - The system uses Levenshtein distance for keyword matching.
 
-## Current Issues
-
-- The system does not support "don't care" preferences.
-- The system does not explicitly confirm the known preferences.
-- The dialog act classifier sometimes misclassifies utterances.
-- Does not yet state restaurant match immediately, needs preliminary. 
-- Dialog system (mainly state transition function) needs more testing and improvement.
+## Configurability
+These can be changed in the code file `state_transition.py` under the dictionary named `CONFIG`:
+- Maximum correcting distance for Levenshtein edit distance 
+- Always confirm for each preference or not 
+- Output in all caps or not 
+- Use baseline dialog act recognition 
 
 ## Group Number & Members
 group number: F3
@@ -79,4 +77,3 @@ members:
 - Lonneke Hormann
 - Finn Joosten
 - Jop Paro
-
