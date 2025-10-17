@@ -1,4 +1,5 @@
-from extract_preferences import extract_preferences, extract_additional_preference
+from extract_preferences import extract_additional_preference
+from extract_preferences_2 import extract_preferences
 from infer_properties import InferredProperties, preference_reasoning
 from restaurant_lookup import restaurant_lookup
 from baseline_systems import BaselineRules
@@ -43,7 +44,7 @@ SYSTEM_UTTERANCES = {
     "suggest_restaurant": "I suggest: {restaurant}. Would you like more information or another suggestion?",
     "ask_additional_preferences": "There are multiple restaurants to choose from.\n"
                                   "What is your additional preference (touristic/assigned seats/children/romantic)?",
-    "goodbye": "Goodbye!",
+    "goodbye": "Thanks for using the restaurant recommendation system. Goodbye!",
     "clarify": "Sorry, I didn't understand. Could you please rephrase?",
 }
 
@@ -170,7 +171,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
         context['area'] = None
         context['food'] = None
         context['price'] = None
-        return "ask_preferences", context, SYSTEM_UTTERANCES["ask_preferences"]
+        return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
 
     # State 8: Ask for additional preferences  
     if currentstate == "ask_additional_preferences":
@@ -258,7 +259,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
                 return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
             else:
                 return "suggest_restaurant", context, None
-        elif dialog_act == "deny":
+        elif dialog_act == "deny" or dialog_act == "negate":
             context['area'] = None
             return "ask_area", context, SYSTEM_UTTERANCES["ask_area"]
         else:
@@ -271,7 +272,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
                 return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
             else:
                 return "suggest_restaurant", context, None
-        elif dialog_act == "deny":
+        elif dialog_act == "deny" or dialog_act == "negate":
             context['food'] = None
             return "ask_food", context, SYSTEM_UTTERANCES["ask_food"]
         else:
@@ -281,7 +282,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
     if currentstate == "confirm_price":
         if dialog_act == "affirm":
             return "suggest_restaurant", context, None
-        elif dialog_act == "deny":
+        elif dialog_act == "deny" or dialog_act == "negate":
             context['price'] = None
             return "ask_price", context, SYSTEM_UTTERANCES["ask_price"]
         else:
