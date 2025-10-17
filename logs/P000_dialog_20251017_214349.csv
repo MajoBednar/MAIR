@@ -1,0 +1,63 @@
+timestamp,participant_id,state,speaker,utterance
+2025-10-17T21:44:18.498943,P000,welcome,user,west side
+2025-10-17T21:44:18.503229,P000,confirm_area,system,"You want a restaurant in the west area, correct?"
+2025-10-17T21:44:22.600314,P000,confirm_area,user,yeahh
+2025-10-17T21:44:22.600314,P000,confirm_area,system,"You want a restaurant in the west area, correct?"
+2025-10-17T21:44:24.480131,P000,confirm_area,user,yeah
+2025-10-17T21:44:24.484888,P000,ask_food,system,What type of food would you like?
+2025-10-17T21:44:27.988084,P000,ask_food,user,french
+2025-10-17T21:44:27.990608,P000,confirm_food,system,"You want french food, correct?"
+2025-10-17T21:44:30.566124,P000,confirm_food,user,yeah
+2025-10-17T21:44:30.569152,P000,ask_price,system,What price range are you looking for?
+2025-10-17T21:44:37.910034,P000,ask_price,user,expencive as hell
+2025-10-17T21:44:37.912972,P000,confirm_price,system,"You want a expensive restaurant, correct?"
+2025-10-17T21:44:41.379891,P000,confirm_price,user,yeah bruh
+2025-10-17T21:44:41.388397,P000,no_match,system,"Sorry, no restaurant matches your preferences. Would you like to try different preferences?"
+2025-10-17T21:44:41.391159,P000,ask_area,system,Which area are you interested in?
+2025-10-17T21:44:47.634265,P000,ask_area,user,fuck no
+2025-10-17T21:44:47.634265,P000,confirm_area,system,"You want a restaurant in the north area, correct?"
+2025-10-17T21:44:50.783218,P000,confirm_area,user,oke
+2025-10-17T21:44:50.783994,P000,confirm_area,system,"You want a restaurant in the north area, correct?"
+2025-10-17T21:44:52.712883,P000,confirm_area,user,ok
+2025-10-17T21:44:52.715052,P000,confirm_area,system,"You want a restaurant in the north area, correct?"
+2025-10-17T21:44:54.810667,P000,confirm_area,user,okay
+2025-10-17T21:44:54.812929,P000,confirm_area,system,"You want a restaurant in the north area, correct?"
+2025-10-17T21:44:56.926602,P000,confirm_area,user,yes
+2025-10-17T21:44:56.929635,P000,ask_food,system,What type of food would you like?
+2025-10-17T21:45:03.233145,P000,ask_food,user,any
+2025-10-17T21:45:03.236127,P000,ask_food,system,What type of food would you like?
+2025-10-17T21:45:08.672711,P000,ask_food,user,french
+2025-10-17T21:45:08.672711,P000,confirm_food,system,"You want french food, correct?"
+2025-10-17T21:45:25.062122,P000,confirm_food,user,yes
+2025-10-17T21:45:25.063128,P000,ask_price,system,What price range are you looking for?
+2025-10-17T21:45:29.265640,P000,ask_price,user,moderate
+2025-10-17T21:45:29.265640,P000,confirm_price,system,"You want a moderate restaurant, correct?"
+2025-10-17T21:45:30.764969,P000,confirm_price,user,yes
+2025-10-17T21:45:30.773004,P000,no_match,system,"Sorry, no restaurant matches your preferences. Would you like to try different preferences?"
+2025-10-17T21:45:30.774746,P000,ask_area,system,Which area are you interested in?
+2025-10-17T21:45:34.746739,P000,ask_area,user,north
+2025-10-17T21:45:34.748481,P000,confirm_area,system,"You want a restaurant in the north area, correct?"
+2025-10-17T21:45:39.269589,P000,confirm_area,user,yes
+2025-10-17T21:45:39.271908,P000,ask_food,system,What type of food would you like?
+2025-10-17T21:45:40.622220,P000,ask_food,user,chinese
+2025-10-17T21:45:40.623226,P000,confirm_food,system,"You want chinese food, correct?"
+2025-10-17T21:45:42.078172,P000,confirm_food,user,yes
+2025-10-17T21:45:42.080747,P000,ask_price,system,What price range are you looking for?
+2025-10-17T21:45:45.520349,P000,ask_price,user,cheap
+2025-10-17T21:45:45.523096,P000,confirm_price,system,"You want a cheap restaurant, correct?"
+2025-10-17T21:45:46.906621,P000,confirm_price,user,yes
+2025-10-17T21:45:46.914505,P000,no_match,system,"Sorry, no restaurant matches your preferences. Would you like to try different preferences?"
+2025-10-17T21:45:46.914505,P000,ask_area,system,Which area are you interested in?
+2025-10-17T21:45:54.025571,P000,ask_area,user,centre
+2025-10-17T21:45:54.028157,P000,confirm_area,system,"You want a restaurant in the centre area, correct?"
+2025-10-17T21:45:55.697694,P000,confirm_area,user,yes
+2025-10-17T21:45:55.700211,P000,ask_food,system,What type of food would you like?
+2025-10-17T21:45:56.900209,P000,ask_food,user,chinese
+2025-10-17T21:45:56.900209,P000,confirm_food,system,"You want chinese food, correct?"
+2025-10-17T21:45:57.590060,P000,confirm_food,user,yes
+2025-10-17T21:45:57.592879,P000,ask_price,system,What price range are you looking for?
+2025-10-17T21:46:01.735802,P000,ask_price,user,cheap
+2025-10-17T21:46:01.735802,P000,confirm_price,system,"You want a cheap restaurant, correct?"
+2025-10-17T21:46:02.552875,P000,confirm_price,user,yes
+2025-10-17T21:46:02.569259,P000,await_user_response,system,I suggest: ['charlie chan']. Would you like more information or another suggestion?
+2025-10-17T21:46:05.875611,P000,await_user_response,system,Thanks for using the restaurant recommendation system. Goodbye!

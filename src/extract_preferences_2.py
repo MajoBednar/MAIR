@@ -1,6 +1,8 @@
 import re
 from Levenshtein import distance
 
+logger = None  # to be initialized externally
+
 PRICE_RANGE_TERMS = ['cheap', 'moderate', 'expensive', 'moderately']
 AREA_TERMS = ['east', 'west', 'north', 'south', 'centre', 'center']
 FOOD_TERMS = [
@@ -28,7 +30,8 @@ def autocorrect(term: str, max_correcting_dist: int) -> str:
             corrected_term = word
             smallest_edit_distance = edit_distance
 
-    if corrected_term:
+    if corrected_term and corrected_term != term and logger is not None:
+        logger.log_autocorrect(term, corrected_term, term)
         return corrected_term
     return term
 

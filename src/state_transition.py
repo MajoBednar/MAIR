@@ -1,13 +1,21 @@
-from extract_preferences import extract_additional_preference
-from extract_preferences_2 import extract_preferences
-from infer_properties import InferredProperties, preference_reasoning
-from restaurant_lookup import restaurant_lookup
-from baseline_systems import BaselineRules
-from ml_models import MLModel, MLP
 import sys
 import pandas as pd
 import os
 import random
+from infer_properties import InferredProperties, preference_reasoning
+from restaurant_lookup import restaurant_lookup
+from baseline_systems import BaselineRules
+from ml_models import MLModel, MLP
+from extract_preferences import extract_additional_preference
+from extract_preferences_2 import extract_preferences
+from dialog_logger import DialogLogger
+
+# Ask participant ID at the start of the session
+participant_id = input("Enter participant ID: ").strip().upper() or "P000"
+logger = DialogLogger(participant_id=participant_id)
+import extract_preferences_2
+extract_preferences_2.logger = logger  # Inject logger into extract_preferences_2 module
+
 
 CONFIG = {
     "levenshtein_dist": 3,
@@ -240,7 +248,7 @@ def nextstate(currentstate, context, utterance, restaurant_df):
                     phone = row.iloc[0].get('phone', 'unknown')
                     return "await_user_response", context, SYSTEM_UTTERANCES["provide_phone"].format(restaurant=restaurant, phone=phone)
                 elif requested_info == "address":
-                    addr = row.iloc[0].get('address', 'unknown')
+                    addr = row.iloc[0].get('addr', 'unknown')
                     return "await_user_response", context, SYSTEM_UTTERANCES["provide_address"].format(restaurant=restaurant, addr=addr)
             # If restaurant not found or info missing
             return "await_user_response", context, f"Sorry, I couldn't find the {requested_info} for {restaurant}."
@@ -309,11 +317,14 @@ def main():
             if user_input.strip().lower() in ["quit", "exit", "q()", "bye"]:
                 goodbye = SYSTEM_UTTERANCES["goodbye"]
                 print(goodbye.upper() if CONFIG.get("caps_output", False) else goodbye)
+                logger.log_turn(state, "system", goodbye)
                 break
+            logger.log_turn(state, "user", user_input)
 
         state, context, sysutt = nextstate(state, context, user_input, restaurant_df)
         if sysutt:
             print(sysutt.upper() if CONFIG.get("caps_output", False) else sysutt)
+            logger.log_turn(state, "system", sysutt)
 
 
 if __name__ == '__main__':
