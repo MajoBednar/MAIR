@@ -1,8 +1,9 @@
 import pandas as pd
-from scipy.stats import shapiro
+from scipy.stats import shapiro, ttest_rel
 
 
 def normality_test(dataframe):
+    print('Shapiro-Wilk test:')
     stat, p = shapiro(dataframe['cExp'])
     print(f"Experimental: W={stat:.3f}, p={p:.3f}")
 
@@ -52,4 +53,9 @@ if __name__ == '__main__':
     print(processed_df)
     print(cond_df)
 
+    print(f"Explicit Confirmation: M = {cond_df['cExp'].mean():.2f}, SD = {cond_df['cExp'].std(ddof=1):.2f}")
+    print(f"No Confirmation: M = {cond_df['cNo'].mean():.2f}, SD = {cond_df['cNo'].std(ddof=1):.2f}")
+
     normality_test(cond_df)
+    t_stat, p_val = ttest_rel(cond_df['cExp'], cond_df['cNo'])
+    print(f'T-test: t={t_stat}, p={p_val}')

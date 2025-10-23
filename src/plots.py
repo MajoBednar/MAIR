@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
+import seaborn as sns
 import numpy as np
 from scipy.stats import gaussian_kde
 
@@ -55,7 +56,69 @@ def histogram(df, num_bins: int | None = 8):
     plt.show()
 
 
+def violin_plot(df):
+    df = df.rename(columns={"cExp": "Explicit Confirmation", "cNo": "No Confirmation"})
+    df_long = df.melt(var_name="Condition", value_name="Satisfaction")
+
+    # Create violin plot
+    plt.figure(figsize=(7, 5))
+    sns.violinplot(data=df_long, x="Condition", y="Satisfaction", inner="box", palette=["#4C72B0", "#DD8452"],
+                   zorder=0)
+    sns.swarmplot(data=df_long, x="Condition", y="Satisfaction", color="black", alpha=0.6)
+
+    for i in range(len(df)):
+        plt.plot(["Explicit Confirmation", "No Confirmation"],
+                 [df.loc[i, "Explicit Confirmation"], df.loc[i, "No Confirmation"]],
+                 color="gray", alpha=0.5, zorder=0)
+
+    # Labels and title
+    plt.xlabel("Condition")
+    plt.ylabel("Satisfaction Score")
+    plt.title("Distribution of Satisfaction Scores by Condition")
+
+    plt.tight_layout()
+    plt.show()
+
+
+def bar_plot(df):
+    df = df.rename(columns={"cExp": "Explicit Confirmation", "cNo": "No Confirmation"})
+    df_long = df.melt(var_name="Condition", value_name="Satisfaction")
+
+    # Calculate group stats (for reference)
+    group_stats = df_long.groupby("Condition")["Satisfaction"].agg(["mean", "std", "count"])
+    print(group_stats)
+
+    # Plot
+    plt.figure(figsize=(7, 5))
+    sns.barplot(
+        data=df_long, x="Condition", y="Satisfaction",
+        ci="sd", capsize=0.2, palette=["#4C72B0", "#DD8452"],
+        edgecolor="black", alpha=0.8
+    )
+
+    # Overlay individual data points
+    sns.swarmplot(
+        data=df_long, x="Condition", y="Satisfaction",
+        color="black", size=6, alpha=0.8
+    )
+
+    # Connect paired data points
+    for i in range(len(df)):
+        plt.plot(["Explicit Confirmation", "No Confirmation"],
+                 [df.loc[i, "Explicit Confirmation"], df.loc[i, "No Confirmation"]],
+                 color="gray", alpha=0.5, linewidth=1, zorder=0)
+
+    # Labels and style
+    plt.xlabel("Condition")
+    plt.ylabel("Satisfaction Score")
+    plt.title("Satisfaction Scores by Condition with Individual Data Points")
+    plt.tight_layout()
+    plt.show()
+
+
 if __name__ == '__main__':
     processed_df, cond_df = prepare_df()
     print(cond_df.to_string())
     histogram(cond_df, 8)
+    violin_plot(cond_df)
+    bar_plot(cond_df)
