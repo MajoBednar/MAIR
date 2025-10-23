@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 import numpy as np
 from scipy.stats import gaussian_kde
+
 from prepare_data import prepare_df
 
 
@@ -23,8 +24,10 @@ def histogram(df, num_bins: int | None = 8):
     bin_centers = (bins[:-1] + bins[1:]) / 2
 
     plt.figure(figsize=(8, 5))
-    plt.bar(bin_centers - width / 2, exp_counts, width=width, label='Explicit Confirmation', alpha=0.7, edgecolor='black')
-    plt.bar(bin_centers + width / 2, no_counts, width=width, label='No Confirmation', alpha=0.7, edgecolor='black')
+    plt.bar(bin_centers - width / 2, exp_counts, width=width, label='Explicit Confirmation', alpha=0.7,
+            edgecolor='black')
+    plt.bar(bin_centers + width / 2, no_counts, width=width, label='No Confirmation', alpha=0.7,
+            edgecolor='black')
 
     # --- Adjust KDEs to counts (scale density by total count and bin width) ---
     x_vals = np.linspace(min(bins), max(bins), 200)

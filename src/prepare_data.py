@@ -1,4 +1,17 @@
 import pandas as pd
+from scipy.stats import shapiro
+
+
+def normality_test(dataframe):
+    stat, p = shapiro(dataframe['cExp'])
+    print(f"Experimental: W={stat:.3f}, p={p:.3f}")
+
+    stat, p = shapiro(dataframe['cNo'])
+    print(f"Control: W={stat:.3f}, p={p:.3f}")
+
+    diff = dataframe['cExp'] - dataframe['cNo']
+    stat, p = shapiro(diff)
+    print(f"Difference: W={stat:.3f}, p={p:.3f}")
 
 
 def invert_q3(score):
@@ -38,3 +51,5 @@ if __name__ == '__main__':
     processed_df, cond_df = prepare_df(df)
     print(processed_df)
     print(cond_df)
+
+    normality_test(cond_df)
