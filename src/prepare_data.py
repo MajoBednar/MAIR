@@ -5,7 +5,7 @@ def invert_q3(score):
     return 8 - score
 
 
-def prepare_df(dataframe):
+def prepare_df(dataframe=pd.read_csv('data/Results_experiment_MAIR.csv')):
     new_df = dataframe.copy()
     for idx, row in new_df.iterrows():
         for trial in ['T1', 'T2', 'T3', 'T4']:
